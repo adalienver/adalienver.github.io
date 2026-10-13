@@ -1,79 +1,74 @@
 ---
 layout: default
-title: Academic Profile
+title: Ana Sayfa
 ---
 
 <div class="card" style="text-align: center;">
-  <h1 style="font-family: 'Cinzel', serif; font-size: 2.3rem;">Enver Adalı</h1>
-  <p style="color: var(--muted); margin: 0.4rem 0 1rem;">
-    English Language & Literature • Translation Studies Researcher<br>
-    İstanbul Beykent University Alumni
+  <h1 style="font-family: 'Cinzel', serif; font-size: 2.2rem; color: var(--primary);">Enver Adalı</h1>
+  <p style="color: var(--muted); margin: 0.4rem 0 1rem; font-size: 1rem;">
+    Mütercim ve Tercümanlık • İngiliz Dili ve Edebiyatı<br>
+    İstanbul Beykent Üniversitesi Mezunu
   </p>
 
   <a href="{{ site.linkedin_url }}" target="_blank" rel="noopener noreferrer" class="btn-linkedin">
-    Connect on LinkedIn ↗
+    LinkedIn Profilim ↗
   </a>
 </div>
 
 <div class="card">
-  <h2>Featured Research Monograph</h2>
-  <h3 style="font-size: 1.25rem; margin-top: 0.4rem;">Ecofeminist Approaches in Dystopian Narratives</h3>
-  <p style="font-size: 0.85rem; color: var(--accent); font-weight: 600; text-transform: uppercase; margin-bottom: 0.8rem;">
-    Aldous Huxley's <em>Brave New World</em> • Theoretical Framework: Karen J. Warren
+  <h2>İngilizce Mütercim ve Tercümanlık Eğitimi ve Önemi</h2>
+  <p style="margin-top: 0.8rem; font-size: 1rem; line-height: 1.8; color: #2d3748;">
+    İngilizce Mütercim ve Tercümanlık mezunları, İngiliz Dili ve Edebiyatı alanından farklı olarak doğrudan <strong>çeviri odaklı (translation-oriented)</strong> kapsamlı bir eğitim alırlar. Müfredat yalnızca metin çevirisini değil; <strong>ardıl çeviri (consecutive interpreting)</strong>, <strong>simültane çeviri (simultaneous interpreting)</strong> ve <strong>yazılı metni anında sözlü aktarma (sight interpreting)</strong> gibi yüksek bilişsel beceri gerektiren sözlü çeviri türlerini de içerir.
   </p>
 
-  <div class="abstract-quote">
-    <strong>Abstract Overview:</strong> This study explores the structural intersection between patriarchal control and environmental exploitation. Utilizing Karen J. Warren's concepts of the <em>"logic of domination"</em> and <em>oppositional value dualisms</em>, the paper examines how the World State asserts totalizing stability by replacing natural reproduction with mechanized technology and suppressing organic ecological ties.
+  <div class="abstract-quote" style="border-left-color: var(--primary); background: #f8fafc; margin-top: 1.2rem;">
+    <strong>Yapay Zekâ Çağında Çevirmenlik:</strong> Günümüzde yapay zekâ teknolojilerinin nereye evrileceği, hukuki veya etik olarak nasıl düzenleneceği/yasaklanıp sınırlandırılacağı ve gelişim süreçlerinin geleceği henüz belirsizliğini korumaktadır. Ancak tam da bu belirsizlik ortamında; kültürel bağlamı kavrayabilen, terminolojiye hâkim ve sözlü çeviri dinamiklerini yönetebilen profesyonel tercüman yetiştirilmesine ve Mütercim-Tercümanlık eğitimine verilen önem katlanarak artmalıdır.
   </div>
+</div>
 
-  <p style="margin-top: 1rem;">
-    <a href="{{ '/research' | relative_url }}" style="font-weight: 600; color: var(--primary);">
-      Read full abstract & study overview →
-    </a>
+<div class="card" style="border-left: 5px solid var(--accent); background: #ffffff;">
+  <h2>Sınav Hazırlık & Akademik Danışmanlık</h2>
+  <p style="margin-top: 0.6rem; font-size: 0.98rem; color: #2d3748;">
+    Akademik hedefleriniz, dil yeterlilik sınavları ve çeviri odaklı eğitimler için birebir danışmanlık ve özel ders verilmektedir:
+  </p>
+  <ul style="margin: 0.8rem 0 1.2rem 1.4rem; font-size: 0.95rem; color: #374151; line-height: 1.8;">
+    <li><strong>Sınav Hazırlık Dersleri:</strong> YDS, YÖKDİL, TOEFL ve IELTS sınav stratejileri, akademik kelime dağarcığı ve okuma-anlama analizleri.</li>
+    <li><strong>Akademik Danışmanlık:</strong> Metin analizi, lisansüstü akademik İngilizce ve terminoloji yönetimi.</li>
+    <li><strong>Çeviri Araçları Desteği:</strong> Bilgisayar Destekli Çeviri araçları (SDL Trados Studio) ve altyazı çevirisi (Subtitle Edit) iş akışları.</li>
+  </ul>
+  <p style="font-size: 0.95rem; color: var(--muted); margin-bottom: 0.4rem;">
+    Dersler ve akademik danışmanlık talepleri hakkında detaylı bilgi almak için:
+  </p>
+  <p style="font-size: 1.05rem; font-weight: 600; color: var(--primary);">
+    ✉️ <a href="mailto:{{ site.email }}" style="color: var(--primary); text-decoration: underline;">{{ site.email }}</a>
   </p>
 </div>
 
 <div class="card">
-  <h2>Academic Background & Affiliations</h2>
+  <h2>Bölüm ve Program Bilgileri</h2>
   <div class="portal-grid">
-    <a href="https://lisansustu.beykent.edu.tr/yuksek-lisans/ingiliz-dili-ve-edebiyati-abd" target="_blank" rel="noopener noreferrer" class="portal-item">
-      <div>
-        <strong>M.A. in English Language and Literature</strong><br>
-        <span style="font-size: 0.85rem; color: var(--muted);">İstanbul Beykent University • Graduate Institute</span>
-      </div>
-      <span class="portal-tag">Program Portal ↗</span>
-    </a>
-
     <a href="https://www.beykent.edu.tr/aday-ogrenci/bolumler-programlar/lisans/fen-edebiyat-fakultesi/ingilizce-mutercim-ve-tercumanlik" target="_blank" rel="noopener noreferrer" class="portal-item">
       <div>
-        <strong>B.A. in Translation and Interpreting</strong><br>
-        <span style="font-size: 0.85rem; color: var(--muted);">İstanbul Beykent University • Faculty of Arts and Sciences</span>
+        <strong>İngilizce Mütercim ve Tercümanlık Bölümü</strong><br>
+        <span style="font-size: 0.85rem; color: var(--muted);">İstanbul Beykent Üniversitesi • Lisans Programı Tanıtımı</span>
       </div>
-      <span class="portal-tag">Department Portal ↗</span>
+      <span class="portal-tag">Bölüm Detayı ↗</span>
+    </a>
+
+    <a href="https://lisansustu.beykent.edu.tr/yuksek-lisans/ingiliz-dili-ve-edebiyati-abd" target="_blank" rel="noopener noreferrer" class="portal-item">
+      <div>
+        <strong>İngiliz Dili ve Edebiyatı Anabilim Dalı</strong><br>
+        <span style="font-size: 0.85rem; color: var(--muted);">İstanbul Beykent Üniversitesi • Lisansüstü Eğitim Enstitüsü</span>
+      </div>
+      <span class="portal-tag">Enstitü Sayfası ↗</span>
     </a>
 
     <a href="https://fef.beykent.edu.tr/bolumler/ingiliz-dili-ve-edebiyati/bolum-mesaji/fen-edebiyat-fakültesi" target="_blank" rel="noopener noreferrer" class="portal-item">
       <div>
-        <strong>Faculty of Arts and Sciences Message</strong><br>
-        <span style="font-size: 0.85rem; color: var(--muted);">Academic mission & departmental overview</span>
+        <strong>Fen-Edebiyat Fakültesi Bölüm Mesajı</strong><br>
+        <span style="font-size: 0.85rem; color: var(--muted);">Akademik vizyon ve fakülte açıklaması</span>
       </div>
-      <span class="portal-tag">Department Message ↗</span>
+      <span class="portal-tag">Fakülte Mesajı ↗</span>
     </a>
   </div>
-</div>
-
-<div class="card" style="border-left: 5px solid var(--primary);">
-  <h2>Workshops & Digital Collaboration</h2>
-  <p style="margin-top: 0.5rem;">
-    To support researchers, students, and faculty across the humanities, I offer complimentary academic sessions and technical assistance:
-  </p>
-  <ul style="margin: 0.75rem 0 1rem 1.4rem;">
-    <li><strong>Computer-Assisted Translation (CAT):</strong> Guidance on translation memories and termbases with <strong>SDL Trados Studio</strong>.</li>
-    <li><strong>Audiovisual Translation:</strong> Timing rules and line synchronizations using <strong>Subtitle Edit</strong>.</li>
-    <li><strong>Digital Humanities:</strong> Setting up open-access reading lists and lecture archives on GitHub.</li>
-  </ul>
-  <p>
-    Inquiries and workshop requests: 
-    <a href="mailto:{{ site.email }}" style="font-weight: 600; color: var(--primary);">{{ site.email }}</a>
-  </p>
 </div>
