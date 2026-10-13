@@ -6,12 +6,3 @@ baseurl: ""
 
 linkedin_url: "https://www.linkedin.com/in/enver-adalı/"
 email: "enveradali195@gmail.com"
-
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
