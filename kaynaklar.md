@@ -4,72 +4,300 @@ title: İngilizce Öğrenme Materyalleri ve Faydalı Kaynaklar
 permalink: /kaynaklar/
 ---
 
-<div class="card">
-  <h1>İngilizce Öğrenme Materyalleri ve Faydalı Kaynaklar</h1>
-  <p style="margin-top: 0.6rem; font-size: 0.98rem; color: #4a5568; line-height: 1.7;">
-    Öğrenciler, çevirmen adayları ve dil sınavlarına (YDS, YÖKDİL, TOEFL, IELTS) hazırlananlar için derlenmiş güvenilir, açık erişimli dijital başvuru kaynakları ve çalışma materyalleri:
+<style>
+  .resource-hero {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .resource-hero h1 {
+    font-size: 2.1rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+  .resource-hero p {
+    color: var(--muted);
+    font-size: 1rem;
+    max-width: 680px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  .category-title {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: 'Lora', serif;
+    font-size: 1.3rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #eef2f6;
+    padding-bottom: 0.5rem;
+  }
+
+  .resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2.2rem;
+  }
+
+  .res-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.25rem 1.4rem;
+    text-decoration: none;
+    color: var(--text) !important;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+  }
+
+  .res-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(21, 50, 91, 0.08);
+    border-color: #b9c7d9;
+  }
+
+  .res-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .res-title {
+    font-weight: 600;
+    font-size: 1.02rem;
+    color: var(--primary);
+    line-height: 1.4;
+  }
+
+  .res-desc {
+    font-size: 0.88rem;
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  .tag-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.65rem;
+    border-radius: 999px;
+    white-space: nowrap;
+    letter-spacing: 0.3px;
+  }
+
+  .tag-grammar { background: #e0f2fe; color: #0369a1; }
+  .tag-vocab { background: #fef3c7; color: #b45309; }
+  .tag-reading { background: #dcfce7; color: #15803d; }
+  .tag-audio { background: #f3e8ff; color: #7e22ce; }
+  .tag-youtube { background: #fee2e2; color: #b91c1c; }
+  .tag-official { background: #ede9fe; color: #6d28d9; }
+
+  .res-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  @media (max-width: 640px) {
+    .resource-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<div class="resource-hero">
+  <h1>İngilizce Öğrenme & Çalışma Kaynakları</h1>
+  <p>
+    Öğrenciler, çevirmen adayları ve dil sınavlarına (YDS, YÖKDİL, TOEFL, IELTS) hazırlananlar için derlenmiş en nitelikli interaktif platformlar, dinleme kanalları ve dilbilgisi kılavuzları.
   </p>
+</div>
 
-  <div class="portal-grid" style="margin-top: 1.5rem;">
+<!-- 1. DİNLEME, HABER & MULTİMEDYA -->
+<h2 class="category-title">🎧 Dinleme, Haber & Video Kanalları</h2>
+<div class="resource-grid">
 
-    <!-- Dilbilgisi & Yapı -->
-    <a href="https://dictionary.cambridge.org/grammar/british-grammar/conjunctions-time" target="_blank" rel="noopener noreferrer" class="portal-item">
-      <div>
-        <strong>Cambridge Grammar: Conjunctions of Time</strong><br>
-        <span style="font-size: 0.85rem; color: var(--muted);">Zaman bağlaçları, yan tümce yapıları ve akademik metin bağlama kuralları.</span>
+  <a href="https://www.youtube.com/@engvidRonnie/videos" target="_blank" rel="noopener noreferrer" class="res-card">
+    <div>
+      <div class="res-header">
+        <span class="res-title">engVid: Ronnie’s English Channel</span>
+        <span class="tag-badge tag-youtube">YouTube Video</span>
       </div>
-      <span class="portal-tag">Gramer ↗</span>
-    </a>
+      <p class="res-desc">
+        Doğal konuşma dili, argo (slang), günlük ifadeler ve kafa karıştıran gramer kalıplarını samimi ve akılda kalıcı bir üslupla anlatan popüler video ders serisi.
+      </p>
+    </div>
+    <div class="res-footer">Kanala Git ↗</div>
+  </a>
 
-    <a href="https://www.engvid.com/english-resource/verbs-followed-by-gerunds-and-infinitives/" target="_blank" rel="noopener noreferrer" class="portal-item">
-      <div>
-        <strong>EngVid: Gerunds & Infinitives Reference</strong><br>
-        <span style="font-size: 0.85rem; color: var(--muted);">Fiillerin ardından gelen -ing ve to-infinitive kalıpları için kapsamlı başvuru tablosu.</span>
+  <a href="https://www.bbc.co.uk/learningenglish/" target="_blank" rel="noopener noreferrer" class="res-card">
+    <div>
+      <div class="res-header">
+        <span class="res-title">BBC Learning English</span>
+        <span class="tag-badge tag-official">BBC Portal</span>
       </div>
-      <span class="portal-tag">Fiil Yapıları ↗</span>
-    </a>
+      <p class="res-desc">
+        "6 Minute English", haber bültenleri, telaffuz atölyeleri ve güncel olaylar üzerinden İngilizceyi geliştiren küresel referans platformu.
+      </p>
+    </div>
+    <div class="res-footer">Platformu Aç ↗</div>
+  </a>
 
-    <a href="https://www.ef.com/wwen/english-resources/english-grammar/pick-right-quantifier/" target="_blank" rel="noopener noreferrer" class="portal-item">
-      <div>
-        <strong>EF English Resources: Quantifiers Guide</strong><br>
-        <span style="font-size: 0.85rem; color: var(--muted);">Sayılabilen ve sayılamayan isimlerle kullanılan miktar belirteçleri rehberi.</span>
+  <a href="https://learningenglish.voanews.com/" target="_blank" rel="noopener noreferrer" class="res-card">
+    <div>
+      <div class="res-header">
+        <span class="res-title">VOA Learning English (Voice of America)</span>
+        <span class="tag-badge tag-audio">Ses & Haber</span>
       </div>
-      <span class="portal-tag">Determiners ↗</span>
-    </a>
+      <p class="res-desc">
+        Basitleştirilmiş kelime kadrosu ve anlaşılır, net konuşma temposuyla hazırlanmış dünya haberleri; dinleme ve dikte pratikleri için idealdir.
+      </p>
+    </div>
+    <div class="res-footer">Haberleri İncele ↗</div>
+  </a>
 
-    <a href="https://www.englishclub.com/grammar/determiners-quantifiers.php" target="_blank" rel="noopener noreferrer" class="portal-item">
-      <div>
-        <strong>EnglishClub: Determiners & Quantifiers</strong><br>
-        <span style="font-size: 0.85rem; color: var(--muted);">Belirteçler, miktar ifadeleri ve pratik alıştırma özetleri.</span>
+  <a href="https://learnenglish.britishcouncil.org/free-resources" target="_blank" rel="noopener noreferrer" class="res-card">
+    <div>
+      <div class="res-header">
+        <span class="res-title">British Council: Free Resources</span>
+        <span class="tag-badge tag-official">Kurumsal / Sınav</span>
       </div>
-      <span class="portal-tag">Referans ↗</span>
-    </a>
+      <p class="res-desc">
+        IELTS hazırlık ipuçları, seviyelendirilmiş ses kayıtları (podcasts), etkileşimli alıştırmalar ve iş İngilizcesi kaynakları.
+      </p>
+    </div>
+    <div class="res-footer">Materyalleri Aç ↗</div>
+  </a>
 
-    <!-- Kelime & Eşdizimlilik (Collocation) -->
-    <a href="https://ozdic.com/" target="_blank" rel="noopener noreferrer" class="portal-item">
-      <div>
-        <strong>Ozdic: The English Collocations Dictionary</strong><br>
-        <span style="font-size: 0.85rem; color: var(--muted);">Çevirmenler ve ileri düzey yazım için kelimelerin doğal birlikteliklerini (collocations) gösteren sözlük.</span>
+</div>
+
+<!-- 2. DİLBİLGİSİ & YAPISAL ANALİZ -->
+<h2 class="category-title">📘 Dilbilgisi & Cümle Mimarisi</h2>
+<div class="resource-grid">
+
+  <a href="https://dictionary.cambridge.org/grammar/british-grammar/conjunctions-time" target="_blank" rel="noopener noreferrer" class="res-card">
+    <div>
+      <div class="res-header">
+        <span class="res-title">Cambridge Grammar: Conjunctions of Time</span>
+        <span class="tag-badge tag-grammar">Bağlaçlar</span>
       </div>
-      <span class="portal-tag">Çeviri / Sözlük ↗</span>
-    </a>
+      <p class="res-desc">
+        Zaman bağlaçları (when, while, as soon as, until vb.), yan tümce yapıları ve akademik metinlerde mantıksal geçiş kuralları.
+      </p>
+    </div>
+    <div class="res-footer">Kılavuzu Oku ↗</div>
+  </a>
 
-    <a href="https://www.vocabulary.com/" target="_blank" rel="noopener noreferrer" class="portal-item">
-      <div>
-        <strong>Vocabulary.com</strong><br>
-        <span style="font-size: 0.85rem; color: var(--muted);">Bağlamsal açıklamalar ve adaptif öğrenme algoritmalarıyla ileri düzey kelime geliştirme platformu.</span>
+  <a href="https://www.engvid.com/english-resource/verbs-followed-by-gerunds-and-infinitives/" target="_blank" rel="noopener noreferrer" class="res-card">
+    <div>
+      <div class="res-header">
+        <span class="res-title">EngVid: Gerunds & Infinitives Table</span>
+        <span class="tag-badge tag-grammar">Fiil Yapıları</span>
       </div>
-      <span class="portal-tag">Kelime Dağarcığı ↗</span>
-    </a>
+      <p class="res-desc">
+        Hangi fiillerin ardından "-ing", hangilerinin ardından "to + verb" geldiğini örnek cümlelerle özetleyen pratik referans tablosu.
+      </p>
+    </div>
+    <div class="res-footer">Tabloyu İncele ↗</div>
+  </a>
 
-    <!-- Okuma & Metin Çözümleme -->
-    <a href="https://lingua.com/english/reading/wonderful-family/" target="_blank" rel="noopener noreferrer" class="portal-item">
-      <div>
-        <strong>Lingua: English Reading Practice</strong><br>
-        <span style="font-size: 0.85rem; color: var(--muted);">Farklı seviyelere göre hazırlanmış okuma parçaları ve kavrama soruları.</span>
+  <a href="https://www.ef.com/wwen/english-resources/english-grammar/pick-right-quantifier/" target="_blank" rel="noopener noreferrer" class="res-card">
+    <div>
+      <div class="res-header">
+        <span class="res-title">EF English: Pick the Right Quantifier</span>
+        <span class="tag-badge tag-grammar">Miktar Belirteçleri</span>
       </div>
-      <span class="portal-tag">Okuma ↗</span>
-    </a>
+      <p class="res-desc">
+        Much/many, few/little, some/any gibi sayılabilen ve sayılamayan isimlerle kullanılan belirteçlerin doğru kullanım prensipleri.
+      </p>
+    </div>
+    <div class="res-footer">Rehbere Git ↗</div>
+  </a>
 
-  </div>
+  <a href="https://www.englishclub.com/grammar/determiners-quantifiers.php" target="_blank" rel="noopener noreferrer" class="res-card">
+    <div>
+      <div class="res-header">
+        <span class="res-title">EnglishClub: Determiners & Quantifiers</span>
+        <span class="tag-badge tag-grammar">Referans</span>
+      </div>
+      <p class="res-desc">
+        İngilizce belirteç sistemine dair sade kurallar, test soruları ve sık yapılan hataların analizi.
+      </p>
+    </div>
+    <div class="res-footer">Alıştırmaları Gör ↗</div>
+  </a>
+
+</div>
+
+<!-- 3. KELİME & EŞDİZİMLİLİK (COLLOCATIONS) -->
+<h2 class="category-title">🔍 Kelime Dağarcığı & Çeviri Sözlükleri</h2>
+<div class="resource-grid">
+
+  <a href="https://ozdic.com/" target="_blank" rel="noopener noreferrer" class="res-card">
+    <div>
+      <div class="res-header">
+        <span class="res-title">Ozdic Collocations Dictionary</span>
+        <span class="tag-badge tag-vocab">Çevirmen Başucu</span>
+      </div>
+      <p class="res-desc">
+        Kelimelerin ana dili İngilizce olanlar tarafından hangi edat ve sıfatlarla doğal şekilde eşleştiğini (make a decision vs do a decision) gösteren vazgeçilmez eşdizim sözlüğü.
+      </p>
+    </div>
+    <div class="res-footer">Sözlüğü Aç ↗</div>
+  </a>
+
+  <a href="https://www.vocabulary.com/" target="_blank" rel="noopener noreferrer" class="res-card">
+    <div>
+      <div class="res-header">
+        <span class="res-title">Vocabulary.com</span>
+        <span class="tag-badge tag-vocab">İleri Düzey Kelime</span>
+      </div>
+      <p class="res-desc">
+        Kelimeleri ezberletmek yerine bağlam içi anlamlarını öğreten, akıllı alıştırma döngülerine sahip akademik kelime öğrenme motoru.
+      </p>
+    </div>
+    <div class="res-footer">Kelime Çalış ↗</div>
+  </a>
+
+</div>
+
+<!-- 4. OKUMA PRATİĞİ & SEVİYE TESTLERİ -->
+<h2 class="category-title">📖 Okuma Kavrama & Seviye Testleri</h2>
+<div class="resource-grid">
+
+  <a href="https://test-english.com/reading/a1/guess-who-a1-english-reading-test/" target="_blank" rel="noopener noreferrer" class="res-card">
+    <div>
+      <div class="res-header">
+        <span class="res-title">Test-English: A1 Reading Test</span>
+        <span class="tag-badge tag-reading">Seviye Testi</span>
+      </div>
+      <p class="res-desc">
+        Temel seviye (A1) okuma metinleri, ipuçları ve anında puanlama yapan etkileşimli kavrama soruları.
+      </p>
+    </div>
+    <div class="res-footer">Testi Çöz ↗</div>
+  </a>
+
+  <a href="https://lingua.com/english/reading/wonderful-family/" target="_blank" rel="noopener noreferrer" class="res-card">
+    <div>
+      <div class="res-header">
+        <span class="res-title">Lingua: English Reading Practice</span>
+        <span class="tag-badge tag-reading">Metin Okuma</span>
+      </div>
+      <p class="res-desc">
+        Farklı zorluk derecelerinde kısa öyküler, makaleler ve metin altı değerlendirme soruları.
+      </p>
+    </div>
+    <div class="res-footer">Metinleri Oku ↗</div>
+  </a>
+
 </div>
