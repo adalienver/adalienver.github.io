@@ -72,3 +72,11 @@ title: Ana Sayfa
     </a>
   </div>
 </div>
+<div class="card">
+  <h2>Mesleki ve Akademik İlkelerimiz</h2>
+  <ul style="margin: 0.8rem 0 1rem 1.4rem; font-size: 0.95rem; color: #374151; line-height: 1.8;">
+    <li><strong>Veri Güvenliği ve Gizlilik:</strong> Danışanlara ve öğrencilere ait metinler, gizlilik ilkeleri uyarınca üçüncü taraf halka açık yapay zekâ motorlarına aktarılmaz.</li>
+    <li><strong>Şeffaf Teknoloji Kullanımı:</strong> Çeviri teknolojileri ve yapay zekâ araçları metnin yerine geçmek için değil; terminoloji tutarlılığı, kalite kontrol ve derlem analizi amacıyla denetimli kullanılır.</li>
+    <li><strong>Bireyselleştirilmiş Pedagoji:</strong> YDS/YÖKDİL ve uluslararası sınavlarda ezber kalıplar yerine; metin çözümleme, sözdizim analizi ve akademik kelime dağarcığını kalıcı kılan yöntemler uygulanır.</li>
+  </ul>
+</div>
