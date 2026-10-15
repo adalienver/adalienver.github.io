@@ -153,8 +153,12 @@ Herkes tutuklanıyor
 Mefailün Failün
 Sebebi belli değil
 Failatün faşizma Failatün çok saçma.</blockquote>
-</div>
 
+  <!-- Video Fragman Bağlantısı -->
+  <div style="margin-top: 1.25rem; position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; border: 1px solid var(--border);">
+    <iframe src="https://ok.ru/videoembed/6570613475841" frameborder="0" allow="autoplay" allowfullscreen style="position: absolute; top:0; left: 0; width: 100%; height: 100%;"></iframe>
+  </div>
+</div>
 <!-- AKADEMİK VE DANIŞMANLIK BÖLÜMÜ -->
 
 <div class="card">
