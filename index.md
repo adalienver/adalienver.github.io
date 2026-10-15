@@ -64,7 +64,7 @@ title: Ana Sayfa
 
 <!-- 3. Epic of Gilgamesh -->
 <div class="card" style="background: #fdfdfd; border-left: 5px solid #92400e;">
-  <h2 style="font-family: 'Cinzel', serif; border: none; margin-bottom: 1rem;">3. Humanıty's Earliest Quest: <em>The Epıc of Gılgamesh</em></h2>
+  <h2 style="font-family: 'Cinzel', serif; border: none; margin-bottom: 1rem;">3. Humanıty's Earlıest Quest: <em>The Epıc of Gılgamesh</em></h2>
 
   <blockquote style="font-size: 1.05rem; line-height: 1.7; font-style: italic; color: #1a202c; border-left: 3px solid #92400e; padding-left: 1.25rem; margin: 1rem 0;">
     "Gilgamesh, where are you hurrying to?<br>
