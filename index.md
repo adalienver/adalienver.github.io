@@ -33,7 +33,7 @@ title: Ana Sayfa
   </blockquote>
 
   <p style="font-size: 0.95rem; line-height: 1.7; color: #374151;">
-    Miranda speaks these words out of pure, sheltered wonder upon seeing other humans for the first time. In Huxley’s <em>Brave New World</em>, John the Savage echoes her phrase with the same high hopes, only to watch that awe sour into bitter disgust as the shallow, synthetic reality of the World State sinks in.
+    Upon seeing other humans for the first time, Miranda utters these words in pure, sheltered wonder.  In Huxley’s <em>Brave New World</em>, John the Savage mirrors her words, and it to transform into a deep sense of disgust as the superficial and artificial nature of the World State
   </p>
 </div>
 
@@ -64,7 +64,7 @@ title: Ana Sayfa
 
 <!-- 3. Epic of Gilgamesh -->
 <div class="card" style="background: #fdfdfd; border-left: 5px solid #92400e;">
-  <h2 style="font-family: 'Cinzel', serif; border: none; margin-bottom: 1rem;">3. Humanity's Earliest Quest: <em>The Epic of Gilgamesh</em></h2>
+  <h2 style="font-family: 'Cinzel', serif; border: none; margin-bottom: 1rem;">3. Humanıty's Earliest Quest: <em>The Epıc of Gılgamesh</em></h2>
 
   <blockquote style="font-size: 1.05rem; line-height: 1.7; font-style: italic; color: #1a202c; border-left: 3px solid #92400e; padding-left: 1.25rem; margin: 1rem 0;">
     "Gilgamesh, where are you hurrying to?<br>
