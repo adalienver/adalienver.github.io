@@ -19,34 +19,69 @@ title: Ana Sayfa
   </div>
 </div>
 
-<!-- SCHOLARLY INTERTEXTUAL SECTION -->
+<!-- INTERTEXTUAL LITERARY ANALYSIS -->
 <div class="card" style="background: #fdfdfd; border-left: 5px solid #2c3e50;">
-  <h2 style="font-family: 'Cinzel', serif; border: none; margin-bottom: 1.5rem;">The Central Quote: <em>The Tempest</em></h2>
+  <h2 style="font-family: 'Cinzel', serif; border: none; margin-bottom: 1.5rem;">Wonder, Prophecy, and Disillusionment Across Worlds</h2>
   
-  <blockquote style="font-size: 1.2rem; line-height: 1.6; font-style: italic; color: #1a202c; border-left: 3px solid var(--primary); padding-left: 1.5rem; margin: 1rem 0;">
-    "O, wonder! How many goodly creatures are there here! How beauteous mankind is! O brave new world, that has such people in't!" 
-    <footer style="font-size: 0.9rem; margin-top: 0.5rem; color: var(--muted);">— Act 5, Scene 1</footer>
+  <p style="font-size: 0.95rem; line-height: 1.7; color: #2d3748; margin-bottom: 1rem;">
+    Literature speaks in echoes across centuries. Three distinct moments of encounter—Shakespeare's Miranda greeting civilization, Macbeth's witches foretelling doom, and John the Savage confronting the World State—reveal how human consciousness shifts when promised worlds collide with lived reality.
+  </p>
+
+  <!-- THE TEMPEST -->
+  <div style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #ddd;">
+    <h3 style="color: var(--primary); font-size: 1.1rem;">I. Miranda's Wonder</h3>
+    <blockquote style="font-size: 1.05rem; line-height: 1.6; font-style: italic; color: #1a202c; border-left: 3px solid var(--primary); padding-left: 1.5rem; margin: 0.8rem 0;">
+      "O, wonder! How many goodly creatures are there here! How beauteous mankind is! O brave new world, that has such people in't!"
+      <footer style="font-size: 0.85rem; margin-top: 0.4rem; color: var(--muted);">— <em>The Tempest</em>, Act 5, Scene 1</footer>
+    </blockquote>
+    <p style="font-size: 0.9rem; line-height: 1.6; color: #374151; margin-top: 0.5rem;">
+      An island-born girl sees humans for the first time. Her awe is genuine, uncontaminated—a Romantic celebration of human dignity.
+    </p>
+  </div>
+
+  <!-- MACBETH -->
+  <div style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #ddd;">
+    <h3 style="color: var(--primary); font-size: 1.1rem;">II. The Witches' Prophecy: Moral Inversion</h3>
+    <blockquote style="font-size: 1.05rem; line-height: 1.6; font-style: italic; color: #1a202c; border-left: 3px solid var(--primary); padding-left: 1.5rem; margin: 0.8rem 0;">
+      "Fair is foul, and foul is fair: / Hover through the fog and filthy air."
+      <footer style="font-size: 0.85rem; margin-top: 0.4rem; color: var(--muted);">— <em>Macbeth</em>, Act 1, Scene 1</footer>
+    </blockquote>
+    <p style="font-size: 0.9rem; line-height: 1.6; color: #374151; margin-top: 0.5rem;">
+      Where Miranda saw beauty, the witches announce moral chaos—good becomes evil, evil becomes good. The prologue to *Macbeth* warns: what appears virtuous conceals corruption.
+    </p>
+  </div>
+
+  <!-- BRAVE NEW WORLD -->
+  <div style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #ddd;">
+    <h3 style="color: var(--primary); font-size: 1.1rem;">III. John the Savage: Echo and Dissonance</h3>
+    <p style="font-size: 0.9rem; line-height: 1.6; color: #374151; margin-top: 0.5rem;">
+      John inherits Miranda's words but discovers the witches' prophecy was right. His journey moves from rapture to bitter disgust—the "brave new world" is beautiful only in its facade. Beneath lies emotional numbness and spiritual death.
+    </p>
+    <ul style="list-style: none; padding-left: 0; font-size: 0.9rem; margin-top: 0.8rem;">
+      <li style="margin-bottom: 0.6rem; padding-left: 1rem;"><strong>Act I:</strong> Naive hope—John dreams of London as a realm of dignity.</li>
+      <li style="margin-bottom: 0.6rem; padding-left: 1rem;"><strong>Act II:</strong> Disillusionment—he sees the shallowness, repeating Miranda's words with contempt.</li>
+      <li style="padding-left: 1rem;"><strong>Act III:</strong> Tragic refusal—the line becomes a eulogy for lost humanity.</li>
+    </ul>
+  </div>
+
+</div>
+
+<!-- GILGAMESH + ŞENSOY BRIDGE -->
+<div class="card" style="background: #f9f5f0; border-left: 5px solid #8b4513;">
+  <h2 style="font-family: 'Cinzel', serif; color: #2c3e50;">Eternal Themes: Ancient Mesopotamia to Modern Istanbul</h2>
+  
+  <p style="font-size: 0.9rem; line-height: 1.7; color: #2d3748; margin-bottom: 1rem;">
+    The *Epic of Gilgamesh* opens with a king's search for immortality—a quest for transcendence that ends in acceptance of human limitation. Millennia later, Ferhan Şensoy's *Şahları da Vururlar* (I. Kabare Fasıl) echoes the same disillusionment: power, spectacle, and political theater mask systemic corruption.
+  </p>
+
+  <blockquote style="font-size: 0.9rem; line-height: 1.6; font-style: italic; color: #1a202c; border-left: 3px solid #8b4513; padding-left: 1.5rem; margin: 1rem 0;">
+    "Herkes bilir az biraz / Mefailün Failün / Şiraz'da vardır kiraz / Failatün Failün Failatün tiyatro."
+    <footer style="font-size: 0.8rem; margin-top: 0.4rem; color: var(--muted);">— Ferhan Şensoy, *Şahları da Vururlar*</footer>
   </blockquote>
 
-  <p style="font-size: 1rem; line-height: 1.8; color: #2d3748;">
-    <strong>Ontological Shift:</strong> In its original Shakespearean context, these words are uttered by <em>Miranda</em>—an emblem of Renaissance innocence. Having been isolated on a remote island, her exclamation is one of pure, unmediated awe at the first sight of "civilized" humanity. 
+  <p style="font-size: 0.9rem; line-height: 1.6; color: #374151; margin-top: 0.8rem;">
+    Beneath the theatrical rhythms lies a political warning: desire for beauty blinds us to injustice. Like John staring at the World State's gleaming towers, Şensoy's audience watches fascism hide behind folk melody. The "wonder" of civilization is the witches' trick—fair is foul.
   </p>
-  
-  <p style="font-size: 1rem; line-height: 1.8; color: #2d3748;">
-    However, in Aldous Huxley’s <em>Brave New World</em>, the phrase undergoes a devastating <strong>intertextual evolution</strong> through the character of John the Savage:
-  </p>
-
-  <ul style="list-style: none; padding-left: 0; font-size: 0.95rem;">
-    <li style="margin-bottom: 1rem;">
-      <strong style="color: var(--primary);">I. Initial Rapture:</strong> John invokes the line with naive expectation, viewing the "World State" as a promised land of Sophoclean dignity.
-    </li>
-    <li style="margin-bottom: 1rem;">
-      <strong style="color: var(--primary);">II. Bitter Disillusionment:</strong> As the reality of a shallow, consumerist, and emotionally sterilized society sets in, the quote is repeated with caustic mockery and nausea.
-    </li>
-    <li>
-      <strong style="color: var(--primary);">III. Tragic Defiance:</strong> By the finale, the line serves as a bitter challenge—a linguistic relic of a lost human soul standing against a mechanized utopia.
-    </li>
-  </ul>
 </div>
 
 <div class="card">
