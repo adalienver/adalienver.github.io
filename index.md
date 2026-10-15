@@ -33,7 +33,7 @@ title: Ana Sayfa
   </blockquote>
 
   <p style="font-size: 0.95rem; line-height: 1.7; color: #374151;">
-    Miranda bu sözleri adadaki çocuksu masumiyetiyle, dış dünyadan gelen insanları ilk kez gördüğünde saf bir hayranlıkla söyler. Huxley’nin <em>Cesur Yeni Dünya</em> romanında ise John bu cümleyi aynı coşkuyla devralır; fakat toplumun ruhsuzluğunu, sahte neşesini ve tüketim çarkını gördükçe sözcükler önce derin bir tiksintiye, ardından mekanik düzene karşı trajik bir isyana dönüşür.
+    Miranda speaks these words out of pure, sheltered wonder upon seeing other humans for the first time. In Huxley’s <em>Brave New World</em>, John the Savage echoes her phrase with the same high hopes, only to watch that awe sour into bitter disgust as the shallow, synthetic reality of the World State sinks in.
   </p>
 </div>
 
@@ -42,7 +42,7 @@ title: Ana Sayfa
   <h2 style="font-family: 'Cinzel', serif; border: none; margin-bottom: 1rem;">2. Shakespeare: <em>Macbeth</em></h2>
 
   <p style="font-size: 0.95rem; color: #4b5563; margin-bottom: 1rem; font-style: italic;">
-    Oyunun tekinsiz açılış sahnesi, fırtına ve savaşın ortasında ahlaki pusulanın tamamen tersine döneceği karanlık bir trajediyi müjdeler.
+    The eerie opening scene immediately overturns the moral order, setting a dark, stormy stage where nothing is quite what it seems.
   </p>
 
   <blockquote style="font-size: 1rem; line-height: 1.7; font-style: italic; color: #1a202c; border-left: 3px solid #7c2d12; padding-left: 1.25rem; margin: 1rem 0;">
@@ -64,20 +64,23 @@ title: Ana Sayfa
 
 <!-- 3. Epic of Gilgamesh -->
 <div class="card" style="background: #fdfdfd; border-left: 5px solid #92400e;">
-  <h2 style="font-family: 'Cinzel', serif; border: none; margin-bottom: 1rem;">3. İnsanlığın İlk Arayışı: <em>Gılgamış Destanı</em></h2>
+  <h2 style="font-family: 'Cinzel', serif; border: none; margin-bottom: 1rem;">3. Humanity's Earliest Quest: <em>The Epic of Gilgamesh</em></h2>
 
   <blockquote style="font-size: 1.05rem; line-height: 1.7; font-style: italic; color: #1a202c; border-left: 3px solid #92400e; padding-left: 1.25rem; margin: 1rem 0;">
-    "Gılgamış, nereye koşuyorsun böyle?<br>
-    Arayıp durduğun ölümsüzlüğü hiçbir zaman bulamayacaksın.<br>
-    Tanrılar insanı yarattıklarında, ölümü de ona verdiler;<br>
-    Ölümsüzlüğü ise kendi ellerinde tuttular.<br>
-    Gılgamış, karnını doyurmaya bak;<br>
-    Gece gündüz bayram et, sevinçle dans et!<br>
-    Giysilerin temiz, başın yıkanmış olsun, suda yıkan gövdeni!<br>
-    Elinden tutan çocuğa sevgiyle bak, kollarındaki eşini mutlu et;<br>
-    Çünkü insanın payına düşen tek şey budur!"
-    <footer style="font-size: 0.85rem; margin-top: 0.4rem; color: var(--muted); font-style: normal;">— Tablet X, Siduri'nin Öğüdü</footer>
+    "Gilgamesh, where are you hurrying to?<br>
+    You will never find that life for which you are looking.<br>
+    When the gods created man they allotted to him death, but life they retained in their own keeping.<br>
+    As for you, Gilgamesh, fill your belly with good things;<br>
+    Day and night, night and day, dance and be merry, feast and rejoice.<br>
+    Let your clothes be fresh, bathe yourself in water,<br>
+    Cherish the little child that holds your hand, and make your wife happy in your embrace;<br>
+    For this too is the lot of man."
+    <footer style="font-size: 0.85rem; margin-top: 0.4rem; color: var(--muted); font-style: normal;">— Tablet X, Siduri's Counsel</footer>
   </blockquote>
+
+  <p style="font-size: 0.95rem; line-height: 1.7; color: #374151;">
+    Siduri offers simple, compassionate wisdom to a grieving king: abandon the impossible hunt for immortality, and instead embrace the warmth, family, and fragile joys of ordinary human life.
+  </p>
 </div>
 
 <!-- 4. Ferhan Şensoy - Şahları da Vururlar -->
@@ -157,10 +160,10 @@ Failatün faşizma Failatün çok saçma.</blockquote>
 <div class="card">
   <h2>İngilizce Mütercim ve Tercümanlık Eğitimi ve Önemi</h2>
   <p style="margin-top: 0.8rem; font-size: 1rem; line-height: 1.8; color: #2d3748;">
-    İngilizce Mütercim ve Tercümanlık disiplini, filolojik yaklaşımların ötesine geçerek doğrudan <strong>çeviri odaklı (translation-oriented)</strong> bir uzmanlık alanı sunar. Bu eğitim; <em>ardıl çeviri</em>, <em>simültane çeviri</em> ve <em>yazılı metni anında sözlü aktarma (sight interpreting)</em> gibi bilişsel yükü yüksek, teknik ve profesyonel becerileri kapsar.
+    İngilizce Mütercim ve Tercümanlık disiplini, İngili Dili ve Edebiyatı, dilbilimgibi beşerie bilimlerin ötesine  geçerek doğrudan <strong>çeviri odaklı (translation-oriented)</strong> bir eğitim sunar. Bu eğitim; <em>ardıl çeviri</em>, <em>simültane çeviri</em> ve <em>yazılı metni anında sözlü aktarma (sight interpreting)</em> gibi bilişsel yükü yüksek, teknik ve profesyonel becerileri kapsar.
   </p>
   <div class="abstract-quote" style="border-left: 4px solid var(--primary); background: #f8fafc; padding: 1rem; margin-top: 1.2rem; font-style: italic;">
-    <strong>Yapay Zekâ Çağında Çevirmenlik:</strong> Teknolojik determinizmin hüküm sürdüğü bu dönemde, kültürel bağlamı kavrayabilen, etik sorumluluk taşıyan ve terminolojik derinliğe sahip profesyonel tercümanların önemi azalmamakta; aksine stratejik bir değer kazanmaktadır.
+    <strong>Yapay Zekâ Çağında Çevirmenlik:</strong> Yapay zeka teknolojisinin öne çıktığı bu dönemde, kültürel bağlamı kavrayabilen, etik sorumluluk taşıyan ve terminolojye hakim olan profesyonel tercümanların önemi azalmamakta, aksine daha fazla önem kazanmaktadır.
   </div>
 </div>
 
