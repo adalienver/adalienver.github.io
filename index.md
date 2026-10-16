@@ -24,10 +24,10 @@ title: Ana Sayfa
 <div class="card">
   <h2>Yapay Zekâ Çağında Çeviribilim ve Beşeri Bilimlerin Geleceği</h2>
   <p style="margin-top: 0.8rem; font-size: 1rem; line-height: 1.8; color: #2d3748;">
-    Büyük Dil Modellerinin (LLM) ve yapay zekâ teknolojilerinin hızla gelişerek hayatın her alanına entegre olması, çeviri sektöründe köklü bir paradigma değişimine yol açmıştır. Geleneksel metin çevirisi yerini büyük ölçüde <strong>makine çevirisi sonrası düzenlemeye (MTPE - Machine Translation Post-Editing)</strong> bırakırken; bu dönüşüm İngilizce Mütercim ve Tercümanlık ile Dilbilim programlarının geleceğini, hatta sürdürülebilirliğini akademik çevrelerde ciddi biçimde tartışmaya açmıştır.
+    Büyük Dil Modellerinin (LLM) ve yapay zekâ teknolojilerinin hızla gelişerek hayatın her alanına girmesi, çeviri sektöründe köklü bir değişimine yol açmıştır. Geleneksel metin çevirisi yerini büyük ölçüde <strong>makine çevirisi sonrası düzenlemeye (MTPE - Machine Translation Post-Editing)</strong> bırakırken; bu dönüşüm İngilizce Mütercim ve Tercümanlık ile Dilbilim programlarının geleceğini, hatta sürdürülebilirliğini akademik çevrelerde tartışmaya açmıştır.
   </p>
   <p style="margin-top: 0.8rem; font-size: 1rem; line-height: 1.8; color: #2d3748;">
-    Buna karşılık; <strong>İngiliz Dili ve Edebiyatı, Türk Dili ve Edebiyatı, Sosyoloji ve Tarih</strong> gibi beşeri bilimler, yapay zekânın ikame edemediği eleştirel düşünme, kültürel bağlam kurma ve felsefi analiz yetkinlikleri sayesinde gün geçtikçe daha da stratejik bir önem kazanmaktadır.
+    Öte yandan, <strong>İngiliz Dili ve Edebiyatı, Türk Dili ve Edebiyatı, Sosyoloji ve Tarih</strong> gibi beşeri bilimler, yapay zekânın ikame edemediği eleştirel düşünme, kültürel bağlam kurma ve felsefi analiz yetkinlikleri sayesinde gün geçtikçe daha da stratejik önem kazanmaktadır.
   </p>
 
   <div class="abstract-quote" style="border-left: 4px solid var(--accent); background: #f8fafc; padding: 1.1rem; margin-top: 1.2rem;">
