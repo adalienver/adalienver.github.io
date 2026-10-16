@@ -135,7 +135,25 @@ Sebebi belli değil
 Failatün faşizma Failatün çok saçma.</blockquote>
 
   <!-- Video Fragman Bağlantısı -->
-  <div style="margin-top: 1.25rem; position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; border: 1px solid var(--border);">
-    <iframe src="https://ok.ru/videoembed/6570613475841" frameborder="0" allow="autoplay" allowfullscreen style="position: absolute; top:0; left: 0; width: 100%; height: 100%;"></iframe>
+ <div style="margin-top: 1.5rem;">
+    <div style="margin-bottom: 0.6rem; display: flex; align-items: center; justify-content: space-between;">
+      <strong style="color: #166534; font-size: 0.95rem;">🎬 Oyun Kaydı & Sahne Kesiti</strong>
+      <a href="https://www.youtube.com/watch?v=g-LI8Jx7lrA" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; color: #1e6b47; font-weight: 600; text-decoration: underline;">
+        YouTube'da Aç ↗
+      </a>
+    </div>
+
+    <!-- Mobil Uyumlu / Duyarlı Video Çerçevesi -->
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; border: 1px solid var(--border); box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
+      <iframe 
+        src="https://www.youtube.com/embed/g-LI8Jx7lrA?si=H8Zz-CuaJJiE4bxs" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+      </iframe>
+    </div>
   </div>
 </div>
