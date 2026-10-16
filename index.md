@@ -28,7 +28,7 @@ title: Ana Sayfa
   </p>
   
   <p style="margin-top: 0.8rem; font-size: 1rem; line-height: 1.8; color: #2d3748;">
-    Buna karşılık, insan kültürünü, düşüncesini ve yaratıcılığını analitik ve eleştirel yöntemlerle inceleyen <strong>beşeri bilimler (humanities)</strong>, yapay zekânın ikame edemediği bağlamsal derinlik, etik muhakeme ve felsefi kavrayış yetkinlikleri sayesinde gün geçtikçe daha stratejik bir değer kazanmaktadır.
+    Buna karşılık, insan kültürünü, düşüncesini ve yaratıcılığını analitik ve eleştirel yöntemlerle inceleyen <strong>beşeri bilimler (humanities)</strong>, yapay zekânda olmayan bağlamsal derinlik, etik muhakeme ve felsefi kavrayış yetkinlikleri sayesinde gün geçtikçe daha stratejik önem kazanmaktadır.
   </p>
 
   <!-- Beşeri Bilimler Disiplinleri -->
