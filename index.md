@@ -24,7 +24,7 @@ title: Ana Sayfa
 <div class="card">
   <h2>Yapay Zekâ Çağında Çeviribilim ve Beşeri Bilimlerin Geleceği</h2>
   <p style="margin-top: 0.8rem; font-size: 1rem; line-height: 1.8; color: #2d3748;">
-    Büyük Dil Modellerinin (LLM) ve yapay zekâ teknolojilerinin hızla gelişmesi, çeviri sektöründe köklü bir paradigma değişimine yol açmıştır. Geleneksel çeviri süreci ağırlıklı olarak <strong>makine çevirisi ardıl düzenlemesine (MTPE - Machine Translation Post-Editing)</strong> evrilirken; bu dönüşüm İngilizce Mütercim ve Tercümanlık ile Dilbilim programlarının geleceğini akademik çevrelerde ciddi biçimde tartışmaya açmıştır.
+    Büyük Dil Modellerinin (LLM) ve yapay zekâ teknolojilerinin hızla gelişmesi, çeviri sektöründe köklü bir  değişimine yol açmıştır. Geleneksel çeviri süreci ağırlıklı olarak <strong>makine çevirisi sonrası düzenltmeye (MTPE - Machine Translation Post-Editing)</strong> bırakıyor. Bu dönüşüm İngilizce Mütercim ve Tercümanlık ile Dilbilim programlarının geleceğini akademik çevrelerde ciddi biçimde tartışmaya açmıştır.
   </p>
   
   <p style="margin-top: 0.8rem; font-size: 1rem; line-height: 1.8; color: #2d3748;">
