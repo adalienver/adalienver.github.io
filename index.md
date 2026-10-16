@@ -24,11 +24,27 @@ title: Ana Sayfa
 <div class="card">
   <h2>Yapay Zekâ Çağında Çeviribilim ve Beşeri Bilimlerin Geleceği</h2>
   <p style="margin-top: 0.8rem; font-size: 1rem; line-height: 1.8; color: #2d3748;">
-    Büyük Dil Modellerinin (LLM) ve yapay zekâ teknolojilerinin hızla gelişerek hayatın her alanına girmesi, çeviri sektöründe köklü bir değişimine yol açmıştır. Geleneksel metin çevirisi yerini büyük ölçüde <strong>makine çevirisi sonrası düzenlemeye (MTPE - Machine Translation Post-Editing)</strong> bırakırken; bu dönüşüm İngilizce Mütercim ve Tercümanlık ile Dilbilim programlarının geleceğini, hatta sürdürülebilirliğini akademik çevrelerde tartışmaya açmıştır.
+    Büyük Dil Modellerinin (LLM) ve yapay zekâ teknolojilerinin hızla gelişmesi, çeviri sektöründe köklü bir paradigma değişimine yol açmıştır. Geleneksel çeviri süreci ağırlıklı olarak <strong>makine çevirisi ardıl düzenlemesine (MTPE - Machine Translation Post-Editing)</strong> evrilirken; bu dönüşüm İngilizce Mütercim ve Tercümanlık ile Dilbilim programlarının geleceğini akademik çevrelerde ciddi biçimde tartışmaya açmıştır.
   </p>
+  
   <p style="margin-top: 0.8rem; font-size: 1rem; line-height: 1.8; color: #2d3748;">
-    Öte yandan, <strong>İngiliz Dili ve Edebiyatı, Türk Dili ve Edebiyatı, Sosyoloji ve Tarih</strong> gibi beşeri bilimler, yapay zekânın ikame edemediği eleştirel düşünme, kültürel bağlam kurma ve felsefi analiz yetkinlikleri sayesinde gün geçtikçe daha da stratejik önem kazanmaktadır.
+    Buna karşılık, insan kültürünü, düşüncesini ve yaratıcılığını analitik ve eleştirel yöntemlerle inceleyen <strong>beşeri bilimler (humanities)</strong>, yapay zekânın ikame edemediği bağlamsal derinlik, etik muhakeme ve felsefi kavrayış yetkinlikleri sayesinde gün geçtikçe daha stratejik bir değer kazanmaktadır.
   </p>
+
+  <!-- Beşeri Bilimler Disiplinleri -->
+  <div style="margin-top: 1.2rem; background: #fdfdfd; border: 1px solid var(--border); border-radius: 8px; padding: 1.2rem;">
+    <h3 style="font-size: 1.05rem; color: var(--primary); margin-bottom: 0.6rem;">Beşeri Bilimler Alanı ve Başlıca Disiplinler</h3>
+    <ul style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.5rem 1rem; margin: 0; padding-left: 1.2rem; font-size: 0.9rem; color: #374151; line-height: 1.6;">
+      <li><strong>Tarih:</strong> Geçmiş toplumları, olayları ve dönüşümleri belgeler ışığında analiz eder.</li>
+      <li><strong>Felsefe:</strong> Varlık, bilgi, ahlak ve insan doğası üzerine akıl yürütür.</li>
+      <li><strong>Dil ve Edebiyat:</strong> İngiliz, Türk, Karşılaştırmalı ve Batı dilleri edebiyatları.</li>
+      <li><strong>Arkeoloji & Sanat Tarihi:</strong> Maddi kültür kalıntılarını ve sanatsal mirası araştırır.</li>
+      <li><strong>Antropoloji & Sosyoloji:</strong> Kültürel çeşitliliği, toplumsal yapıları ve insan davranışını inceler.</li>
+      <li><strong>Din Bilimleri / Teoloji:</strong> İnanç sistemlerini, metinleri ve teolojik yapıları ele alır.</li>
+      <li><strong>Görsel & Sahne Sanatları:</strong> Tiyatro, sinema, müzik ve estetik yaratıcılık alanları.</li>
+      <li><strong>İletişim & Medya:</strong> Kitle iletişimi, medya kuramları ve toplumsal etkilerini inceler.</li>
+    </ul>
+  </div>
 
   <div class="abstract-quote" style="border-left: 4px solid var(--accent); background: #f8fafc; padding: 1.1rem; margin-top: 1.2rem;">
     <strong>Mesleki Dayanışma ve Çeviribilime Destek:</strong><br>
