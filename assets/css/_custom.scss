@@ -1,0 +1,142 @@
+// ——— CUSTOM ACADEMIC STYLING ———
+
+// Hero Section
+.site-hero {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  border-bottom: 3px solid var(--primary);
+  margin-bottom: 2rem;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-family: $serif-font-family;
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin: 0;
+  font-style: italic;
+}
+
+.hero-affiliation {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
+
+.hero-nav {
+  margin-top: 1.5rem;
+}
+
+// Literary Sections
+.literary-section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #fafbfc;
+  border-left: 5px solid var(--primary);
+  border-radius: 4px;
+}
+
+.primary-quote {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  font-style: italic;
+  color: #1a202c;
+  border-left: 4px solid var(--primary);
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  font-family: Georgia, 'Times New Roman', serif;
+
+  footer {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+    font-style: normal;
+  }
+}
+
+.intro-block {
+  background: #f0f4f8;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 5px solid var(--accent);
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  font-size: 0.95rem;
+  color: #2d3748;
+}
+
+.analysis-box {
+  background: #fffaf0;
+  padding: 1.5rem;
+  border: 2px solid #f6ad55;
+  border-radius: 8px;
+  margin: 1rem 0;
+
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+  }
+}
+
+.highlight-box {
+  background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 5px solid #f39c12;
+  margin: 1.5rem 0;
+  color: #2c3e50;
+  line-height: 1.8;
+
+  strong {
+    color: #d63031;
+  }
+}
+
+// Services Grid
+.services-grid {
+  display: grid;
+  gap: 2rem;
+  margin: 2rem 0;
+
+  h3 {
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      padding-left: 1.5rem;
+      margin-bottom: 0.8rem;
+      position: relative;
+
+      &:before {
+        content: "▸";
+        position: absolute;
+        left: 0;
+        color: var(--primary);
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// Principles Section
+.principles
