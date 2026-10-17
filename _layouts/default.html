@@ -163,5 +163,39 @@
       <p>© {{ 'now' | date: "%Y" }} {{ site.title }} • İstanbul Beykent Üniversitesi Mezunu</p>
     </footer>
   </div>
+  <!-- İletişim ve Hizmetler Penceresi -->
+<div id="contactModal" class="contact-modal" style="display: none;">
+  <div class="contact-modal-backdrop" onclick="closeContactModal()"></div>
+  <div class="contact-modal-card">
+    <button class="modal-close" onclick="closeContactModal()">&times;</button>
+    
+    <h3 style="margin-top: 0; color: #1e293b; font-size: 1.25rem;">İletişim & Hizmet Talebi</h3>
+    <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 16px;">
+      İlgilendiğiniz alana tıklayarak doğrudan e-posta taslağı oluşturabilirsiniz:
+    </p>
+
+    <!-- Ücretsiz Seçenek -->
+    <a href="mailto:ornekmail@gmail.com?subject=Ücretsiz%20Eğitim%20Talebi%20(Trados%20/%20Subtitle%20Edit)&body=Merhaba,%0D%0A%0D%0AMütercim-Tercümanlık%20dayanışması%20kapsamındaki%20Trados%20SDL%20Studio%20/%20Subtitle%20Edit%20eğitimine%20katılmak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AÜniversite/Bölüm:%20" class="service-option free">
+      <div class="badge-free">Ücretsiz (Öğrenci & Mezun Dayanışması)</div>
+      <div class="option-title">🎧 SDL Trados Studio & Subtitle Edit Eğitimi</div>
+      <div class="option-desc">Çeviribilim ve mütercim-tercümanlık öğrencileri/mezunları için Zoom üzerinden ücretsiz yazılım eğitimleri.</div>
+    </a>
+
+    <!-- Ücretli Seçenek 1 -->
+    <a href="mailto:ornekmail@gmail.com?subject=Tez%20Formatlama%20Talebi%20(Word)&body=Merhaba,%0D%0A%0D%0AYüksek%20Lisans%20/%20Doktora%20tezim%20için%20üniversite%20enstitü%20kılavuzuna%20uygun%20Word%20şablonu%20ve%20formatlama%20desteği%20almak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AÜniversite/Enstitü:%20%0D%0ASayfa%20Sayısı:%20" class="service-option paid">
+      <div class="badge-paid">Ücretli Hizmet</div>
+      <div class="option-title">📄 Tez Word Şablonu & Formatlama</div>
+      <div class="option-desc">Tezli Yüksek Lisans ve Doktora tezleri için üniversite yazım kılavuzlarına tam uyumlu profesyonel Word dosyası hazırlama.</div>
+    </a>
+
+    <!-- Ücretli Seçenek 2 -->
+    <a href="mailto:ornekmail@gmail.com?subject=Web%20Sitesi%20Kurulum%20Talebi&body=Merhaba,%0D%0A%0D%0APortfolyo%20/%20Akademik%20tanıtım%20için%20web%20sitesi%20kurulumu%20hakkında%20bilgi%20almak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AIstediğim%20Site%20Türü:%20" class="service-option paid">
+      <div class="badge-paid">Ücretli Hizmet</div>
+      <div class="option-title">🌐 Kişisel / Akademik Web Sitesi Kurulumu</div>
+      <div class="option-desc">Akademisyenler, çevirmenler ve bireysel kullanım için modern portfolyo ve tanıtım sitesi kurulumu.</div>
+    </a>
+
+  </div>
+</div>
 </body>
 </html>
