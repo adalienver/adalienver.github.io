@@ -4,12 +4,17 @@ title: Ana Sayfa
 permalink: /
 ---
 
-# Enver Adalı
+<div class="home-intro">
+  <h1>Enver Adalı</h1>
+  <p><strong>Mütercim ve Tercümanlık • İngiliz Dili ve Edebiyatı</strong><br>
+  İstanbul Beykent Üniversitesi Mezunu</p>
 
-**Mütercim ve Tercümanlık • İngiliz Dili ve Edebiyatı**  
-İstanbul Beykent Üniversitesi Mezunu
-
-[LinkedIn Profili ↗]({{ site.linkedin_url }}){: .btn .btn--primary}
+  <p>
+    <a href="{{ site.linkedin_url }}" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+      LinkedIn Profili ↗
+    </a>
+  </p>
+</div>
 
 ---
 
@@ -93,19 +98,19 @@ Günümüzde yapay zekâ ve makine çevirisi teknolojileri hızla ilerlese de, k
 
 ## Mesleki ve Akademik İlkelerimiz
 
-**1. Veri Güvenliği ve Gizlilik**
+### 1. Veri Güvenliği ve Gizlilik
 
 Danışanlara ve öğrencilere ait metinler, gizlilik ilkeleri uyarınca üçüncü taraf halka açık yapay zekâ motorlarına aktarılmaz.
 
-**2. Şeffaf Teknoloji Kullanımı**
+### 2. Şeffaf Teknoloji Kullanımı
 
 Çeviri teknolojileri ve yapay zekâ araçları metnin yerine geçmek için değil; terminoloji tutarlılığı, kalite kontrol ve derlem analizi amacıyla denetimli kullanılır.
 
-**3. Bireyselleştirilmiş Pedagoji**
+### 3. Bireyselleştirilmiş Pedagoji
 
 YDS/YÖKDİL ve uluslararası sınavlarda ezber kalıplar yerine; metin çözümleme, sözdizim analizi ve akademik kelime dağarcığını kalıcı kılan yöntemler uygulanır.
 
-**4. Etik Tercümanlık**
+### 4. Etik Tercümanlık
 
 Tercümanlık sadece teknik bir beceri değildir—kültürel sorumluluğun taşıyıcılığıdır.
 
@@ -115,8 +120,8 @@ Tercümanlık sadece teknik bir beceri değildir—kültürel sorumluluğun taş
 
 | Program | Kurum | Bağlantı |
 |---------|--------|----------|
-| **İngilizce Mütercim ve Tercümanlık (Lisans)** | İstanbul Beykent Üniversitesi | [Bölüm Sayfası](https://www.beykent.edu.tr/aday-ogrenci/bolumler-programlar/lisans/fen-edebiyat-fakultesi/ingilizce-mutercim-ve-tercumanlik){:target="_blank"} |
-| **İngiliz Dili ve Edebiyatı (Yüksek Lisans)** | Beykent Lisansüstü Enstitüsü | [Enstitü Sayfası](https://lisansustu.beykent.edu.tr/yuksek-lisans/ingiliz-dili-ve-edebiyati-abd){:target="_blank"} |
+| **İngilizce Mütercim ve Tercümanlık (Lisans)** | İstanbul Beykent Üniversitesi | <a href="https://www.beykent.edu.tr/aday-ogrenci/bolumler-programlar/lisans/fen-edebiyat-fakultesi/ingilizce-mutercim-ve-tercumanlik" target="_blank" rel="noopener noreferrer">Bölüm Sayfası</a> |
+| **İngiliz Dili ve Edebiyatı (Yüksek Lisans)** | Beykent Lisansüstü Enstitüsü | <a href="https://lisansustu.beykent.edu.tr/yuksek-lisans/ingiliz-dili-ve-edebiyati-abd" target="_blank" rel="noopener noreferrer">Enstitü Sayfası</a> |
 
 ---
 
