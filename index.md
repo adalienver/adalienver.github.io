@@ -99,4 +99,13 @@ title: Ana Sayfa
   <a href="{{ '/kaynaklar' | relative_url }}" style="font-weight: 700; color: var(--primary); text-decoration: none; border-bottom: 2px solid var(--primary);">
     Kaynaklar Sayfasını Görüntüle →
   </a>
+  <script>
+function openContactModal() {
+  document.getElementById('contactModal').style.display = 'flex';
+}
+
+function closeContactModal() {
+  document.getElementById('contactModal').style.display = 'none';
+}
+</script>
 </div>
