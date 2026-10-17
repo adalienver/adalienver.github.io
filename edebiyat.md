@@ -71,8 +71,30 @@
     <strong>I. / KABARE FASIL. NASIL? ÇOK SAÇMA</strong><br>
     <em>.- Gibi yapanlar, kadınlı erkekli kara çarşafa bürünmüşler, bir köşede kümelenmişlerdir ki en beklemedikleri anda ışık yanar, kabare fasıl başlar.-</em>
   </p>
+  <!-- Video Fragman Bağlantısı -->
+ <div style="margin-top: 1.5rem;">
+    <div style="margin-bottom: 0.6rem; display: flex; align-items: center; justify-content: space-between;">
+      <strong style="color: #166534; font-size: 0.95rem;">🎬 Oyun Kaydı & Sahne Kesiti</strong>
+      <a href="https://www.youtube.com/watch?v=g-LI8Jx7lrA" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; color: #1e6b47; font-weight: 600; text-decoration: underline;">
+        YouTube'da Aç ↗
+      </a>
+    </div>
 
+    <!-- Spotify Oynatıcı -->
+<div style="margin: 1.5rem 0; width: 100%;">
+  <iframe 
+    data-testid="embed-iframe" 
+    style="border-radius: 12px; display: block;" 
+    src="https://open.spotify.com/embed/episode/0vWidpx294iiN22lXiKXlX?utm_source=generator&si=54e8038a87a14803" 
+    width="100%" 
+    height="352" 
+    frameBorder="0" 
+    allowfullscreen="" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+    loading="lazy">
+  </iframe>
   <blockquote style="font-family: monospace; font-size: 0.92rem; line-height: 1.6; color: #1f2937; background: #f8fafc; padding: 1.2rem; border-radius: 6px; border: 1px solid var(--border); white-space: pre-wrap;">
+    
     .- Ömer Hayyam, elinde bir şişe şarap, öbür elinde bir pankart, girer. Pankartta: "BU CENNETE GREV VARDIR" yazılı. Şarkı başlar.—
 HAYYAM - Dünya alem gezdi Rıza KORO - Bezm-i candan bezdi Rıza HAYYAM - Dünya âlem gezdi Rıza KORO - Yoksul halkı ezdi Rıza HAYYAM - Çok saltanat gördü Rıza KORO - Zevk-ü sefa sürdü Rıza HAYYAM - Bitmeyecek sandı rüya KORO - Şahlık elden gitti işte HAYYAM - Bitmeyecek sandı sefa KORO - Ol saltanat bitti gayrı HAYYAM - Çok hastalık gördü Rıza KORO - Her birinden yırttı Rıza
 HAYYAM - Her ülkede bir organı bırakarak kaçtı Rıza KORO - Ölmeyecek sandı dünya
@@ -132,27 +154,6 @@ Acem mülkü külliyen Ömer Hayyan bağıyken Yavuz Sultan genç iken Yıl bin�
 Şah Rıza henüz sperm Rıza!
 .</blockquote>
 
-  <!-- Video Fragman Bağlantısı -->
- <div style="margin-top: 1.5rem;">
-    <div style="margin-bottom: 0.6rem; display: flex; align-items: center; justify-content: space-between;">
-      <strong style="color: #166534; font-size: 0.95rem;">🎬 Oyun Kaydı & Sahne Kesiti</strong>
-      <a href="https://www.youtube.com/watch?v=g-LI8Jx7lrA" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; color: #1e6b47; font-weight: 600; text-decoration: underline;">
-        YouTube'da Aç ↗
-      </a>
-    </div>
 
-    <!-- Spotify Oynatıcı -->
-<div style="margin: 1.5rem 0; width: 100%;">
-  <iframe 
-    data-testid="embed-iframe" 
-    style="border-radius: 12px; display: block;" 
-    src="https://open.spotify.com/embed/episode/0vWidpx294iiN22lXiKXlX?utm_source=generator&si=54e8038a87a14803" 
-    width="100%" 
-    height="352" 
-    frameBorder="0" 
-    allowfullscreen="" 
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-    loading="lazy">
-  </iframe>
 </div>
   
