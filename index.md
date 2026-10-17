@@ -3,6 +3,7 @@ layout: default
 title: Ana Sayfa
 ---
 
+<!-- PROFİL KARTI -->
 <div class="card" style="text-align: center; border-bottom: 3px solid var(--primary);">
   <h1 style="font-family: 'Cinzel', serif; font-size: 2.5rem; color: var(--primary); margin-bottom: 0.5rem;">Enver Adalı</h1>
   <p style="color: var(--muted); margin: 0; font-size: 1.1rem; letter-spacing: 1px;">
@@ -18,17 +19,15 @@ title: Ana Sayfa
   </div>
 </div>
 
-
 <!-- AKADEMİK VE DANIŞMANLIK BÖLÜMÜ -->
-
 <div class="card">
   <h2>Yapay Zekâ Çağında Çeviribilim ve Beşeri Bilimlerin Geleceği</h2>
   <p style="margin-top: 0.8rem; font-size: 1rem; line-height: 1.8; color: #2d3748;">
-    Büyük Dil Modellerinin (LLM) ve yapay zekâ teknolojilerinin hızla gelişmesi, çeviri sektöründe köklü bir  değişimine yol açmıştır. Geleneksel çeviri süreci ağırlıklı olarak <strong>makine çevirisi sonrası düzenltmeye (MTPE - Machine Translation Post-Editing)</strong> bırakıyor. Bu dönüşüm İngilizce Mütercim ve Tercümanlık ile Dilbilim programlarının geleceğini akademik çevrelerde ciddi biçimde tartışmaya açmıştır.
+    Büyük Dil Modellerinin (LLM) ve yapay zekâ teknolojilerinin hızla gelişmesi, çeviri sektöründe köklü bir değişime yol açmıştır. Geleneksel çeviri süreci ağırlıklı olarak <strong>makine çevirisi sonrası düzenlemeye (MTPE - Machine Translation Post-Editing)</strong> evrilmektedir. Bu dönüşüm İngilizce Mütercim ve Tercümanlık ile Dilbilim programlarının geleceğini akademik çevrelerde ciddi biçimde tartışmaya açmıştır.
   </p>
   
   <p style="margin-top: 0.8rem; font-size: 1rem; line-height: 1.8; color: #2d3748;">
-    Buna karşılık, insan kültürünü, düşüncesini ve yaratıcılığını analitik ve eleştirel yöntemlerle inceleyen <strong>beşeri bilimler (humanities)</strong>, yapay zekânda olmayan bağlamsal derinlik, etik muhakeme ve felsefi kavrayış yetkinlikleri sayesinde gün geçtikçe daha stratejik önem kazanmaktadır.
+    Buna karşılık, insan kültürünü, düşüncesini ve yaratıcılığını analitik ve eleştirel yöntemlerle inceleyen <strong>beşeri bilimler (humanities)</strong>; yapay zekâda bulunmayan bağlamsal derinlik, etik muhakeme ve felsefi kavrayış yetkinlikleri sayesinde gün geçtikçe daha stratejik bir önem kazanmaktadır.
   </p>
 
   <!-- Beşeri Bilimler Disiplinleri -->
@@ -55,6 +54,7 @@ title: Ana Sayfa
   </div>
 </div>
 
+<!-- SINAV HAZIRLIK & DANIŞMANLIK -->
 <div class="card" style="border-left: 5px solid var(--accent); background: #ffffff;">
   <h2>Sınav Hazırlık & Akademik Danışmanlık</h2>
   <p style="margin-top: 0.6rem; font-size: 0.98rem; color: #2d3748;">
@@ -66,10 +66,11 @@ title: Ana Sayfa
     <li><strong>Teknoloji Entegrasyonu:</strong> SDL Trados Studio ve Subtitle Edit ile bilgisayar destekli çeviri iş akışları.</li>
   </ul>
   <p style="font-size: 1.05rem; font-weight: 600; color: var(--primary);">
-    ✉️ <a href="mailto:{{ site.email }}" style="color: var(--primary); text-decoration: underline;">{{ site.email }}</a>
+    ✉️ <a href="javascript:void(0)" onclick="openContactModal()" style="color: var(--primary); text-decoration: underline;">İletişim & Talep İçin Tıklayın</a>
   </p>
 </div>
 
+<!-- KURUMSAL BAĞLANTILAR -->
 <div class="card">
   <h2>Kurumsal Bağlantılar</h2>
   <div class="portal-grid">
@@ -91,8 +92,7 @@ title: Ana Sayfa
   </div>
 </div>
 
-
-</div>
+<!-- KAYNAKLAR KARTI -->
 <div class="card" style="text-align: center; background: #fafbfc; border: 1px dashed var(--primary);">
   <h3>Akademik Kaynaklar Merkezi</h3>
   <p style="font-size: 0.95rem; color: var(--muted); margin: 0.5rem 0 1rem;">
@@ -101,11 +101,46 @@ title: Ana Sayfa
   <a href="{{ '/kaynaklar' | relative_url }}" style="font-weight: 700; color: var(--primary); text-decoration: none; border-bottom: 2px solid var(--primary);">
     Kaynaklar Sayfasını Görüntüle →
   </a>
-  <script>
+</div>
+
+<!-- İLETİŞİM & HİZMETLER MODALI (AÇILIR PENCERE) -->
+<div id="contactModal" style="display: none; position: fixed; inset: 0; background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(3px); z-index: 10000; align-items: center; justify-content: center; padding: 16px;">
+  <div style="position: relative; background: #ffffff; width: 100%; max-width: 540px; border-radius: 14px; padding: 24px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2); z-index: 10001; text-align: left;">
+    <button onclick="closeContactModal()" style="position: absolute; top: 14px; right: 16px; background: none; border: none; font-size: 24px; cursor: pointer; color: #94a3b8;">&times;</button>
+    
+    <h3 style="margin-top: 0; color: #1e293b; font-size: 1.25rem;">İletişim & Hizmet Talebi</h3>
+    <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 16px;">
+      İlgilendiğiniz alana tıklayarak doğrudan e-posta taslağı oluşturabilirsiniz:
+    </p>
+
+    <!-- Ücretsiz Seçenek -->
+    <a href="mailto:{{ site.email }}?subject=Ücretsiz%20Eğitim%20Talebi%20(Trados%20/%20Subtitle%20Edit)&body=Merhaba,%0D%0A%0D%0AMütercim-Tercümanlık%20dayanışması%20kapsamındaki%20Trados%20SDL%20Studio%20/%20Subtitle%20Edit%20eğitimine%20katılmak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AÜniversite/Bölüm:%20" style="display: block; text-decoration: none; border-radius: 10px; padding: 12px 14px; margin-bottom: 10px; background: #f0fdf4; border: 1px solid #bbf7d0;">
+      <div style="font-size: 0.72rem; font-weight: 700; color: #166534; text-transform: uppercase;">Ücretsiz (Öğrenci & Mezun Dayanışması)</div>
+      <div style="font-size: 0.95rem; font-weight: 600; color: #0f172a; margin: 4px 0;">🎧 SDL Trados Studio & Subtitle Edit Eğitimi</div>
+      <div style="font-size: 0.82rem; color: #64748b; line-height: 1.4;">Çeviribilim ve mütercim-tercümanlık öğrencileri/mezunları için Zoom üzerinden ücretsiz yazılım eğitimleri.</div>
+    </a>
+
+    <!-- Ücretli Seçenek 1 -->
+    <a href="mailto:{{ site.email }}?subject=Tez%20Formatlama%20Talebi%20(Word)&body=Merhaba,%0D%0A%0D%0AYüksek%20Lisans%20/%20Doktora%20tezim%20için%20üniversite%20enstitü%20kılavuzuna%20uygun%20Word%20şablonu%20ve%20formatlama%20desteği%20almak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AÜniversite/Enstitü:%20%0D%0ASayfa%20Sayısı:%20" style="display: block; text-decoration: none; border-radius: 10px; padding: 12px 14px; margin-bottom: 10px; background: #f8fafc; border: 1px solid #e2e8f0;">
+      <div style="font-size: 0.72rem; font-weight: 700; color: #475569; text-transform: uppercase;">Ücretli Hizmet</div>
+      <div style="font-size: 0.95rem; font-weight: 600; color: #0f172a; margin: 4px 0;">📄 Tez Word Şablonu & Formatlama</div>
+      <div style="font-size: 0.82rem; color: #64748b; line-height: 1.4;">Tezli Yüksek Lisans ve Doktora tezleri için enstitü yazım kılavuzlarına tam uyumlu profesyonel Word dosyası hazırlama.</div>
+    </a>
+
+    <!-- Ücretli Seçenek 2 -->
+    <a href="mailto:{{ site.email }}?subject=Web%20Sitesi%20Kurulum%20Talebi&body=Merhaba,%0D%0A%0D%0APortfolyo%20/%20Akademik%20tanıtım%20için%20web%20sitesi%20kurulumu%20hakkında%20bilgi%20almak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AIstediğim%20Site%20Türü:%20" style="display: block; text-decoration: none; border-radius: 10px; padding: 12px 14px; margin-bottom: 10px; background: #f8fafc; border: 1px solid #e2e8f0;">
+      <div style="font-size: 0.72rem; font-weight: 700; color: #475569; text-transform: uppercase;">Ücretli Hizmet</div>
+      <div style="font-size: 0.95rem; font-weight: 600; color: #0f172a; margin: 4px 0;">🌐 Kişisel / Akademik Web Sitesi Kurulumu</div>
+      <div style="font-size: 0.82rem; color: #64748b; line-height: 1.4;">Akademisyenler, çevirmenler ve bireysel kullanım için modern portfolyo ve tanıtım sitesi kurulumu.</div>
+    </a>
+  </div>
+</div>
+
+<!-- JAVASCRIPT KODLARI -->
+<script>
 function openContactModal() {
   document.getElementById('contactModal').style.display = 'flex';
 }
-
 function closeContactModal() {
   document.getElementById('contactModal').style.display = 'none';
 }
