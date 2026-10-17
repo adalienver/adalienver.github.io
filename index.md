@@ -91,6 +91,8 @@ title: Ana Sayfa
   </div>
 </div>
 
+
+</div>
 <div class="card" style="text-align: center; background: #fafbfc; border: 1px dashed var(--primary);">
   <h3>Akademik Kaynaklar Merkezi</h3>
   <p style="font-size: 0.95rem; color: var(--muted); margin: 0.5rem 0 1rem;">
@@ -108,4 +110,3 @@ function closeContactModal() {
   document.getElementById('contactModal').style.display = 'none';
 }
 </script>
-</div>
