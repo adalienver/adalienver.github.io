@@ -1,63 +1,81 @@
-// ——— CUSTOM ACADEMIC STYLING ———
+.home-intro {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
 
-blockquote {
-  font-size: 1.05rem;
+.home-intro h1 {
+  margin-bottom: 0.4rem;
+}
+
+.home-intro p {
+  margin-bottom: 0.8rem;
+}
+
+.page__content {
+  font-size: 1.02rem;
   line-height: 1.8;
-  font-style: italic;
-  color: #1a202c;
-  border-left: 4px solid var(--primary);
-  padding-left: 1.5rem;
-  margin: 1.5rem 0;
-  font-family: Georgia, 'Times New Roman', serif;
 }
 
-blockquote footer {
-  font-size: 0.9rem;
-  color: var(--muted);
-  margin-top: 0.5rem;
-  font-style: normal;
-  font-weight: 600;
-}
-
-h2 {
-  border-bottom: 2px solid var(--primary);
-  padding-bottom: 0.5rem;
-  margin-top: 2rem;
+.page__content h2 {
+  margin-top: 2.5rem;
   margin-bottom: 1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid #ececec;
 }
 
-table {
+.page__content h3 {
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.page__content blockquote {
+  margin: 1.2rem 0;
+  padding: 0.8rem 1rem;
+  border-left: 4px solid #3b82f6;
+  background: #f8fafc;
+  color: #374151;
+}
+
+.page__content blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.page__content ul {
+  margin-bottom: 1.2rem;
+}
+
+.page__content li {
+  margin-bottom: 0.45rem;
+}
+
+.page__content table {
   width: 100%;
+  display: table;
+  margin: 1rem 0 1.5rem 0;
   border-collapse: collapse;
-  margin: 1.5rem 0;
+  font-size: 0.96rem;
 }
 
-table th {
-  background-color: var(--primary);
-  color: white;
-  padding: 0.8rem;
-  text-align: left;
-  font-weight: 600;
+.page__content th,
+.page__content td {
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem;
+  vertical-align: top;
 }
 
-table td {
-  padding: 0.8rem;
-  border-bottom: 1px solid #ddd;
+.page__content th {
+  background: #f8fafc;
 }
 
-.btn {
+.page__content hr {
+  margin: 2rem 0;
+}
+
+.page__content .btn,
+.home-intro .btn {
   display: inline-block;
-  padding: 0.6rem 1.5rem;
-  border-radius: 4px;
-  font-weight: 600;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
   text-decoration: none;
-}
-
-.btn--primary {
-  background-color: var(--primary);
-  color: white;
-}
-
-a {
-  color: var(--primary);
 }
