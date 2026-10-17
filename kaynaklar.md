@@ -98,6 +98,7 @@ permalink: /kaynaklar/
   .tag-audio { background: #f3e8ff; color: #7e22ce; }
   .tag-youtube { background: #fee2e2; color: #b91c1c; }
   .tag-official { background: #ede9fe; color: #6d28d9; }
+  .tag-corpus { background: #e0e7ff; color: #3730a3; }
 
   .res-footer {
     display: flex;
@@ -238,7 +239,7 @@ permalink: /kaynaklar/
 
 </div>
 
-<!-- 3. KELİME & EŞDİZİMLİLİK (COLLOCATIONS) -->
+<!-- 3. KELİME, DEYİM & ÇEVİRİ SÖZLÜKLERİ -->
 <h2 class="category-title">🔍 Kelime Dağarcığı & Çeviri Sözlükleri</h2>
 <div class="resource-grid">
 
@@ -266,6 +267,45 @@ permalink: /kaynaklar/
       </p>
     </div>
     <div class="res-footer">Kelime Çalış ↗</div>
+  </a>
+
+  <a href="https://glosbe.com/" target="_blank" rel="noopener noreferrer" class="res-card">
+    <div>
+      <div class="res-header">
+        <span class="res-title">Glosbe Çok Dilli Paralel Bellek</span>
+        <span class="tag-badge tag-corpus">Paralel Metinler</span>
+      </div>
+      <p class="res-desc">
+        Milyarlarca gerçek çeviri cümlesini bağlamıyla inceleyebileceğiniz, terim ve kalıp çevirilerinde çevirmenler ve araştırmacılar için zengin paralel korpus sözlüğü.
+      </p>
+    </div>
+    <div class="res-footer">Glosbe'yi Aç ↗</div>
+  </a>
+
+  <a href="https://www.thefreedictionary.com/" target="_blank" rel="noopener noreferrer" class="res-card">
+    <div>
+      <div class="res-header">
+        <span class="res-title">The Free Dictionary (Farlex)</span>
+        <span class="tag-badge tag-vocab">Kapsamlı Sözlük</span>
+      </div>
+      <p class="res-desc">
+        Genel İngilizce tanımlarının yanı sıra tıp, hukuk, finans ve bilişim gibi özel alan terimlerini, deyimleri ve kısaltmaları tek çatı altında toplayan devasa referans portalı.
+      </p>
+    </div>
+    <div class="res-footer">Sözlüğü Aç ↗</div>
+  </a>
+
+  <a href="https://www.eslcafe.com/resources/idioms" target="_blank" rel="noopener noreferrer" class="res-card">
+    <div>
+      <div class="res-header">
+        <span class="res-title">Dave's ESL Cafe: Idioms Archive</span>
+        <span class="tag-badge tag-vocab">Deyimler & Kalıplar</span>
+      </div>
+      <p class="res-desc">
+        Günlük dilde ve metinlerde sıkça karşılaşılan İngilizce deyimleri, gerçek hayattan örnek cümlelerle ve sade açıklamalarla kategorilendiren zengin deyim arşivi.
+      </p>
+    </div>
+    <div class="res-footer">Deyimleri İncele ↗</div>
   </a>
 
 </div>
