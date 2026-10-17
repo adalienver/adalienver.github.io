@@ -93,6 +93,13 @@
     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
     loading="lazy">
   </iframe>
+  <!-- Metin / Sahne Görselleri -->
+<div style="display: flex; flex-direction: column; gap: 16px; margin-top: 20px;">
+  <img src="/assets/img/2.png" alt="Sahne Bölüm 2" style="width: 100%; border-radius: 8px; border: 1px solid var(--border);" />
+  <img src="/assets/img/3.png" alt="Sahne Bölüm 3" style="width: 100%; border-radius: 8px; border: 1px solid var(--border);" />
+  <img src="/assets/img/4.png" alt="Sahne Bölüm 4" style="width: 100%; border-radius: 8px; border: 1px solid var(--border);" />
+  <img src="/assets/img/5.png" alt="Sahne Bölüm 5" style="width: 100%; border-radius: 8px; border: 1px solid var(--border);" />
+</div>
   <blockquote style="font-family: monospace; font-size: 0.92rem; line-height: 1.6; color: #1f2937; background: #f8fafc; padding: 1.2rem; border-radius: 6px; border: 1px solid var(--border); white-space: pre-wrap;">
     
     .- Ömer Hayyam, elinde bir şişe şarap, öbür elinde bir pankart, girer. Pankartta: "BU CENNETE GREV VARDIR" yazılı. Şarkı başlar.—
