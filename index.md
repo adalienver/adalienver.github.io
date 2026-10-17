@@ -31,7 +31,7 @@ Miranda, ıssız bir adada yaşamış genç bir kadındır. İlk kez "uygar" ins
 >
 > — William Shakespeare, *Macbeth*, Act 1, Scene 1
 
-*Macbeth*'in açılış sahnesi Miranda'nın bağlamsallığını ters çevirir. Üç cadı, iyi ve kötüyü karıştıran müphemliğin içinde çalışırlar. Shakespeare burada şu uyarıyı verir: görüntü aldatıcıdır. Güzellik içinde çürümelik, virtue'de vice gizlidir.
+*Macbeth*'in açılış sahnesi Miranda'nın bağlamsallığını ters çevirir. Üç cadı, iyi ve kötüyü karıştıran müphemliğin içinde çalışırlar. Shakespeare burada şu uyarıyı verir: görüntü aldatıcıdır.
 
 ### III. John the Savage: Huxley'nin Yeniden Bağlamlandırması
 
