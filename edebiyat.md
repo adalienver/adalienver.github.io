@@ -145,15 +145,7 @@ Failatün faşizma Failatün çok saçma.</blockquote>
 
     <!-- Mobil Uyumlu / Duyarlı Video Çerçevesi -->
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; border: 1px solid var(--border); box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
-      <iframe 
-        src="https://www.youtube.com/embed/g-LI8Jx7lrA?si=H8Zz-CuaJJiE4bxs" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen 
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-      </iframe>
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/episode/0vWidpx294iiN22lXiKXlX?utm_source=generator&si=54e8038a87a14803" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
   </div>
 </div>
