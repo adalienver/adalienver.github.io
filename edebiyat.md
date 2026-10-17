@@ -157,6 +157,4 @@ Failatün faşizma Failatün çok saçma.</blockquote>
     loading="lazy">
   </iframe>
 </div>
-    </div>
-  </div>
-</div>
+  
