@@ -100,66 +100,7 @@
   <img src="{{ '/assets/4.png' | relative_url }}" alt="Sahne Bölüm 4" style="width: 100%; border-radius: 8px;" />
   <img src="{{ '/assets/5.png' | relative_url }}" alt="Sahne Bölüm 5" style="width: 100%; border-radius: 8px;" />
 </div>
-  <blockquote style="font-family: monospace; font-size: 0.92rem; line-height: 1.6; color: #1f2937; background: #f8fafc; padding: 1.2rem; border-radius: 6px; border: 1px solid var(--border); white-space: pre-wrap;">
-    
-    .- Ömer Hayyam, elinde bir şişe şarap, öbür elinde bir pankart, girer. Pankartta: "BU CENNETE GREV VARDIR" yazılı. Şarkı başlar.—
-HAYYAM - Dünya alem gezdi Rıza KORO - Bezm-i candan bezdi Rıza HAYYAM - Dünya âlem gezdi Rıza KORO - Yoksul halkı ezdi Rıza HAYYAM - Çok saltanat gördü Rıza KORO - Zevk-ü sefa sürdü Rıza HAYYAM - Bitmeyecek sandı rüya KORO - Şahlık elden gitti işte HAYYAM - Bitmeyecek sandı sefa KORO - Ol saltanat bitti gayrı HAYYAM - Çok hastalık gördü Rıza KORO - Her birinden yırttı Rıza
-HAYYAM - Her ülkede bir organı bırakarak kaçtı Rıza KORO - Ölmeyecek sandı dünya
-HAYYAM - Kahire'de öldü Rıza
- 
-KORO - Ölmeyecek sandı dünya HAYYAM - Kahredip de öldü Rıza
-.— Zebani tekerlekli bir kara kazan içinde Rıza'yı sokar. Şarkı durur.-
-HAYYAM - Mahçelerde mörülce Moynar melin mörümce
-İnsan mir hoş oluyor ekselansı görünce! Hayrola ekselans, to go to cehennem mi möyle?
-Rıza ölmüş tacı ilen gömülmüş
-Görmemişsin tacı olmuş, tutmuş ahrete getirmiş
-KORO - Cüm çaka çiki çak çiki çi ka ka ka Cüm çaka çiki çak çiki çi ka ka ka
 
-RIZA - Ölmeden baktırmış idim fala Rüyamda dinarsu serdim yola Kissinger torpil yaptı allaha
-Menim yerim cennet-ül âlâ
-
-HAYYAM - Madem hurma ağaçları artık kana mulanık Kissinger'in durumu senin kadar karanlık
-Zulmedene zulmederler, zalim azapta gerek Cehennemin çeşmesi kaynar akıyor kaynar
-KORO - Cüm çaka çiki çak çiki çi ka ka ka Cüm çaka çiki çak çiki çi ka ka ka
-RIZA - Cennet menden mahrum kalmaz Hurilere ayıp olur
-Men cennete girmez isem Cennet için kayıp olur.
-HAYYAM - Sen cennetever isen Gayet fena ayıp otur
-Sen cennete cennet deme Cennet-mekân olmayanda
-KORO - Cüm çaka çiki çak çiki çi ka ka ka Cüm çaka çiki çak çiki çi ka ka ka
-
-RIZA - Üç penç günâh eylemişem Durum gayet abartılmış
-Men çok sevap eylemişem Yazılması unutulmuş
-Cüm çaka çiki çak çiki kaka!
- 
-ZEBANİ - Dingildeme ekselans, haydi yürü gidiyoruz... Daha senin altının ateşini yakıcam. Gidicem sırat köprüsünün altından yeni gelenleri toplıycam. Bütün gün seninle uğraşıcak değilim ya, ben de burda üçüncü dereceden emeklilik bekleyen zavallı bir zebaniyim, öbür tarafta ölen ölene.. Bu Saddam Hüseyin'le Humeyni işin bokunu çıkardılar. Hergün kamyon kamyon ölü geliyor. Bu kadar çok ölüm olunca Azrail işe yetişemiyor. Kimi ölümlerde Azrail gecikmeleri görülüyor... Adam ölmüş ölüsü bu tarafa gelmemiş durumlar var, kayıp ölüler var... Allah Baba, sabahleyin hem Azrail'e hem bize bi fırça, bi fırça... Yürü gidiyoruz ekselans, cüm çaka çiki çak çiki çi ka ka ka..
-.- Zebani kazanı iterek çıkarır. Hayyam ekselansın peşinden seslenir.-
-HAYYAM - Ekselans! Hadi gene âlâsınız âlâsınız! Mir kazan içindesiniz. Cehennemde mundan iyisi, Şam'da kayısı.. Cennete de mekleriz! Hayırlı azaplar!
-.- Şarkı kaldığı yerden sürüp gider.-KORO - Toprak oldu göçtü Rıza HAYYAM - Gökyüzüne uçtu Rıza
-KORO - Toprak oldu göçtü Rıza Gökyüzüne uçtu Rıza
-HAYYAM - Azrail'i gördü Rıza KORO - Ona yolu sordu Rıza
-HAYYAM - Cennette yer beğenmezken Cehenneme düştü Rıza
-KORO - Cennette yer beğenmezken HAYYAM - Durumuna şaştı Rıza KORO - Gitti Rıza bitmez kavga HAYYAM - Molla senin tabut yolda KORO - ölmeden bir hayır eyle HAYYAM - Asma kesme bitsin artık KORO - Madem artık öldü Rıza HAYYAM - Zulmün sonu gelsin artık
-KORO - Madem artık öldü Rıza Zulmün sonu gelsin artık.
- 
-Bundan tam kırk yıl önce İran'da bir eğlence Sürdü kırk gün kırk gece Acemce bir köçekçe
-
-Şah Rıza Şah Rıza
-Şah Rıza henüz Prens Rıza
-Evleniyor törenle Prenses Fevziye'yle Gülistan Sarayı'nda Binbir masraf içinde
-Ram da dam da dibi di dam Ram da dam da dibi di dam
-Prens Rıza olurken Fevziye'yle hem dem İran birden oluyor Mısır ile akraba
-Bundan tam kırk yıl önce Humeyni kırk yaşında İlkokulda Süreyya Doğmamış Farah Diba
-
-Şah Rıza Şah Rıza
-Şah Rıza henüz Prens Rıza
-Halkının isteğine Razı olmayan Rıza Düşkün idi ezelden
-Hem karıya hem kıza
-Ram da dam da dibi di dam Ram da dam da dibi di dam
-Acem mülkü külliyen Ömer Hayyan bağıyken Yavuz Sultan genç iken Yıl binüçyüzpenç iken
-
-Şah Rıza Şah Rıza
-Şah Rıza henüz sperm Rıza!
-.</blockquote>
 
 
 </div>
