@@ -120,14 +120,9 @@ title: Ana Sayfa
       <div style="font-size: 0.82rem; color: #64748b; line-height: 1.4;">Çeviribilim ve mütercim-tercümanlık öğrencileri/mezunları için Zoom üzerinden ücretsiz yazılım eğitimleri.</div>
     </a>
 
-    <!-- Ücretli Seçenek 1 -->
-    <a href="mailto:{{ site.email }}?subject=Tez%20Formatlama%20Talebi%20(Word)&body=Merhaba,%0D%0A%0D%0AYüksek%20Lisans%20/%20Doktora%20tezim%20için%20üniversite%20enstitü%20kılavuzuna%20uygun%20Word%20şablonu%20ve%20formatlama%20desteği%20almak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AÜniversite/Enstitü:%20%0D%0ASayfa%20Sayısı:%20" style="display: block; text-decoration: none; border-radius: 10px; padding: 12px 14px; margin-bottom: 10px; background: #f8fafc; border: 1px solid #e2e8f0;">
-      <div style="font-size: 0.72rem; font-weight: 700; color: #475569; text-transform: uppercase;">Ücretli Hizmet</div>
-      <div style="font-size: 0.95rem; font-weight: 600; color: #0f172a; margin: 4px 0;">📄 Tez Word Şablonu & Formatlama</div>
-      <div style="font-size: 0.82rem; color: #64748b; line-height: 1.4;">Tezli Yüksek Lisans ve Doktora tezleri için enstitü yazım kılavuzlarına tam uyumlu profesyonel Word dosyası hazırlama.</div>
-    </a>
+    
 
-    <!-- Ücretli Seçenek 2 -->
+    <!-- Ücretli Seçenek  -->
     <a href="mailto:{{ site.email }}?subject=Web%20Sitesi%20Kurulum%20Talebi&body=Merhaba,%0D%0A%0D%0APortfolyo%20/%20Akademik%20tanıtım%20için%20web%20sitesi%20kurulumu%20hakkında%20bilgi%20almak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AIstediğim%20Site%20Türü:%20" style="display: block; text-decoration: none; border-radius: 10px; padding: 12px 14px; margin-bottom: 10px; background: #f8fafc; border: 1px solid #e2e8f0;">
       <div style="font-size: 0.72rem; font-weight: 700; color: #475569; text-transform: uppercase;">Ücretli Hizmet</div>
       <div style="font-size: 0.95rem; font-weight: 600; color: #0f172a; margin: 4px 0;">🌐 Kişisel / Akademik Web Sitesi Kurulumu</div>
