@@ -1,81 +1,12 @@
-.home-intro {
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.home-intro h1 {
-  margin-bottom: 0.4rem;
-}
-
-.home-intro p {
-  margin-bottom: 0.8rem;
-}
-
-.page__content {
-  font-size: 1.02rem;
-  line-height: 1.8;
-}
-
-.page__content h2 {
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-  padding-bottom: 0.35rem;
-  border-bottom: 1px solid #ececec;
-}
-
-.page__content h3 {
-  margin-top: 1.8rem;
-  margin-bottom: 0.8rem;
-}
-
-.page__content blockquote {
-  margin: 1.2rem 0;
-  padding: 0.8rem 1rem;
-  border-left: 4px solid #3b82f6;
-  background: #f8fafc;
-  color: #374151;
-}
-
-.page__content blockquote p:last-child {
-  margin-bottom: 0;
-}
-
-.page__content ul {
-  margin-bottom: 1.2rem;
-}
-
-.page__content li {
-  margin-bottom: 0.45rem;
-}
-
-.page__content table {
-  width: 100%;
-  display: table;
-  margin: 1rem 0 1.5rem 0;
-  border-collapse: collapse;
-  font-size: 0.96rem;
-}
-
-.page__content th,
-.page__content td {
-  border: 1px solid #e5e7eb;
-  padding: 0.75rem;
-  vertical-align: top;
-}
-
-.page__content th {
-  background: #f8fafc;
-}
-
-.page__content hr {
-  margin: 2rem 0;
-}
-
-.page__content .btn,
-.home-intro .btn {
-  display: inline-block;
-  padding: 0.7rem 1rem;
-  border-radius: 8px;
-  text-decoration: none;
+/* adalienver.github.io — Academic Portfolio Background (Ecofeminism & Dystopia) */
+body {
+  background-color: #0a1d17;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.42)),
+    url('bg-adalienver.png'),
+    linear-gradient(135deg, #0a1d17 0%, #8a1c27 55%, #d4af37 100%);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
