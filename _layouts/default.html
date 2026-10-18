@@ -13,8 +13,8 @@
 
   <style>
     :root {
-      --bg: #f8fafc;
-      --card: #ffffff;
+      --bg: #0b1d17;
+      --card: rgba(255, 255, 255, 0.94);
       --primary: #15325b;
       --accent: #1e6b47;
       --text: #1f2937;
@@ -23,14 +23,19 @@
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
+    
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       background-color: var(--bg);
-      background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
-      background-size: 28px 28px;
+      background-image: url('{{ "/assets/bg-adalienver.svg" | relative_url }}');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
       color: var(--text);
       line-height: 1.75;
       padding: 0 1rem 4rem;
+      min-height: 100vh;
     }
 
     .container {
@@ -43,14 +48,14 @@
       justify-content: space-between;
       align-items: center;
       padding: 1.5rem 0;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
       margin-bottom: 2rem;
     }
     .nav-brand {
       font-family: 'Cinzel', serif;
       font-weight: 700;
       font-size: 1.2rem;
-      color: var(--primary) !important;
+      color: #ffffff !important;
       text-decoration: none;
     }
     .nav-links {
@@ -59,21 +64,24 @@
     }
     .nav-links a {
       text-decoration: none;
-      color: var(--muted) !important;
+      color: #cbd5e1 !important;
       font-weight: 500;
       font-size: 0.95rem;
+      cursor: pointer;
+      transition: color 0.2s ease;
     }
     .nav-links a:hover {
-      color: var(--primary) !important;
+      color: #ffffff !important;
     }
 
     .card {
       background: var(--card);
-      border: 1px solid var(--border);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(8px);
       border-radius: 12px;
       padding: 2.25rem;
       margin-bottom: 2rem;
-      box-shadow: 0 4px 12px rgba(21, 50, 91, 0.04);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     }
 
     h1, h2, h3, h4 {
@@ -139,9 +147,93 @@
       text-align: center;
       margin-top: 3.5rem;
       padding-top: 2rem;
-      border-top: 1px solid var(--border);
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
       font-size: 0.85rem;
-      color: var(--muted);
+      color: #cbd5e1;
+    }
+
+    /* Modal Stilleri */
+    .contact-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 10000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+    .contact-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(4px);
+    }
+    .contact-modal-card {
+      position: relative;
+      background: #ffffff;
+      width: 100%;
+      max-width: 540px;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.25);
+      z-index: 10001;
+      text-align: left;
+    }
+    .modal-close {
+      position: absolute;
+      top: 14px;
+      right: 16px;
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: #94a3b8;
+    }
+    .service-option {
+      display: block;
+      text-decoration: none;
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin-bottom: 10px;
+      transition: all 0.2s ease;
+      border: 1px solid #e2e8f0;
+    }
+    .service-option.free {
+      background: #f0fdf4;
+      border-color: #bbf7d0;
+    }
+    .service-option.free:hover {
+      background: #dcfce7;
+    }
+    .service-option.paid {
+      background: #f8fafc;
+      border-color: #e2e8f0;
+    }
+    .service-option.paid:hover {
+      background: #f1f5f9;
+    }
+    .badge-free {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #166534;
+      text-transform: uppercase;
+    }
+    .badge-paid {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #475569;
+      text-transform: uppercase;
+    }
+    .option-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #0f172a;
+      margin: 4px 0;
+    }
+    .option-desc {
+      font-size: 0.82rem;
+      color: #64748b;
+      line-height: 1.4;
     }
   </style>
 </head>
@@ -152,7 +244,7 @@
       <div class="nav-links">
         <a href="{{ '/' | relative_url }}">Ana Sayfa</a>
         <a href="{{ '/kaynaklar' | relative_url }}">İngilizce Kaynaklar</a>
-        <a href="mailto:{{ site.email }}">İletişim</a>
+        <a href="javascript:void(0)" onclick="openContactModal()">İletişim</a>
         <a href="{{ '/edebiyat' | relative_url }}">Edebi Seçki</a>
       </div>
     </nav>
@@ -163,39 +255,57 @@
       <p>© {{ 'now' | date: "%Y" }} {{ site.title }} • İstanbul Beykent Üniversitesi Mezunu</p>
     </footer>
   </div>
+
   <!-- İletişim ve Hizmetler Penceresi -->
-<div id="contactModal" class="contact-modal" style="display: none;">
-  <div class="contact-modal-backdrop" onclick="closeContactModal()"></div>
-  <div class="contact-modal-card">
-    <button class="modal-close" onclick="closeContactModal()">&times;</button>
-    
-    <h3 style="margin-top: 0; color: #1e293b; font-size: 1.25rem;">İletişim & Hizmet Talebi</h3>
-    <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 16px;">
-      İlgilendiğiniz alana tıklayarak doğrudan e-posta taslağı oluşturabilirsiniz:
-    </p>
+  <div id="contactModal" class="contact-modal" style="display: none;">
+    <div class="contact-modal-backdrop" onclick="closeContactModal()"></div>
+    <div class="contact-modal-card">
+      <button class="modal-close" onclick="closeContactModal()">&times;</button>
+      
+      <h3 style="margin-top: 0; color: #1e293b; font-size: 1.25rem;">İletişim & Hizmet Talebi</h3>
+      <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 16px;">
+        İlgilendiğiniz alana tıklayarak doğrudan e-posta taslağı oluşturabilirsiniz:
+      </p>
 
-    <!-- Ücretsiz Seçenek -->
-    <a href="mailto:ornekmail@gmail.com?subject=Ücretsiz%20Eğitim%20Talebi%20(Trados%20/%20Subtitle%20Edit)&body=Merhaba,%0D%0A%0D%0AMütercim-Tercümanlık%20dayanışması%20kapsamındaki%20Trados%20SDL%20Studio%20/%20Subtitle%20Edit%20eğitimine%20katılmak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AÜniversite/Bölüm:%20" class="service-option free">
-      <div class="badge-free">Ücretsiz (Öğrenci & Mezun Dayanışması)</div>
-      <div class="option-title">🎧 SDL Trados Studio & Subtitle Edit Eğitimi</div>
-      <div class="option-desc">Çeviribilim ve mütercim-tercümanlık öğrencileri/mezunları için Zoom üzerinden ücretsiz yazılım eğitimleri.</div>
-    </a>
+      <!-- Ücretsiz Seçenek -->
+      <a href="mailto:{{ site.email }}?subject=Ücretsiz%20Eğitim%20Talebi%20(Trados%20/%20Subtitle%20Edit)&body=Merhaba,%0D%0A%0D%0AMütercim-Tercümanlık%20dayanışması%20kapsamındaki%20Trados%20SDL%20Studio%20/%20Subtitle%20Edit%20eğitimine%20katılmak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AÜniversite/Bölüm:%20" class="service-option free">
+        <div class="badge-free">Ücretsiz (Öğrenci & Mezun Dayanışması)</div>
+        <div class="option-title">🎧 SDL Trados Studio & Subtitle Edit Eğitimi</div>
+        <div class="option-desc">Çeviribilim ve mütercim-tercümanlık öğrencileri/mezunları için Zoom üzerinden ücretsiz yazılım eğitimleri.</div>
+      </a>
 
-    <!-- Ücretli Seçenek 1 -->
-    <a href="mailto:ornekmail@gmail.com?subject=Tez%20Formatlama%20Talebi%20(Word)&body=Merhaba,%0D%0A%0D%0AYüksek%20Lisans%20/%20Doktora%20tezim%20için%20üniversite%20enstitü%20kılavuzuna%20uygun%20Word%20şablonu%20ve%20formatlama%20desteği%20almak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AÜniversite/Enstitü:%20%0D%0ASayfa%20Sayısı:%20" class="service-option paid">
-      <div class="badge-paid">Ücretli Hizmet</div>
-      <div class="option-title">📄 Tez Word Şablonu & Formatlama</div>
-      <div class="option-desc">Tezli Yüksek Lisans ve Doktora tezleri için üniversite yazım kılavuzlarına tam uyumlu profesyonel Word dosyası hazırlama.</div>
-    </a>
+      <!-- Ücretli Seçenek 1 -->
+      <a href="mailto:{{ site.email }}?subject=Tez%20Formatlama%20Talebi%20(Word)&body=Merhaba,%0D%0A%0D%0AYüksek%20Lisans%20/%20Doktora%20tezim%20için%20üniversite%20enstitü%20kılavuzuna%20uygun%20Word%20şablonu%20ve%20formatlama%20desteği%20almak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AÜniversite/Enstitü:%20%0D%0ASayfa%20Sayısı:%20" class="service-option paid">
+        <div class="badge-paid">Ücretli Hizmet</div>
+        <div class="option-title">📄 Tez Word Şablonu & Formatlama</div>
+        <div class="option-desc">Tezli Yüksek Lisans ve Doktora tezleri için üniversite yazım kılavuzlarına tam uyumlu profesyonel Word dosyası hazırlama.</div>
+      </a>
 
-    <!-- Ücretli Seçenek 2 -->
-    <a href="mailto:ornekmail@gmail.com?subject=Web%20Sitesi%20Kurulum%20Talebi&body=Merhaba,%0D%0A%0D%0APortfolyo%20/%20Akademik%20tanıtım%20için%20web%20sitesi%20kurulumu%20hakkında%20bilgi%20almak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AIstediğim%20Site%20Türü:%20" class="service-option paid">
-      <div class="badge-paid">Ücretli Hizmet</div>
-      <div class="option-title">🌐 Kişisel / Akademik Web Sitesi Kurulumu</div>
-      <div class="option-desc">Akademisyenler, çevirmenler ve bireysel kullanım için modern portfolyo ve tanıtım sitesi kurulumu.</div>
-    </a>
-
+      <!-- Ücretli Seçenek 2 -->
+      <a href="mailto:{{ site.email }}?subject=Web%20Sitesi%20Kurulum%20Talebi&body=Merhaba,%0D%0A%0D%0APortfolyo%20/%20Akademik%20tanıtım%20için%20web%20sitesi%20kurulumu%20hakkında%20bilgi%20almak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AIstediğim%20Site%20Türü:%20" class="service-option paid">
+        <div class="badge-paid">Ücretli Hizmet</div>
+        <div class="option-title">🌐 Kişisel / Akademik Web Sitesi Kurulumu</div>
+        <div class="option-desc">Akademisyenler, çevirmenler ve bireysel kullanım için modern portfolyo ve tanıtım sitesi kurulumu.</div>
+      </a>
+    </div>
   </div>
-</div>
+
+  <!-- Modal Kontrol Scriptleri -->
+  <script>
+    function openContactModal() {
+      var modal = document.getElementById('contactModal');
+      if (modal) {
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+    }
+    function closeContactModal() {
+      var modal = document.getElementById('contactModal');
+      if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+    }
+  </script>
 </body>
 </html>
