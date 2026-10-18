@@ -99,6 +99,7 @@ permalink: /kaynaklar/
   .tag-youtube { background: #fee2e2; color: #b91c1c; }
   .tag-official { background: #ede9fe; color: #6d28d9; }
   .tag-corpus { background: #e0e7ff; color: #3730a3; }
+  .tag-context { background: #fae8ff; color: #86198f; }
 
   .res-footer {
     display: flex;
@@ -119,7 +120,7 @@ permalink: /kaynaklar/
 <div class="resource-hero">
   <h1>İngilizce Öğrenme & Çalışma Kaynakları</h1>
   <p>
-    Öğrenciler, çevirmen adayları ve dil sınavlarına (YDS, YÖKDİL, TOEFL, IELTS) hazırlananlar için derlenmiş en nitelikli interaktif platformlar, dinleme kanalları ve dilbilgisi kılavuzları.
+    Öğrenciler, çevirmen adayları ve dil sınavlarına (YDS, YÖKDİL, TOEFL, IELTS) hazırlananlar için derlenmiş en nitelikli interaktif platformlar, dinleme kanalları, korpus veri tabanları ve dilbilgisi kılavuzları.
   </p>
 </div>
 
@@ -239,9 +240,48 @@ permalink: /kaynaklar/
 
 </div>
 
-<!-- 3. KELİME, DEYİM & ÇEVİRİ SÖZLÜKLERİ -->
-<h2 class="category-title">🔍 Kelime Dağarcığı & Çeviri Sözlükleri</h2>
+<!-- 3. KELİME, DEYİM, KORPUS & ÇEVİRİ SÖZLÜKLERİ -->
+<h2 class="category-title">🔍 Kelime Dağarcığı, Korpus & Çeviri Sözlükleri</h2>
 <div class="resource-grid">
+
+  <a href="https://www.english-corpora.org/coca/" target="_blank" rel="noopener noreferrer" class="res-card">
+    <div>
+      <div class="res-header">
+        <span class="res-title">COCA (Corpus of Contemporary American English)</span>
+        <span class="tag-badge tag-corpus">Akademik Korpus</span>
+      </div>
+      <p class="res-desc">
+        1 milyardan fazla kelimeden oluşan, sözcük sıklığı (frequency), türsel dağılım ve akademik metin eşdizimlerini incelemek için en güçlü dilbilimsel korpus veri tabanı.
+      </p>
+    </div>
+    <div class="res-footer">Korpusu İncele ↗</div>
+  </a>
+
+  <a href="https://sentencedict.com/" target="_blank" rel="noopener noreferrer" class="res-card">
+    <div>
+      <div class="res-header">
+        <span class="res-title">SentenceDict (Örnek Cümle Motoru)</span>
+        <span class="tag-badge tag-context">Bağlamsal Kullanım</span>
+      </div>
+      <p class="res-desc">
+        Aradığınız herhangi bir İngilizce kelimenin gerçek metinler içindeki farklı seviyelerdeki kullanım biçimlerini ve cümle kalıplarını listeleyen pratik arama aracı.
+      </p>
+    </div>
+    <div class="res-footer">Cümle Bul ↗</div>
+  </a>
+
+  <a href="https://dictionary.reverso.net/" target="_blank" rel="noopener noreferrer" class="res-card">
+    <div>
+      <div class="res-header">
+        <span class="res-title">Reverso Context & Dictionary</span>
+        <span class="tag-badge tag-context">Bağlam Çevirisi</span>
+      </div>
+      <p class="res-desc">
+        Kelimeleri ve deyimleri milyonlarca iki dilli gerçek paralel metin içerisinde aratarak en doğal eşdeğerlerini ve kullanım bağlamlarını sunan çevirmen aracı.
+      </p>
+    </div>
+    <div class="res-footer">Sözlüğü Aç ↗</div>
+  </a>
 
   <a href="https://ozdic.com/" target="_blank" rel="noopener noreferrer" class="res-card">
     <div>
