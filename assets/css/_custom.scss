@@ -1,10 +1,6 @@
-/* adalienver.github.io — Academic Portfolio Background (Ecofeminism & Dystopia) */
 body {
-  background-color: #0a1d17;
-  background-image: 
-    radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.23), rgba(0, 0, 0, 0.42)),
-    url('bg-adalienver.png'),
-    linear-gradient(135deg, #0a1d17 0%, #8a1c27 55%, #d4af37 100%);
+  background-color: #0b1d17; /* Yedek koyu zemin rengi */
+  background-image: url('{{ "/assets/img/bg-adalienver.svg" | relative_url }}');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
