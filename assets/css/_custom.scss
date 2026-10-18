@@ -1,6 +1,6 @@
 body {
   background-color: #0b1d17; /* Yedek koyu zemin rengi */
-  background-image: url('{{ "/assets/img/bg-adalienver.svg" | relative_url }}');
+  background-image: url('{{ "/assets/bg-adalienver.svg" | relative_url }}');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
