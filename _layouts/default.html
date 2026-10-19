@@ -13,34 +13,55 @@
 
   <style>
     :root {
-      --bg: #0b1d17;
-      --card: rgba(255, 255, 255, 0.94);
+      --bg: #f9f7f2;
+      --card: rgba(255, 255, 255, 0.88);
       --primary: #15325b;
       --accent: #1e6b47;
       --text: #1f2937;
       --muted: #64748b;
-      --border: #e2e8f0;
+      --border: rgba(226, 232, 240, 0.8);
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    
+
+    /* YAVAŞÇA DEĞİŞEN VE NEFES ALAN ARKA PLAN (AURORA MOTION) */
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background-color: var(--bg);
-      background-image: url('{{ "/assets/bg-adalienver.svg" | relative_url }}');
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
       color: var(--text);
       line-height: 1.75;
       padding: 0 1rem 4rem;
       min-height: 100vh;
+      background-color: var(--bg);
+      
+      /* Akıcı degrade küreleri + mikro arşiv ızgarası */
+      background-image: 
+        radial-gradient(circle at 10% 20%, rgba(186, 68, 77, 0.08) 0%, transparent 45%),
+        radial-gradient(circle at 90% 80%, rgba(42, 85, 68, 0.09) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.07) 0%, transparent 55%),
+        linear-gradient(to right, rgba(0,0,0,0.02) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0,0,0,0.02) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 100% 100%, 48px 48px, 48px 48px;
+      background-attachment: fixed;
+      animation: subtleAura 18s ease-in-out infinite alternate;
+    }
+
+    @keyframes subtleAura {
+      0% {
+        background-position: 0% 0%, 100% 100%, 50% 50%, 0 0, 0 0;
+      }
+      50% {
+        background-position: 25% 40%, 75% 60%, 40% 70%, 0 0, 0 0;
+      }
+      100% {
+        background-position: 10% 80%, 90% 20%, 60% 30%, 0 0, 0 0;
+      }
     }
 
     .container {
       max-width: 860px;
       margin: 0 auto;
+      position: relative;
+      z-index: 1;
     }
 
     nav.academic-nav {
@@ -48,14 +69,14 @@
       justify-content: space-between;
       align-items: center;
       padding: 1.5rem 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.07);
       margin-bottom: 2rem;
     }
     .nav-brand {
       font-family: 'Cinzel', serif;
       font-weight: 700;
       font-size: 1.2rem;
-      color: #ffffff !important;
+      color: var(--primary) !important;
       text-decoration: none;
     }
     .nav-links {
@@ -64,24 +85,26 @@
     }
     .nav-links a {
       text-decoration: none;
-      color: #cbd5e1 !important;
+      color: var(--muted) !important;
       font-weight: 500;
       font-size: 0.95rem;
       cursor: pointer;
       transition: color 0.2s ease;
     }
     .nav-links a:hover {
-      color: #ffffff !important;
+      color: var(--primary) !important;
     }
 
+    /* KARTLAR: HAFİF ŞEFFAF VE BUZLU CAM */
     .card {
       background: var(--card);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      backdrop-filter: blur(8px);
-      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 14px;
       padding: 2.25rem;
       margin-bottom: 2rem;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 10px 30px -8px rgba(35, 45, 60, 0.06);
     }
 
     h1, h2, h3, h4 {
@@ -90,7 +113,7 @@
     }
 
     .abstract-quote {
-      background: #f7faf8;
+      background: rgba(247, 250, 248, 0.85);
       border-left: 4px solid var(--accent);
       padding: 1.25rem 1.4rem;
       border-radius: 0 8px 8px 0;
@@ -111,6 +134,7 @@
       font-size: 0.9rem;
       font-weight: 600;
       margin-top: 0.5rem;
+      box-shadow: 0 4px 10px rgba(0, 119, 181, 0.2);
     }
 
     .portal-grid {
@@ -124,7 +148,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 1rem 1.2rem;
-      background: #fafbfc;
+      background: rgba(250, 251, 252, 0.8);
       border: 1px solid var(--border);
       border-radius: 8px;
       text-decoration: none;
@@ -147,9 +171,9 @@
       text-align: center;
       margin-top: 3.5rem;
       padding-top: 2rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
       font-size: 0.85rem;
-      color: #cbd5e1;
+      color: var(--muted);
     }
 
     /* Modal Stilleri */
@@ -165,7 +189,7 @@
     .contact-modal-backdrop {
       position: fixed;
       inset: 0;
-      background: rgba(15, 23, 42, 0.65);
+      background: rgba(15, 23, 42, 0.45);
       backdrop-filter: blur(4px);
     }
     .contact-modal-card {
@@ -175,7 +199,7 @@
       max-width: 540px;
       border-radius: 14px;
       padding: 24px;
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
       z-index: 10001;
       text-align: left;
     }
@@ -198,43 +222,14 @@
       transition: all 0.2s ease;
       border: 1px solid #e2e8f0;
     }
-    .service-option.free {
-      background: #f0fdf4;
-      border-color: #bbf7d0;
-    }
-    .service-option.free:hover {
-      background: #dcfce7;
-    }
-    .service-option.paid {
-      background: #f8fafc;
-      border-color: #e2e8f0;
-    }
-    .service-option.paid:hover {
-      background: #f1f5f9;
-    }
-    .badge-free {
-      font-size: 0.72rem;
-      font-weight: 700;
-      color: #166534;
-      text-transform: uppercase;
-    }
-    .badge-paid {
-      font-size: 0.72rem;
-      font-weight: 700;
-      color: #475569;
-      text-transform: uppercase;
-    }
-    .option-title {
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: #0f172a;
-      margin: 4px 0;
-    }
-    .option-desc {
-      font-size: 0.82rem;
-      color: #64748b;
-      line-height: 1.4;
-    }
+    .service-option.free { background: #f0fdf4; border-color: #bbf7d0; }
+    .service-option.free:hover { background: #dcfce7; }
+    .service-option.paid { background: #f8fafc; border-color: #e2e8f0; }
+    .service-option.paid:hover { background: #f1f5f9; }
+    .badge-free { font-size: 0.72rem; font-weight: 700; color: #166534; text-transform: uppercase; }
+    .badge-paid { font-size: 0.72rem; font-weight: 700; color: #475569; text-transform: uppercase; }
+    .option-title { font-size: 0.95rem; font-weight: 600; color: #0f172a; margin: 4px 0; }
+    .option-desc { font-size: 0.82rem; color: #64748b; line-height: 1.4; }
   </style>
 </head>
 <body>
@@ -256,7 +251,7 @@
     </footer>
   </div>
 
-  <!-- İletişim ve Hizmetler Penceresi -->
+  <!-- İletişim Modalı -->
   <div id="contactModal" class="contact-modal" style="display: none;">
     <div class="contact-modal-backdrop" onclick="closeContactModal()"></div>
     <div class="contact-modal-card">
@@ -267,16 +262,18 @@
         İlgilendiğiniz alana tıklayarak doğrudan e-posta taslağı oluşturabilirsiniz:
       </p>
 
-      <!-- Ücretsiz Seçenek -->
       <a href="mailto:{{ site.email }}?subject=Ücretsiz%20Eğitim%20Talebi%20(Trados%20/%20Subtitle%20Edit)&body=Merhaba,%0D%0A%0D%0AMütercim-Tercümanlık%20dayanışması%20kapsamındaki%20Trados%20SDL%20Studio%20/%20Subtitle%20Edit%20eğitimine%20katılmak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AÜniversite/Bölüm:%20" class="service-option free">
         <div class="badge-free">Ücretsiz (Öğrenci & Mezun Dayanışması)</div>
         <div class="option-title">🎧 SDL Trados Studio & Subtitle Edit Eğitimi</div>
         <div class="option-desc">Çeviribilim ve mütercim-tercümanlık öğrencileri/mezunları için Zoom üzerinden ücretsiz yazılım eğitimleri.</div>
       </a>
 
- 
+      <a href="mailto:{{ site.email }}?subject=Tez%20Formatlama%20Talebi%20(Word)&body=Merhaba,%0D%0A%0D%0AYüksek%20Lisans%20/%20Doktora%20tezim%20için%20üniversite%20enstitü%20kılavuzuna%20uygun%20Word%20şablonu%20ve%20formatlama%20desteği%20almak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AÜniversite/Enstitü:%20%0D%0ASayfa%20Sayısı:%20" class="service-option paid">
+        <div class="badge-paid">Ücretli Hizmet</div>
+        <div class="option-title">📄 Tez Word Şablonu & Formatlama</div>
+        <div class="option-desc">Tezli Yüksek Lisans ve Doktora tezleri için üniversite yazım kılavuzlarına tam uyumlu profesyonel Word dosyası hazırlama.</div>
+      </a>
 
-      <!-- Ücretli Seçenek 1 -->
       <a href="mailto:{{ site.email }}?subject=Web%20Sitesi%20Kurulum%20Talebi&body=Merhaba,%0D%0A%0D%0APortfolyo%20/%20Akademik%20tanıtım%20için%20web%20sitesi%20kurulumu%20hakkında%20bilgi%20almak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AIstediğim%20Site%20Türü:%20" class="service-option paid">
         <div class="badge-paid">Ücretli Hizmet</div>
         <div class="option-title">🌐 Kişisel / Akademik Web Sitesi Kurulumu</div>
@@ -285,7 +282,6 @@
     </div>
   </div>
 
-  <!-- Modal Kontrol Scriptleri -->
   <script>
     function openContactModal() {
       var modal = document.getElementById('contactModal');
