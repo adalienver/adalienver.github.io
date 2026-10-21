@@ -94,7 +94,7 @@ title: Ana Sayfa
 
 <!-- KAYNAKLAR KARTI -->
 <div class="card" style="text-align: center; background: #fafbfc; border: 1px dashed var(--primary);">
-  <h3>Akademik Kaynaklar Merkezi</h3>
+  <h3> Kaynaklar Merkezi</h3>
   <p style="font-size: 0.95rem; color: var(--muted); margin: 0.5rem 0 1rem;">
     Dilbilgisi rehberleri, eşdizimlilik sözlükleri, BBC/British Council materyalleri ve okuma parçaları.
   </p>
