@@ -22,6 +22,75 @@ permalink: /kaynaklar/
     line-height: 1.6;
   }
 
+  /* CANLI ARAMA & FİLTRELEME ÇUBUĞU */
+  .filter-container {
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 15px rgba(21, 50, 91, 0.04);
+  }
+
+  .search-input-wrapper {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    font-size: 0.95rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    outline: none;
+    font-family: inherit;
+    background: #ffffff;
+    transition: all 0.2s ease;
+  }
+  .search-input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(21, 50, 91, 0.1);
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 0.85rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--muted);
+    font-size: 1rem;
+  }
+
+  .filter-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .chip-btn {
+    background: #ffffff;
+    border: 1px solid var(--border);
+    padding: 0.35rem 0.85rem;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--text);
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .chip-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+  }
+  .chip-btn.active {
+    background: var(--primary);
+    color: #ffffff;
+    border-color: var(--primary);
+  }
+
+  /* KATEGORİ VE KART DÜZENİ */
   .category-title {
     display: flex;
     align-items: center;
@@ -30,7 +99,7 @@ permalink: /kaynaklar/
     font-size: 1.3rem;
     color: var(--primary);
     margin-bottom: 1rem;
-    border-bottom: 2px solid #eef2f6;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.06);
     padding-bottom: 0.5rem;
   }
 
@@ -45,14 +114,13 @@ permalink: /kaynaklar/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #ffffff;
+    background: var(--card) !important;
     border: 1px solid var(--border);
     border-radius: 10px;
     padding: 1.25rem 1.4rem;
     text-decoration: none;
     color: var(--text) !important;
-    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+    transition: all 0.25s ease;
   }
 
   .res-card:hover {
@@ -110,6 +178,14 @@ permalink: /kaynaklar/
     color: var(--accent);
   }
 
+  #no-results-msg {
+    display: none;
+    text-align: center;
+    padding: 2.5rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+
   @media (max-width: 640px) {
     .resource-grid {
       grid-template-columns: 1fr;
@@ -120,264 +196,306 @@ permalink: /kaynaklar/
 <div class="resource-hero">
   <h1>İngilizce Öğrenme & Çalışma Kaynakları</h1>
   <p>
-    Öğrenciler, çevirmen adayları ve dil sınavlarına (YDS, YÖKDİL, TOEFL, IELTS) hazırlananlar için derlenmiş en nitelikli interaktif platformlar, dinleme kanalları, korpus veri tabanları ve dilbilgisi kılavuzları.
+    Öğrenciler, çevirmen adayları ve dil sınavlarına (YDS, YÖKDİL, TOEFL, IELTS) hazırlananlar için derlenmiş interaktif platformlar, dinleme kanalları, korpus veri tabanları ve dilbilgisi kılavuzları.
   </p>
 </div>
 
+<!-- CANLI FİLTRELEME & ARAMA ÇUBUĞU -->
+<div class="filter-container">
+  <div class="search-input-wrapper">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="resourceSearch" class="search-input" placeholder="Kaynak adı, konu veya etiket arayın (örn. Korpus, Bağlaç, Dinleme)..." />
+  </div>
+  <div class="filter-chips">
+    <button class="chip-btn active" data-category="all">Tümü</button>
+    <button class="chip-btn" data-category="audio">🎧 Dinleme & Video</button>
+    <button class="chip-btn" data-category="grammar">📘 Dilbilgisi & Yapı</button>
+    <button class="chip-btn" data-category="corpus">🔍 Korpus & Sözlükler</button>
+    <button class="chip-btn" data-category="reading">📖 Okuma & Test</button>
+  </div>
+</div>
+
+<div id="no-results-msg">Aradığınız kritere uygun kaynak bulunamadı.</div>
+
 <!-- 1. DİNLEME, HABER & MULTİMEDYA -->
-<h2 class="category-title">🎧 Dinleme, Haber & Video Kanalları</h2>
-<div class="resource-grid">
+<div class="category-section" data-section="audio">
+  <h2 class="category-title">🎧 Dinleme, Haber & Video Kanalları</h2>
+  <div class="resource-grid">
 
-  <a href="https://www.youtube.com/@engvidRonnie/videos" target="_blank" rel="noopener noreferrer" class="res-card">
-    <div>
-      <div class="res-header">
-        <span class="res-title">engVid: Ronnie’s English Channel</span>
-        <span class="tag-badge tag-youtube">YouTube Video</span>
+    <a href="https://www.youtube.com/@engvidRonnie/videos" target="_blank" rel="noopener noreferrer" class="res-card" data-category="audio" data-keywords="engvid ronnie video youtube konuşma argo slang gramer ders">
+      <div>
+        <div class="res-header">
+          <span class="res-title">engVid: Ronnie’s English Channel</span>
+          <span class="tag-badge tag-youtube">YouTube Video</span>
+        </div>
+        <p class="res-desc">
+          Doğal konuşma dili, argo (slang), günlük ifadeler ve kafa karıştıran gramer kalıplarını samimi bir üslupla anlatan video ders serisi.
+        </p>
       </div>
-      <p class="res-desc">
-        Doğal konuşma dili, argo (slang), günlük ifadeler ve kafa karıştıran gramer kalıplarını samimi ve akılda kalıcı bir üslupla anlatan popüler video ders serisi.
-      </p>
-    </div>
-    <div class="res-footer">Kanala Git ↗</div>
-  </a>
+      <div class="res-footer">Kanala Git ↗</div>
+    </a>
 
-  <a href="https://www.bbc.co.uk/learningenglish/" target="_blank" rel="noopener noreferrer" class="res-card">
-    <div>
-      <div class="res-header">
-        <span class="res-title">BBC Learning English</span>
-        <span class="tag-badge tag-official">BBC Portal</span>
+    <a href="https://www.bbc.co.uk/learningenglish/" target="_blank" rel="noopener noreferrer" class="res-card" data-category="audio" data-keywords="bbc learning english 6 minute haber dinleme telaffuz">
+      <div>
+        <div class="res-header">
+          <span class="res-title">BBC Learning English</span>
+          <span class="tag-badge tag-official">BBC Portal</span>
+        </div>
+        <p class="res-desc">
+          "6 Minute English", haber bültenleri, telaffuz atölyeleri ve güncel olaylar üzerinden İngilizceyi geliştiren referans platformu.
+        </p>
       </div>
-      <p class="res-desc">
-        "6 Minute English", haber bültenleri, telaffuz atölyeleri ve güncel olaylar üzerinden İngilizceyi geliştiren küresel referans platformu.
-      </p>
-    </div>
-    <div class="res-footer">Platformu Aç ↗</div>
-  </a>
+      <div class="res-footer">Platformu Aç ↗</div>
+    </a>
 
-  <a href="https://learningenglish.voanews.com/" target="_blank" rel="noopener noreferrer" class="res-card">
-    <div>
-      <div class="res-header">
-        <span class="res-title">VOA Learning English (Voice of America)</span>
-        <span class="tag-badge tag-audio">Ses & Haber</span>
+    <a href="https://learningenglish.voanews.com/" target="_blank" rel="noopener noreferrer" class="res-card" data-category="audio" data-keywords="voa learning english voice of america haber dikte dinleme listening">
+      <div>
+        <div class="res-header">
+          <span class="res-title">VOA Learning English</span>
+          <span class="tag-badge tag-audio">Ses & Haber</span>
+        </div>
+        <p class="res-desc">
+          Basitleştirilmiş kelime kadrosu ve net konuşma temposuyla hazırlanmış dünya haberleri; dinleme ve dikte pratikleri için idealdir.
+        </p>
       </div>
-      <p class="res-desc">
-        Basitleştirilmiş kelime kadrosu ve anlaşılır, net konuşma temposuyla hazırlanmış dünya haberleri; dinleme ve dikte pratikleri için idealdir.
-      </p>
-    </div>
-    <div class="res-footer">Haberleri İncele ↗</div>
-  </a>
+      <div class="res-footer">Haberleri İncele ↗</div>
+    </a>
 
-  <a href="https://learnenglish.britishcouncil.org/free-resources" target="_blank" rel="noopener noreferrer" class="res-card">
-    <div>
-      <div class="res-header">
-        <span class="res-title">British Council: Free Resources</span>
-        <span class="tag-badge tag-official">Kurumsal / Sınav</span>
+    <a href="https://learnenglish.britishcouncil.org/free-resources" target="_blank" rel="noopener noreferrer" class="res-card" data-category="audio" data-keywords="british council ielts podcast sınav hazırlık iş ingilizcesi">
+      <div>
+        <div class="res-header">
+          <span class="res-title">British Council: Free Resources</span>
+          <span class="tag-badge tag-official">Kurumsal / Sınav</span>
+        </div>
+        <p class="res-desc">
+          IELTS hazırlık ipuçları, seviyelendirilmiş ses kayıtları (podcasts), etkileşimli alıştırmalar ve iş İngilizcesi kaynakları.
+        </p>
       </div>
-      <p class="res-desc">
-        IELTS hazırlık ipuçları, seviyelendirilmiş ses kayıtları (podcasts), etkileşimli alıştırmalar ve iş İngilizcesi kaynakları.
-      </p>
-    </div>
-    <div class="res-footer">Materyalleri Aç ↗</div>
-  </a>
+      <div class="res-footer">Materyalleri Aç ↗</div>
+    </a>
 
+  </div>
 </div>
 
 <!-- 2. DİLBİLGİSİ & YAPISAL ANALİZ -->
-<h2 class="category-title">📘 Dilbilgisi & Cümle Mimarisi</h2>
-<div class="resource-grid">
+<div class="category-section" data-section="grammar">
+  <h2 class="category-title">📘 Dilbilgisi & Cümle Mimarisi</h2>
+  <div class="resource-grid">
 
-  <a href="https://dictionary.cambridge.org/grammar/british-grammar/conjunctions-time" target="_blank" rel="noopener noreferrer" class="res-card">
-    <div>
-      <div class="res-header">
-        <span class="res-title">Cambridge Grammar: Conjunctions of Time</span>
-        <span class="tag-badge tag-grammar">Bağlaçlar</span>
+    <a href="https://dictionary.cambridge.org/grammar/british-grammar/conjunctions-time" target="_blank" rel="noopener noreferrer" class="res-card" data-category="grammar" data-keywords="cambridge grammar conjunctions bağlaçlar zaman sentences syntax">
+      <div>
+        <div class="res-header">
+          <span class="res-title">Cambridge Grammar: Conjunctions</span>
+          <span class="tag-badge tag-grammar">Bağlaçlar</span>
+        </div>
+        <p class="res-desc">
+          Zaman bağlaçları (when, while, until vb.), yan tümce yapıları ve akademik metinlerde mantıksal geçiş kuralları.
+        </p>
       </div>
-      <p class="res-desc">
-        Zaman bağlaçları (when, while, as soon as, until vb.), yan tümce yapıları ve akademik metinlerde mantıksal geçiş kuralları.
-      </p>
-    </div>
-    <div class="res-footer">Kılavuzu Oku ↗</div>
-  </a>
+      <div class="res-footer">Kılavuzu Oku ↗</div>
+    </a>
 
-  <a href="https://www.engvid.com/english-resource/verbs-followed-by-gerunds-and-infinitives/" target="_blank" rel="noopener noreferrer" class="res-card">
-    <div>
-      <div class="res-header">
-        <span class="res-title">EngVid: Gerunds & Infinitives Table</span>
-        <span class="tag-badge tag-grammar">Fiil Yapıları</span>
+    <a href="https://www.engvid.com/english-resource/verbs-followed-by-gerunds-and-infinitives/" target="_blank" rel="noopener noreferrer" class="res-card" data-category="grammar" data-keywords="gerund infinitive engvid fiiller verb structures ing to">
+      <div>
+        <div class="res-header">
+          <span class="res-title">EngVid: Gerunds & Infinitives Table</span>
+          <span class="tag-badge tag-grammar">Fiil Yapıları</span>
+        </div>
+        <p class="res-desc">
+          Hangi fiillerin ardından "-ing", hangilerinin ardından "to + verb" geldiğini listeleyen referans tablosu.
+        </p>
       </div>
-      <p class="res-desc">
-        Hangi fiillerin ardından "-ing", hangilerinin ardından "to + verb" geldiğini örnek cümlelerle özetleyen pratik referans tablosu.
-      </p>
-    </div>
-    <div class="res-footer">Tabloyu İncele ↗</div>
-  </a>
+      <div class="res-footer">Tabloyu İncele ↗</div>
+    </a>
 
-  <a href="https://www.ef.com/wwen/english-resources/english-grammar/pick-right-quantifier/" target="_blank" rel="noopener noreferrer" class="res-card">
-    <div>
-      <div class="res-header">
-        <span class="res-title">EF English: Pick the Right Quantifier</span>
-        <span class="tag-badge tag-grammar">Miktar Belirteçleri</span>
+    <a href="https://www.ef.com/wwen/english-resources/english-grammar/pick-right-quantifier/" target="_blank" rel="noopener noreferrer" class="res-card" data-category="grammar" data-keywords="ef quantifiers miktar belirteçleri much many few little sayılabilen">
+      <div>
+        <div class="res-header">
+          <span class="res-title">EF English: Quantifiers</span>
+          <span class="tag-badge tag-grammar">Miktar Belirteçleri</span>
+        </div>
+        <p class="res-desc">
+          Much/many, few/little, some/any gibi sayılabilen ve sayılamayan isimlerle kullanılan belirteçlerin kuralları.
+        </p>
       </div>
-      <p class="res-desc">
-        Much/many, few/little, some/any gibi sayılabilen ve sayılamayan isimlerle kullanılan belirteçlerin doğru kullanım prensipleri.
-      </p>
-    </div>
-    <div class="res-footer">Rehbere Git ↗</div>
-  </a>
+      <div class="res-footer">Rehbere Git ↗</div>
+    </a>
 
-  <a href="https://www.englishclub.com/grammar/determiners-quantifiers.php" target="_blank" rel="noopener noreferrer" class="res-card">
-    <div>
-      <div class="res-header">
-        <span class="res-title">EnglishClub: Determiners & Quantifiers</span>
-        <span class="tag-badge tag-grammar">Referans</span>
+    <a href="https://www.englishclub.com/grammar/determiners-quantifiers.php" target="_blank" rel="noopener noreferrer" class="res-card" data-category="grammar" data-keywords="englishclub determiners quantifiers alıştırma test soruları">
+      <div>
+        <div class="res-header">
+          <span class="res-title">EnglishClub: Determiners</span>
+          <span class="tag-badge tag-grammar">Referans</span>
+        </div>
+        <p class="res-desc">
+          İngilizce belirteç sistemine dair sade kurallar, test soruları ve sık yapılan hataların analizi.
+        </p>
       </div>
-      <p class="res-desc">
-        İngilizce belirteç sistemine dair sade kurallar, test soruları ve sık yapılan hataların analizi.
-      </p>
-    </div>
-    <div class="res-footer">Alıştırmaları Gör ↗</div>
-  </a>
+      <div class="res-footer">Alıştırmaları Gör ↗</div>
+    </a>
 
+  </div>
 </div>
 
-<!-- 3. KELİME, DEYİM, KORPUS & ÇEVİRİ SÖZLÜKLERİ -->
-<h2 class="category-title">🔍 Kelime Dağarcığı, Korpus & Çeviri Sözlükleri</h2>
-<div class="resource-grid">
+<!-- 3. KELİME, KORPUS & ÇEVİRİ SÖZLÜKLERİ -->
+<div class="category-section" data-section="corpus">
+  <h2 class="category-title">🔍 Kelime Dağarcığı, Korpus & Çeviri Sözlükleri</h2>
+  <div class="resource-grid">
 
-  <a href="https://www.english-corpora.org/coca/" target="_blank" rel="noopener noreferrer" class="res-card">
-    <div>
-      <div class="res-header">
-        <span class="res-title">COCA (Corpus of Contemporary American English)</span>
-        <span class="tag-badge tag-corpus">Akademik Korpus</span>
+    <a href="https://www.english-corpora.org/coca/" target="_blank" rel="noopener noreferrer" class="res-card" data-category="corpus" data-keywords="coca corpus american english akademik dilbilim derlem eşdizim frekans">
+      <div>
+        <div class="res-header">
+          <span class="res-title">COCA (Corpus of Contemporary American)</span>
+          <span class="tag-badge tag-corpus">Akademik Korpus</span>
+        </div>
+        <p class="res-desc">
+          1 milyardan fazla kelimeden oluşan, sözcük sıklığı ve akademik eşdizimleri incelemek için kapsamlı korpus veri tabanı.
+        </p>
       </div>
-      <p class="res-desc">
-        1 milyardan fazla kelimeden oluşan, sözcük sıklığı (frequency), türsel dağılım ve akademik metin eşdizimlerini incelemek için en güçlü dilbilimsel korpus veri tabanı.
-      </p>
-    </div>
-    <div class="res-footer">Korpusu İncele ↗</div>
-  </a>
+      <div class="res-footer">Korpusu İncele ↗</div>
+    </a>
 
-  <a href="https://sentencedict.com/" target="_blank" rel="noopener noreferrer" class="res-card">
-    <div>
-      <div class="res-header">
-        <span class="res-title">SentenceDict (Örnek Cümle Motoru)</span>
-        <span class="tag-badge tag-context">Bağlamsal Kullanım</span>
+    <a href="https://sentencedict.com/" target="_blank" rel="noopener noreferrer" class="res-card" data-category="corpus" data-keywords="sentencedict cümle arama örnek cümle bağlam context">
+      <div>
+        <div class="res-header">
+          <span class="res-title">SentenceDict (Örnek Cümle Motoru)</span>
+          <span class="tag-badge tag-context">Bağlamsal Kullanım</span>
+        </div>
+        <p class="res-desc">
+          Aradığınız kelimenin gerçek metinler içindeki farklı seviyelerdeki cümle kalıplarını listeleyen arama aracı.
+        </p>
       </div>
-      <p class="res-desc">
-        Aradığınız herhangi bir İngilizce kelimenin gerçek metinler içindeki farklı seviyelerdeki kullanım biçimlerini ve cümle kalıplarını listeleyen pratik arama aracı.
-      </p>
-    </div>
-    <div class="res-footer">Cümle Bul ↗</div>
-  </a>
+      <div class="res-footer">Cümle Bul ↗</div>
+    </a>
 
-  <a href="https://dictionary.reverso.net/" target="_blank" rel="noopener noreferrer" class="res-card">
-    <div>
-      <div class="res-header">
-        <span class="res-title">Reverso Context & Dictionary</span>
-        <span class="tag-badge tag-context">Bağlam Çevirisi</span>
+    <a href="https://dictionary.reverso.net/" target="_blank" rel="noopener noreferrer" class="res-card" data-category="corpus" data-keywords="reverso context dictionary çeviri paralel metin sözlük">
+      <div>
+        <div class="res-header">
+          <span class="res-title">Reverso Context & Dictionary</span>
+          <span class="tag-badge tag-context">Bağlam Çevirisi</span>
+        </div>
+        <p class="res-desc">
+          Kelimeleri ve deyimleri milyonlarca iki dilli paralel metin içerisinde aratarak eşdeğerlerini sunan çevirmen aracı.
+        </p>
       </div>
-      <p class="res-desc">
-        Kelimeleri ve deyimleri milyonlarca iki dilli gerçek paralel metin içerisinde aratarak en doğal eşdeğerlerini ve kullanım bağlamlarını sunan çevirmen aracı.
-      </p>
-    </div>
-    <div class="res-footer">Sözlüğü Aç ↗</div>
-  </a>
+      <div class="res-footer">Sözlüğü Aç ↗</div>
+    </a>
 
-  <a href="https://ozdic.com/" target="_blank" rel="noopener noreferrer" class="res-card">
-    <div>
-      <div class="res-header">
-        <span class="res-title">Ozdic Collocations Dictionary</span>
-        <span class="tag-badge tag-vocab">Çevirmen Başucu</span>
+    <a href="https://ozdic.com/" target="_blank" rel="noopener noreferrer" class="res-card" data-category="corpus" data-keywords="ozdic collocations eşdizim sözlük preposition fiil tamlama">
+      <div>
+        <div class="res-header">
+          <span class="res-title">Ozdic Collocations Dictionary</span>
+          <span class="tag-badge tag-vocab">Çevirmen Başucu</span>
+        </div>
+        <p class="res-desc">
+          Kelimelerin hangi edat ve sıfatlarla doğal eşleştiğini gösteren başucu eşdizim sözlüğü.
+        </p>
       </div>
-      <p class="res-desc">
-        Kelimelerin ana dili İngilizce olanlar tarafından hangi edat ve sıfatlarla doğal şekilde eşleştiğini (make a decision vs do a decision) gösteren vazgeçilmez eşdizim sözlüğü.
-      </p>
-    </div>
-    <div class="res-footer">Sözlüğü Aç ↗</div>
-  </a>
+      <div class="res-footer">Sözlüğü Aç ↗</div>
+    </a>
 
-  <a href="https://www.vocabulary.com/" target="_blank" rel="noopener noreferrer" class="res-card">
-    <div>
-      <div class="res-header">
-        <span class="res-title">Vocabulary.com</span>
-        <span class="tag-badge tag-vocab">İleri Düzey Kelime</span>
+    <a href="https://glosbe.com/" target="_blank" rel="noopener noreferrer" class="res-card" data-category="corpus" data-keywords="glosbe çok dilli bellek translation memory paralel corpus">
+      <div>
+        <div class="res-header">
+          <span class="res-title">Glosbe Çok Dilli Paralel Bellek</span>
+          <span class="tag-badge tag-corpus">Paralel Metinler</span>
+        </div>
+        <p class="res-desc">
+          Milyarlarca gerçek çeviri cümlesini bağlamıyla inceleyebileceğiniz zengin paralel korpus sözlüğü.
+        </p>
       </div>
-      <p class="res-desc">
-        Kelimeleri ezberletmek yerine bağlam içi anlamlarını öğreten, akıllı alıştırma döngülerine sahip akademik kelime öğrenme motoru.
-      </p>
-    </div>
-    <div class="res-footer">Kelime Çalış ↗</div>
-  </a>
+      <div class="res-footer">Glosbe'yi Aç ↗</div>
+    </a>
 
-  <a href="https://glosbe.com/" target="_blank" rel="noopener noreferrer" class="res-card">
-    <div>
-      <div class="res-header">
-        <span class="res-title">Glosbe Çok Dilli Paralel Bellek</span>
-        <span class="tag-badge tag-corpus">Paralel Metinler</span>
-      </div>
-      <p class="res-desc">
-        Milyarlarca gerçek çeviri cümlesini bağlamıyla inceleyebileceğiniz, terim ve kalıp çevirilerinde çevirmenler ve araştırmacılar için zengin paralel korpus sözlüğü.
-      </p>
-    </div>
-    <div class="res-footer">Glosbe'yi Aç ↗</div>
-  </a>
-
-  <a href="https://www.thefreedictionary.com/" target="_blank" rel="noopener noreferrer" class="res-card">
-    <div>
-      <div class="res-header">
-        <span class="res-title">The Free Dictionary (Farlex)</span>
-        <span class="tag-badge tag-vocab">Kapsamlı Sözlük</span>
-      </div>
-      <p class="res-desc">
-        Genel İngilizce tanımlarının yanı sıra tıp, hukuk, finans ve bilişim gibi özel alan terimlerini, deyimleri ve kısaltmaları tek çatı altında toplayan devasa referans portalı.
-      </p>
-    </div>
-    <div class="res-footer">Sözlüğü Aç ↗</div>
-  </a>
-
-  <a href="https://www.eslcafe.com/resources/idioms" target="_blank" rel="noopener noreferrer" class="res-card">
-    <div>
-      <div class="res-header">
-        <span class="res-title">Dave's ESL Cafe: Idioms Archive</span>
-        <span class="tag-badge tag-vocab">Deyimler & Kalıplar</span>
-      </div>
-      <p class="res-desc">
-        Günlük dilde ve metinlerde sıkça karşılaşılan İngilizce deyimleri, gerçek hayattan örnek cümlelerle ve sade açıklamalarla kategorilendiren zengin deyim arşivi.
-      </p>
-    </div>
-    <div class="res-footer">Deyimleri İncele ↗</div>
-  </a>
-
+  </div>
 </div>
 
-<!-- 4. OKUMA PRATİĞİ & SEVİYE TESTLERİ -->
-<h2 class="category-title">📖 Okuma Kavrama & Seviye Testleri</h2>
-<div class="resource-grid">
+<!-- 4. OKUMA PRATİĞİ & TESTLER -->
+<div class="category-section" data-section="reading">
+  <h2 class="category-title">📖 Okuma Kavrama & Seviye Testleri</h2>
+  <div class="resource-grid">
 
-  <a href="https://test-english.com/reading/a1/guess-who-a1-english-reading-test/" target="_blank" rel="noopener noreferrer" class="res-card">
-    <div>
-      <div class="res-header">
-        <span class="res-title">Test-English: A1 Reading Test</span>
-        <span class="tag-badge tag-reading">Seviye Testi</span>
+    <a href="https://test-english.com/reading/a1/guess-who-a1-english-reading-test/" target="_blank" rel="noopener noreferrer" class="res-card" data-category="reading" data-keywords="test english reading a1 okuma kavrama seviye sınavı">
+      <div>
+        <div class="res-header">
+          <span class="res-title">Test-English: A1 Reading Test</span>
+          <span class="tag-badge tag-reading">Seviye Testi</span>
+        </div>
+        <p class="res-desc">
+          Temel seviye okuma metinleri ve anında puanlama yapan etkileşimli kavrama alıştırmaları.
+        </p>
       </div>
-      <p class="res-desc">
-        Temel seviye (A1) okuma metinleri, ipuçları ve anında puanlama yapan etkileşimli kavrama soruları.
-      </p>
-    </div>
-    <div class="res-footer">Testi Çöz ↗</div>
-  </a>
+      <div class="res-footer">Testi Çöz ↗</div>
+    </a>
 
-  <a href="https://lingua.com/english/reading/wonderful-family/" target="_blank" rel="noopener noreferrer" class="res-card">
-    <div>
-      <div class="res-header">
-        <span class="res-title">Lingua: English Reading Practice</span>
-        <span class="tag-badge tag-reading">Metin Okuma</span>
+    <a href="https://lingua.com/english/reading/wonderful-family/" target="_blank" rel="noopener noreferrer" class="res-card" data-category="reading" data-keywords="lingua reading practice metin okuma parça sorular">
+      <div>
+        <div class="res-header">
+          <span class="res-title">Lingua: English Reading Practice</span>
+          <span class="tag-badge tag-reading">Metin Okuma</span>
+        </div>
+        <p class="res-desc">
+          Farklı zorluk derecelerinde kısa öyküler, makaleler ve metin değerlendirme soruları.
+        </p>
       </div>
-      <p class="res-desc">
-        Farklı zorluk derecelerinde kısa öyküler, makaleler ve metin altı değerlendirme soruları.
-      </p>
-    </div>
-    <div class="res-footer">Metinleri Oku ↗</div>
-  </a>
+      <div class="res-footer">Metinleri Oku ↗</div>
+    </a>
 
+  </div>
 </div>
+
+<!-- ANINDA FİLTRELEME VE ARAMA JAVASCRIPT KODU -->
+<script>
+  (function() {
+    const searchInput = document.getElementById('resourceSearch');
+    const chipBtns = document.querySelectorAll('.chip-btn');
+    const cards = document.querySelectorAll('.res-card');
+    const sections = document.querySelectorAll('.category-section');
+    const noResults = document.getElementById('no-results-msg');
+
+    let activeCategory = 'all';
+
+    function filterResources() {
+      const query = searchInput.value.toLowerCase().trim();
+      let visibleTotal = 0;
+
+      sections.forEach(sec => {
+        let sectionVisibleCount = 0;
+        const secCards = sec.querySelectorAll('.res-card');
+
+        secCards.forEach(card => {
+          const cat = card.getAttribute('data-category');
+          const keywords = (card.getAttribute('data-keywords') || '').toLowerCase();
+          const text = card.textContent.toLowerCase();
+
+          const matchesCat = (activeCategory === 'all' || cat === activeCategory);
+          const matchesQuery = (query === '' || text.includes(query) || keywords.includes(query));
+
+          if (matchesCat && matchesQuery) {
+            card.style.display = 'flex';
+            sectionVisibleCount++;
+            visibleTotal++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Başlık altında kart kalmadıysa kategori başlığını gizle
+        sec.style.display = sectionVisibleCount > 0 ? 'block' : 'none';
+      });
+
+      noResults.style.display = visibleTotal === 0 ? 'block' : 'none';
+    }
+
+    searchInput.addEventListener('input', filterResources);
+
+    chipBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        chipBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeCategory = btn.getAttribute('data-category');
+        filterResources();
+      });
+    });
+  })();
+</script>
