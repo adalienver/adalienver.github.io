@@ -1,52 +1,52 @@
-<!-- LITERARY VOICES & DRAMATIC TEXTS -->
+---
+layout: default
+title: Edebi Seçki
+permalink: /edebiyat/
+---
 
 <!-- 1. The Tempest & Brave New World -->
-<div class="card" style="background: #fdfdfd; border-left: 5px solid #15325b;">
-  <h2 style="font-family: 'Cinzel', serif; border: none; margin-bottom: 1rem;">1. Shakespeare & Huxley: <em>The Tempest</em></h2>
+<div class="card" style="border-left: 4px solid var(--primary);">
+  <h2 style="font-size: 1.35rem; margin-bottom: 0.75rem;">1. Shakespeare & Huxley: <em>The Tempest</em></h2>
   
-  <blockquote style="font-size: 1.1rem; line-height: 1.6; font-style: italic; color: #1a202c; border-left: 3px solid var(--primary); padding-left: 1.25rem; margin: 1rem 0;">
+  <blockquote style="font-size: 1.05rem; line-height: 1.6; font-style: italic; color: #1e293b; border-left: 3px solid var(--primary); padding-left: 1rem; margin: 1rem 0;">
     "O, wonder!<br>
     How many goodly creatures are there here!<br>
     How beauteous mankind is! O brave new world,<br>
     That has such people in't!"
-    <footer style="font-size: 0.85rem; margin-top: 0.4rem; color: var(--muted); font-style: normal;">— Act 5, Scene 1</footer>
+    <footer style="font-size: 0.85rem; margin-top: 0.4rem; color: var(--muted); font-style: normal;">— William Shakespeare, <em>The Tempest</em> (Act 5, Scene 1)</footer>
   </blockquote>
 
-  <p style="font-size: 0.95rem; line-height: 1.7; color: #374151;">
-    Upon seeing other humans for the first time, Miranda utters these words in pure, sheltered wonder.  In Huxley’s <em>Brave New World</em>, John the Savage mirrors her words, and it to transform into a deep sense of disgust as the superficial and artificial nature of the World State
+  <p style="font-size: 0.95rem; line-height: 1.7; color: #374151; margin-top: 0.8rem;">
+    Miranda, ilk kez başka insanlarla karşılaştığında bu sözleri saf bir hayranlıkla dile getirir. Aldous Huxley’nin <em>Brave New World</em> distopyasında ise Vahşi John (John the Savage) bu dizeyi alıntılar; ancak onun dilinde bu hayranlık, yapay ve mekanik Yeni Dünya Düzeni'ne duyulan derin bir tiksintiye dönüşür.
   </p>
 </div>
 
 <!-- 2. Macbeth -->
-<div class="card" style="background: #fdfdfd; border-left: 5px solid #7c2d12;">
-  <h2 style="font-family: 'Cinzel', serif; border: none; margin-bottom: 1rem;">2. Shakespeare: <em>Macbeth</em></h2>
+<div class="card" style="border-left: 4px solid #7c2d12;">
+  <h2 style="font-size: 1.35rem; margin-bottom: 0.75rem;">2. Shakespeare: <em>Macbeth</em></h2>
 
-  <p style="font-size: 0.95rem; color: #4b5563; margin-bottom: 1rem; font-style: italic;">
-    The eerie opening scene immediately overturns the moral order, setting a dark, stormy stage where nothing is quite what it seems.
-  </p>
-
-  <blockquote style="font-size: 1rem; line-height: 1.7; font-style: italic; color: #1a202c; border-left: 3px solid #7c2d12; padding-left: 1.25rem; margin: 1rem 0;">
+  <blockquote style="font-size: 1rem; line-height: 1.7; font-style: italic; color: #1e293b; border-left: 3px solid #7c2d12; padding-left: 1rem; margin: 1rem 0;">
     <strong>First Witch:</strong> When shall we three meet again?<br>
     In thunder, lightning, or in rain?<br>
     <strong>Second Witch:</strong> When the hurly-burly's done,<br>
     When the battle's lost and won.<br>
     <strong>Third Witch:</strong> That will be ere the set of sun.<br>
-    <strong>First Witch:</strong> Where the place?<br>
-    <strong>Second Witch:</strong> Upon the heath.<br>
-    <strong>Third Witch:</strong> There to meet with Macbeth.<br>
-    <span style="display: block; margin-top: 0.5rem; font-weight: 600;">(Act 1, Scene 1)</span>
     <br>
     "Fair is foul, and foul is fair:<br>
-    Hover through the fog and filthy air."<br>
-    <span style="display: block; margin-top: 0.3rem; font-weight: 600;">(Witches, Act 1, Scene 1)</span>
+    Hover through the fog and filthy air."
+    <footer style="font-size: 0.85rem; margin-top: 0.4rem; color: var(--muted); font-style: normal;">— Act 1, Scene 1</footer>
   </blockquote>
+
+  <p style="font-size: 0.95rem; line-height: 1.7; color: #374151; margin-top: 0.8rem;">
+    Cadıların sis ve fırtına içindeki tekinsiz açılışı, ahlaki ve ontolojik düzenin tersyüz oluşunu müjdeler: İyilik kötülüğe, kötülük ise görünürdeki düzene bürünür.
+  </p>
 </div>
 
 <!-- 3. Epic of Gilgamesh -->
-<div class="card" style="background: #fdfdfd; border-left: 5px solid #92400e;">
-  <h2 style="font-family: 'Cinzel', serif; border: none; margin-bottom: 1rem;">3. Humanıty's Earlıest Quest: <em>The Epıc of Gılgamesh</em></h2>
+<div class="card" style="border-left: 4px solid #92400e;">
+  <h2 style="font-size: 1.35rem; margin-bottom: 0.75rem;">3. İnsanlığın Kadim Arayışı: <em>The Epic of Gilgamesh</em></h2>
 
-  <blockquote style="font-size: 1.05rem; line-height: 1.7; font-style: italic; color: #1a202c; border-left: 3px solid #92400e; padding-left: 1.25rem; margin: 1rem 0;">
+  <blockquote style="font-size: 1.02rem; line-height: 1.7; font-style: italic; color: #1e293b; border-left: 3px solid #92400e; padding-left: 1rem; margin: 1rem 0;">
     "Gilgamesh, where are you hurrying to?<br>
     You will never find that life for which you are looking.<br>
     When the gods created man they allotted to him death, but life they retained in their own keeping.<br>
@@ -55,53 +55,47 @@
     Let your clothes be fresh, bathe yourself in water,<br>
     Cherish the little child that holds your hand, and make your wife happy in your embrace;<br>
     For this too is the lot of man."
-    <footer style="font-size: 0.85rem; margin-top: 0.4rem; color: var(--muted); font-style: normal;">— Tablet X, Siduri's Counsel</footer>
+    <footer style="font-size: 0.85rem; margin-top: 0.4rem; color: var(--muted); font-style: normal;">— Tablet X, Siduri'nin Öğüdü</footer>
   </blockquote>
 
-  <p style="font-size: 0.95rem; line-height: 1.7; color: #374151;">
-    Siduri offers simple, compassionate wisdom to a grieving king: abandon the impossible hunt for immortality, and instead embrace the warmth, family, and fragile joys of ordinary human life.
+  <p style="font-size: 0.95rem; line-height: 1.7; color: #374151; margin-top: 0.8rem;">
+    Ölümsüzlük peşinde kederle koşan Gılgamış'a Siduri'nin çağrısı nettir: İmkânsız olan tanrısal ölümsüzlüğü terk edip sıradan insan yaşamının sıcaklığına, aileye ve anın kıymetine dönmek.
   </p>
 </div>
 
 <!-- 4. Ferhan Şensoy - Şahları da Vururlar -->
-<div class="card" style="background: #fdfdfd; border-left: 5px solid #1e6b47;">
-  <h2 style="font-family: 'Cinzel', serif; border: none; margin-bottom: 1rem;">4. Türk Tiyatrosu: Ferhan Şensoy — <em>Şahları da Vururlar</em></h2>
+<div class="card" style="border-left: 4px solid #166534;">
+  <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: gap; gap: 0.5rem; margin-bottom: 0.75rem;">
+    <h2 style="font-size: 1.35rem; margin: 0;">4. Ferhan Şensoy — <em>Şahları da Vururlar</em></h2>
+    <a href="https://www.youtube.com/watch?v=g-LI8Jx7lrA" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; color: #166534; font-weight: 600; text-decoration: underline;">
+      YouTube Sahnesi ↗
+    </a>
+  </div>
 
-  <p style="font-size: 0.95rem; color: #4b5563; margin-bottom: 1rem;">
-    <strong>I. / KABARE FASIL. NASIL? ÇOK SAÇMA</strong><br>
-    <em>.- Gibi yapanlar, kadınlı erkekli kara çarşafa bürünmüşler, bir köşede kümelenmişlerdir ki en beklemedikleri anda ışık yanar, kabare fasıl başlar.-</em>
+  <p style="font-size: 0.95rem; color: #4b5563; margin-bottom: 1.25rem;">
+    <strong>I. / Kabare Fasıl: Çok Saçma</strong><br>
+    <em>«Gibi yapanlar, kadınlı erkekli kara çarşafa bürünmüşler, bir köşede kümelenmişlerdir ki en beklemedikleri anda ışık yanar, kabare fasıl başlar.»</em>
   </p>
-  <!-- Video Fragman Bağlantısı -->
- <div style="margin-top: 1.5rem;">
-    <div style="margin-bottom: 0.6rem; display: flex; align-items: center; justify-content: space-between;">
-      <strong style="color: #166534; font-size: 0.95rem;">🎬 Oyun Kaydı & Sahne Kesiti</strong>
-      <a href="https://www.youtube.com/watch?v=g-LI8Jx7lrA" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; color: #1e6b47; font-weight: 600; text-decoration: underline;">
-        YouTube'da Aç ↗
-      </a>
-    </div>
 
-    <!-- Spotify Oynatıcı -->
-<div style="margin: 1.5rem 0; width: 100%;">
-  <iframe 
-    data-testid="embed-iframe" 
-    style="border-radius: 12px; display: block;" 
-    src="https://open.spotify.com/embed/episode/0vWidpx294iiN22lXiKXlX?utm_source=generator&si=54e8038a87a14803" 
-    width="100%" 
-    height="352" 
-    frameBorder="0" 
-    allowfullscreen="" 
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-    loading="lazy">
-  </iframe>
-  <!-- Metin / Sahne Görselleri -->
-<div style="display: flex; flex-direction: column; gap: 16px; margin-top: 20px;">
-  <img src="{{ '/assets/2.png' | relative_url }}" alt="Sahne Bölüm 2" style="width: 100%; border-radius: 8px;" />
-  <img src="{{ '/assets/3.png' | relative_url }}" alt="Sahne Bölüm 3" style="width: 100%; border-radius: 8px;" />
-  <img src="{{ '/assets/4.png' | relative_url }}" alt="Sahne Bölüm 4" style="width: 100%; border-radius: 8px;" />
-  <img src="{{ '/assets/5.png' | relative_url }}" alt="Sahne Bölüm 5" style="width: 100%; border-radius: 8px;" />
+  <!-- Spotify Oynatıcı -->
+  <div style="margin: 1.5rem 0;">
+    <iframe 
+      data-testid="embed-iframe" 
+      style="border-radius: 12px; display: block; border: 0;" 
+      src="https://open.spotify.com/embed/episode/0vWidpx294iiN22lXiKXlX?utm_source=generator&si=54e8038a87a14803" 
+      width="100%" 
+      height="152" 
+      allowfullscreen="" 
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <!-- Sahne / Metin Görselleri (Sade Dikey Akış) -->
+  <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 1.5rem;">
+    <img src="{{ '/assets/2.png' | relative_url }}" alt="Sahne Bölüm 2" style="width: 100%; border-radius: 8px; border: 1px solid var(--border);" loading="lazy" />
+    <img src="{{ '/assets/3.png' | relative_url }}" alt="Sahne Bölüm 3" style="width: 100%; border-radius: 8px; border: 1px solid var(--border);" loading="lazy" />
+    <img src="{{ '/assets/4.png' | relative_url }}" alt="Sahne Bölüm 4" style="width: 100%; border-radius: 8px; border: 1px solid var(--border);" loading="lazy" />
+    <img src="{{ '/assets/5.png' | relative_url }}" alt="Sahne Bölüm 5" style="width: 100%; border-radius: 8px; border: 1px solid var(--border);" loading="lazy" />
+  </div>
 </div>
-
-
-
-</div>
-  
