@@ -1,15 +1,394 @@
-<nav class="academic-nav">
-  <a href="{{ '/' | relative_url }}" class="nav-brand-box">
-    <div class="brand-monogram">EA</div>
-    <div class="brand-text-group">
-      <span class="brand-name">ENVER ADALI</span>
-      <span class="brand-sub">Translation & Literature</span>
-    </div>
-  </a>
-  <div class="nav-links">
-    <a href="{{ '/' | relative_url }}">Ana Sayfa</a>
-    <a href="{{ '/kaynaklar' | relative_url }}">İngilizce Kaynaklar</a>
-    <a href="javascript:void(0)" onclick="openContactModal()">İletişim</a>
-    <a href="{{ '/edebiyat' | relative_url }}">Edebi Seçki</a>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --card: rgba(255, 255, 255, 0.9);
+      --primary: #15325b;
+      --accent: #1e6b47;
+      --text: #1f2937;
+      --muted: #64748b;
+      --border: rgba(226, 232, 240, 0.8);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    #bg-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text);
+      line-height: 1.75;
+      padding: 0 1rem 4rem;
+      min-height: 100vh;
+      background: transparent;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ÜST MENÜ & EA MONOGRAM ROZET */
+    nav.academic-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      margin-bottom: 2rem;
+    }
+
+    .nav-brand-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none !important;
+      transition: transform 0.2s ease;
+    }
+    .nav-brand-box:hover {
+      transform: translateY(-1px);
+    }
+
+    .brand-monogram {
+      width: 42px;
+      height: 42px;
+      background: linear-gradient(135deg, #15325b 0%, #1e6b47 100%);
+      color: #f8fafc;
+      font-family: 'Cinzel', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 9px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      box-shadow: 0 4px 12px rgba(21, 50, 91, 0.16);
+      letter-spacing: 1.5px;
+      user-select: none;
+    }
+
+    .brand-text-group {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.15;
+    }
+
+    .brand-name {
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--primary);
+      letter-spacing: 1.2px;
+    }
+
+    .brand-sub {
+      font-size: 0.72rem;
+      font-family: 'Inter', sans-serif;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.25rem;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--muted) !important;
+      font-weight: 500;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+    .nav-links a:hover {
+      color: var(--primary) !important;
+    }
+
+    /* KARTLAR */
+    .card, .res-card {
+      background: var(--card) !important;
+      border: 1px solid rgba(255, 255, 255, 0.9) !important;
+      backdrop-filter: blur(12px) !important;
+      -webkit-backdrop-filter: blur(12px) !important;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px -8px rgba(35, 45, 60, 0.06);
+    }
+    .card {
+      padding: 2.25rem;
+      margin-bottom: 2rem;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Lora', serif;
+      color: var(--primary);
+    }
+
+    .abstract-quote {
+      background: rgba(247, 250, 248, 0.85);
+      border-left: 4px solid var(--accent);
+      padding: 1.25rem 1.4rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1.25rem 0;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .btn-linkedin {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #0077b5;
+      color: #ffffff !important;
+      padding: 0.5rem 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-top: 0.5rem;
+    }
+
+    .portal-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      margin-top: 1rem;
+    }
+    .portal-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.2rem;
+      background: rgba(250, 251, 252, 0.85);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--text) !important;
+    }
+    .portal-item:hover {
+      background: #ffffff;
+      border-color: var(--primary);
+    }
+    .portal-item strong { color: var(--primary); }
+    .portal-tag {
+      font-size: 0.8rem;
+      color: var(--muted);
+      background: #edf2f7;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    /* MODAL */
+    .contact-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 10000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+    .contact-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.45);
+      backdrop-filter: blur(4px);
+    }
+    .contact-modal-card {
+      position: relative;
+      background: #ffffff;
+      width: 100%;
+      max-width: 540px;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+      z-index: 10001;
+      text-align: left;
+    }
+    .modal-close {
+      position: absolute;
+      top: 14px;
+      right: 16px;
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: #94a3b8;
+    }
+    .service-option {
+      display: block;
+      text-decoration: none;
+      border-radius: 10px;
+      padding: 12px 14px;
+      margin-bottom: 10px;
+      transition: all 0.2s ease;
+      border: 1px solid #e2e8f0;
+    }
+    .service-option.free { background: #f0fdf4; border-color: #bbf7d0; }
+    .service-option.free:hover { background: #dcfce7; }
+    .service-option.paid { background: #f8fafc; border-color: #e2e8f0; }
+    .service-option.paid:hover { background: #f1f5f9; }
+    .badge-free { font-size: 0.72rem; font-weight: 700; color: #166534; text-transform: uppercase; }
+    .badge-paid { font-size: 0.72rem; font-weight: 700; color: #475569; text-transform: uppercase; }
+    .option-title { font-size: 0.95rem; font-weight: 600; color: #0f172a; margin: 4px 0; }
+    .option-desc { font-size: 0.82rem; color: #64748b; line-height: 1.4; }
+  </style>
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+
+  <div class="container">
+    <nav class="academic-nav">
+      <a href="{{ '/' | relative_url }}" class="nav-brand-box">
+        <div class="brand-monogram">EA</div>
+        <div class="brand-text-group">
+          <span class="brand-name">ENVER ADALI</span>
+          <span class="brand-sub">Translation & Literature</span>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="{{ '/' | relative_url }}">Ana Sayfa</a>
+        <a href="{{ '/kaynaklar' | relative_url }}">İngilizce Kaynaklar</a>
+        <a href="javascript:void(0)" onclick="openContactModal()">İletişim</a>
+        <a href="{{ '/edebiyat' | relative_url }}">Edebi Seçki</a>
+      </div>
+    </nav>
+
+    {{ content }}
+
+    <footer>
+      <p>© {{ 'now' | date: "%Y" }} {{ site.title }} • İstanbul Beykent Üniversitesi Mezunu</p>
+    </footer>
   </div>
-</nav>
+
+  <div id="contactModal" class="contact-modal" style="display: none;">
+    <div class="contact-modal-backdrop" onclick="closeContactModal()"></div>
+    <div class="contact-modal-card">
+      <button class="modal-close" onclick="closeContactModal()">&times;</button>
+      <h3 style="margin-top: 0; color: #1e293b; font-size: 1.25rem;">İletişim & Hizmet Talebi</h3>
+      <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 16px;">
+        İlgilendiğiniz alana tıklayarak doğrudan e-posta taslağı oluşturabilirsiniz:
+      </p>
+
+      <a href="mailto:{{ site.email }}?subject=Ücretsiz%20Eğitim%20Talebi%20(Trados%20/%20Subtitle%20Edit)&body=Merhaba,%0D%0A%0D%0AMütercim-Tercümanlık%20dayanışması%20kapsamındaki%20Trados%20SDL%20Studio%20/%20Subtitle%20Edit%20eğitimine%20katılmak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AÜniversite/Bölüm:%20" class="service-option free">
+        <div class="badge-free">Ücretsiz (Öğrenci & Mezun Dayanışması)</div>
+        <div class="option-title">🎧 SDL Trados Studio & Subtitle Edit Eğitimi</div>
+        <div class="option-desc">Çeviribilim ve mütercim-tercümanlık öğrencileri/mezunları için Zoom üzerinden ücretsiz yazılım eğitimleri.</div>
+      </a>
+
+      <a href="mailto:{{ site.email }}?subject=Tez%20Formatlama%20Talebi%20(Word)&body=Merhaba,%0D%0A%0D%0AYüksek%20Lisans%20/%20Doktora%20tezim%20için%20üniversite%20enstitü%20kılavuzuna%20uygun%20Word%20şablonu%20ve%20formatlama%20desteği%20almak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AÜniversite/Enstitü:%20%0D%0ASayfa%20Sayısı:%20" class="service-option paid">
+        <div class="badge-paid">Ücretli Hizmet</div>
+        <div class="option-title">📄 Tez Word Şablonu & Formatlama</div>
+        <div class="option-desc">Tezli Yüksek Lisans ve Doktora tezleri için üniversite yazım kılavuzlarına tam uyumlu profesyonel Word dosyası hazırlama.</div>
+      </a>
+
+      <a href="mailto:{{ site.email }}?subject=Web%20Sitesi%20Kurulum%20Talebi&body=Merhaba,%0D%0A%0D%0APortfolyo%20/%20Akademik%20tanıtım%20için%20web%20sitesi%20kurulumu%20hakkında%20bilgi%20almak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AIstediğim%20Site%20Türü:%20" class="service-option paid">
+        <div class="badge-paid">Ücretli Hizmet</div>
+        <div class="option-title">🌐 Kişisel / Akademik Web Sitesi Kurulumu</div>
+        <div class="option-desc">Akademisyenler, çevirmenler ve bireysel kullanım için modern portfolyo ve tanıtım sitesi kurulumu.</div>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      const canvas = document.getElementById('bg-canvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+
+      let w, h;
+      function resize() {
+        w = canvas.width = window.innerWidth;
+        h = canvas.height = window.innerHeight;
+      }
+      window.addEventListener('resize', resize);
+      resize();
+
+      let t = 0;
+      function render() {
+        t += 0.0035;
+        ctx.fillStyle = '#f8f5ee';
+        ctx.fillRect(0, 0, w, h);
+
+        const x1 = w * (0.3 + Math.sin(t * 0.9) * 0.2);
+        const y1 = h * (0.3 + Math.cos(t * 0.7) * 0.2);
+        const g1 = ctx.createRadialGradient(x1, y1, 20, x1, y1, w * 0.55);
+        g1.addColorStop(0, 'rgba(165, 42, 42, 0.09)');
+        g1.addColorStop(1, 'rgba(165, 42, 42, 0)');
+        ctx.fillStyle = g1;
+        ctx.fillRect(0, 0, w, h);
+
+        const x2 = w * (0.7 + Math.cos(t * 0.8) * 0.2);
+        const y2 = h * (0.7 + Math.sin(t * 1.1) * 0.2);
+        const g2 = ctx.createRadialGradient(x2, y2, 20, x2, y2, w * 0.55);
+        g2.addColorStop(0, 'rgba(30, 80, 50, 0.09)');
+        g2.addColorStop(1, 'rgba(30, 80, 50, 0)');
+        ctx.fillStyle = g2;
+        ctx.fillRect(0, 0, w, h);
+
+        ctx.lineWidth = 1.2;
+        for (let i = 0; i < 4; i++) {
+          ctx.beginPath();
+          ctx.strokeStyle = i % 2 === 0 ? 'rgba(180, 140, 60, 0.15)' : 'rgba(30, 70, 50, 0.12)';
+          const yBase = h * (0.15 + i * 0.22);
+          for (let x = 0; x <= w; x += 25) {
+            const y = yBase + Math.sin(x * 0.003 + t * 2 + i) * 35 + Math.cos(x * 0.001 - t + i) * 20;
+            if (x === 0) ctx.moveTo(x, y);
+            else ctx.lineTo(x, y);
+          }
+          ctx.stroke();
+        }
+
+        requestAnimationFrame(render);
+      }
+      render();
+    })();
+
+    function openContactModal() {
+      var modal = document.getElementById('contactModal');
+      if (modal) {
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+      }
+    }
+    function closeContactModal() {
+      var modal = document.getElementById('contactModal');
+      if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+    }
+  </script>
+</body>
+</html>
