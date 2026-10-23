@@ -17,7 +17,7 @@ permalink: /edebiyat/
   </blockquote>
 
   <p style="font-size: 0.95rem; line-height: 1.7; color: #374151; margin-top: 0.8rem;">
-    Miranda, ilk kez başka insanlarla karşılaştığında bu sözleri saf bir hayranlıkla dile getirir. Aldous Huxley’nin <em>Brave New World</em> distopyasında ise Vahşi John (John the Savage) bu dizeyi alıntılar; ancak onun dilinde bu hayranlık, yapay ve mekanik Yeni Dünya Düzeni'ne duyulan derin bir tiksintiye dönüşür.
+    Miranda, ilk kez başka insanlarla karşılaştığında bu sözleri saf bir hayranlıkla dile getirir. Aldous Huxley’nin <em>Brave New World</em> distopyasında ise Vahşi John (John the Savage) bu dizeyi alıntılar; ancak onun dilinde bu hayranlık, yapay ve mekanik Dünya Devleti'ne duyulan derin bir tiksintiye dönüşür.
   </p>
 </div>
 
@@ -65,7 +65,7 @@ permalink: /edebiyat/
 
 <!-- 4. Ferhan Şensoy - Şahları da Vururlar -->
 <div class="card" style="border-left: 4px solid #166534;">
-  <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: gap; gap: 0.5rem; margin-bottom: 0.75rem;">
+  <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
     <h2 style="font-size: 1.35rem; margin: 0;">4. Ferhan Şensoy — <em>Şahları da Vururlar</em></h2>
     <a href="https://www.youtube.com/watch?v=g-LI8Jx7lrA" target="_blank" rel="noopener noreferrer" style="font-size: 0.85rem; color: #166534; font-weight: 600; text-decoration: underline;">
       YouTube Sahnesi ↗
@@ -78,7 +78,7 @@ permalink: /edebiyat/
   </p>
 
   <!-- Spotify Oynatıcı -->
-  <div style="margin: 1.5rem 0;">
+  <div style="margin: 1.2rem 0;">
     <iframe 
       data-testid="embed-iframe" 
       style="border-radius: 12px; display: block; border: 0;" 
@@ -91,11 +91,33 @@ permalink: /edebiyat/
     </iframe>
   </div>
 
-  <!-- Sahne / Metin Görselleri (Sade Dikey Akış) -->
-  <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 1.5rem;">
-    <img src="{{ '/assets/2.png' | relative_url }}" alt="Sahne Bölüm 2" style="width: 100%; border-radius: 8px; border: 1px solid var(--border);" loading="lazy" />
-    <img src="{{ '/assets/3.png' | relative_url }}" alt="Sahne Bölüm 3" style="width: 100%; border-radius: 8px; border: 1px solid var(--border);" loading="lazy" />
-    <img src="{{ '/assets/4.png' | relative_url }}" alt="Sahne Bölüm 4" style="width: 100%; border-radius: 8px; border: 1px solid var(--border);" loading="lazy" />
-    <img src="{{ '/assets/5.png' | relative_url }}" alt="Sahne Bölüm 5" style="width: 100%; border-radius: 8px; border: 1px solid var(--border);" loading="lazy" />
-  </div>
+  <!-- AKORDİYON SAHNE METİNLERİ GALERİSİ -->
+  <details style="margin-top: 1.5rem; background: #fafafa; border: 1px solid var(--border); border-radius: 10px; padding: 0.85rem 1.1rem; cursor: pointer; transition: all 0.2s ease;">
+    <summary style="font-weight: 600; font-size: 0.95rem; color: #166534; display: flex; align-items: center; justify-content: space-between; user-select: none;">
+      <span>📖 Oyun Metinleri & Sahne Belgelerini İncele (4 Belge)</span>
+      <span style="font-size: 0.8rem; background: #e2e8f0; color: #475569; padding: 0.15rem 0.5rem; border-radius: 4px;">Göster / Gizle</span>
+    </summary>
+    
+    <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 1.2rem; cursor: default;">
+      <div style="border-radius: 8px; overflow: hidden; border: 1px solid var(--border); background: #ffffff;">
+        <div style="padding: 0.4rem 0.8rem; font-size: 0.8rem; font-weight: 600; color: #64748b; background: #f8fafc; border-bottom: 1px solid var(--border);">Bölüm 2</div>
+        <img src="{{ '/assets/2.png' | relative_url }}" alt="Sahne Bölüm 2" style="width: 100%; display: block;" loading="lazy" />
+      </div>
+
+      <div style="border-radius: 8px; overflow: hidden; border: 1px solid var(--border); background: #ffffff;">
+        <div style="padding: 0.4rem 0.8rem; font-size: 0.8rem; font-weight: 600; color: #64748b; background: #f8fafc; border-bottom: 1px solid var(--border);">Bölüm 3</div>
+        <img src="{{ '/assets/3.png' | relative_url }}" alt="Sahne Bölüm 3" style="width: 100%; display: block;" loading="lazy" />
+      </div>
+
+      <div style="border-radius: 8px; overflow: hidden; border: 1px solid var(--border); background: #ffffff;">
+        <div style="padding: 0.4rem 0.8rem; font-size: 0.8rem; font-weight: 600; color: #64748b; background: #f8fafc; border-bottom: 1px solid var(--border);">Bölüm 4</div>
+        <img src="{{ '/assets/4.png' | relative_url }}" alt="Sahne Bölüm 4" style="width: 100%; display: block;" loading="lazy" />
+      </div>
+
+      <div style="border-radius: 8px; overflow: hidden; border: 1px solid var(--border); background: #ffffff;">
+        <div style="padding: 0.4rem 0.8rem; font-size: 0.8rem; font-weight: 600; color: #64748b; background: #f8fafc; border-bottom: 1px solid var(--border);">Bölüm 5</div>
+        <img src="{{ '/assets/5.png' | relative_url }}" alt="Sahne Bölüm 5" style="width: 100%; display: block;" loading="lazy" />
+      </div>
+    </div>
+  </details>
 </div>
