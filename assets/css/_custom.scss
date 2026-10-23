@@ -1,8 +1,53 @@
-body {
-  background-color: #0b1d17; /* Yedek koyu zemin rengi */
-  background-image: url('{{ "/assets/bg-adalienver.svg" | relative_url }}');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+/* EA Monogram Rozet & Başlık Stilleri */
+.nav-brand-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none !important;
+  transition: transform 0.2s ease;
+}
+
+.nav-brand-box:hover {
+  transform: translateY(-1px);
+}
+
+.brand-monogram {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #15325b 0%, #1e6b47 100%);
+  color: #f8fafc;
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow: 0 4px 12px rgba(21, 50, 91, 0.16);
+  letter-spacing: 1.5px;
+  user-select: none;
+}
+
+.brand-text-group {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.brand-name {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 1.08rem;
+  color: var(--primary, #15325b);
+  letter-spacing: 1.2px;
+}
+
+.brand-sub {
+  font-size: 0.72rem;
+  font-family: 'Inter', sans-serif;
+  color: var(--muted, #64748b);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-top: 2px;
 }
