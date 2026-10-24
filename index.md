@@ -10,11 +10,11 @@ title: Ana Sayfa
     Mütercim ve Tercümanlık • İngiliz Dili ve Edebiyatı
   </p>
   <p style="color: var(--muted); font-size: 0.9rem; margin-top: 0.5rem;">
-    İstanbul Beykent Üniversitesi Mezunu
+    İstanbul Beykent Üniversitesi Mezunu enveradali195@gmail.com
   </p>
   <div style="margin-top: 1.5rem;">
     <a href="{{ site.linkedin_url }}" target="_blank" rel="noopener noreferrer" class="btn-linkedin">
-      LinkedIn Profilim ↗
+      LinkedIn Profilim ↗ 
     </a>
   </div>
 </div>
