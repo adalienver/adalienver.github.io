@@ -6,15 +6,20 @@ title: Ana Sayfa
 <!-- PROFİL KARTI -->
 <div class="card" style="text-align: center; border-bottom: 3px solid var(--primary);">
   <h1 style="font-family: 'Cinzel', serif; font-size: 2.5rem; color: var(--primary); margin-bottom: 0.5rem;">Enver Adalı</h1>
-  <p style="color: var(--muted); margin: 0; font-size: 1.1rem; letter-spacing: 1px;">
+  <p style="color: var(--muted); margin: 0; font-size: 1.1rem; letter-spacing: 0.5px;">
     Mütercim ve Tercümanlık • İngiliz Dili ve Edebiyatı
   </p>
-  <p style="color: var(--muted); font-size: 0.9rem; margin-top: 0.5rem;">
-    İstanbul Beykent Üniversitesi Mezunu enveradali195@gmail.com
+  <p style="color: var(--muted); font-size: 0.95rem; margin-top: 0.4rem;">
+    İstanbul Beykent Üniversitesi Mezunu
   </p>
-  <div style="margin-top: 1.5rem;">
-    <a href="{{ site.linkedin_url }}" target="_blank" rel="noopener noreferrer" class="btn-linkedin">
+  
+  <!-- ETKİLEŞİM BUTONLARI (LINKEDIN & E-POSTA) -->
+  <div style="margin-top: 1.5rem; display: flex; justify-content: center; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
+    <a href="{{ site.linkedin_url }}" target="_blank" rel="noopener noreferrer" class="btn-linkedin" style="margin-top: 0;">
       LinkedIn Profilim ↗ 
+    </a>
+    <a href="mailto:enveradali195@gmail.com" class="btn-email" style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(21, 50, 91, 0.08); color: var(--primary) !important; padding: 0.5rem 1.1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 600; border: 1px solid rgba(21, 50, 91, 0.2); transition: all 0.2s ease;">
+      ✉ enveradali195@gmail.com
     </a>
   </div>
 </div>
