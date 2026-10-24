@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>{{ page.title }} | {{ site.title }}</title>
   <meta name="description" content="{{ site.description }}">
 
@@ -21,7 +21,20 @@
       --border: rgba(226, 232, 240, 0.8);
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * { 
+      box-sizing: border-box; 
+      margin: 0; 
+      padding: 0; 
+    }
+
+    /* BEYAZ BOŞLUK VE YATAY TAŞMAYI KESEN KURALLAR */
+    html, body {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden !important;
+      position: relative;
+      background: #f8f5ee;
+    }
 
     #bg-canvas {
       position: fixed;
@@ -39,24 +52,25 @@
       line-height: 1.75;
       padding: 0 1rem 4rem;
       min-height: 100vh;
-      background: transparent;
     }
 
     .container {
       max-width: 860px;
+      width: 100%;
       margin: 0 auto;
       position: relative;
       z-index: 1;
     }
 
-    /* ÜST MENÜ & EA MONOGRAM ROZET */
+    /* MASAÜSTÜ NAVİGASYON */
     nav.academic-nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1.5rem 0;
+      padding: 1.25rem 0;
       border-bottom: 1px solid rgba(0, 0, 0, 0.08);
       margin-bottom: 2rem;
+      gap: 1rem;
     }
 
     .nav-brand-box {
@@ -65,6 +79,7 @@
       gap: 12px;
       text-decoration: none !important;
       transition: transform 0.2s ease;
+      flex-shrink: 0;
     }
     .nav-brand-box:hover {
       transform: translateY(-1px);
@@ -97,22 +112,25 @@
     .brand-name {
       font-family: 'Cinzel', serif;
       font-weight: 700;
-      font-size: 1.1rem;
+      font-size: 1.08rem;
       color: var(--primary);
       letter-spacing: 1.2px;
+      white-space: nowrap;
     }
 
     .brand-sub {
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       font-family: 'Inter', sans-serif;
       color: var(--muted);
       text-transform: uppercase;
       letter-spacing: 0.8px;
       margin-top: 2px;
+      white-space: nowrap;
     }
 
     .nav-links {
       display: flex;
+      align-items: center;
       gap: 1.25rem;
     }
     .nav-links a {
@@ -122,9 +140,52 @@
       font-size: 0.95rem;
       cursor: pointer;
       transition: color 0.2s ease;
+      white-space: nowrap !important; /* Kelimelerin bölünmesini (Ana & Sayfa gibi) engeller */
     }
     .nav-links a:hover {
       color: var(--primary) !important;
+    }
+
+    /* MOBİL İÇİN TAM DÜZELTME (AKILLI DİKEY YERLEŞİM) */
+    @media (max-width: 768px) {
+      body {
+        padding: 0 0.75rem 3rem;
+      }
+      
+      nav.academic-nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.85rem;
+        padding: 1rem 0;
+        margin-bottom: 1.5rem;
+      }
+
+      .nav-brand-box {
+        margin-bottom: 0.25rem;
+      }
+
+      .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.45rem;
+        width: 100%;
+      }
+
+      .nav-links a {
+        font-size: 0.82rem;
+        padding: 0.35rem 0.65rem;
+        background: rgba(255, 255, 255, 0.75);
+        border: 1px solid rgba(226, 232, 240, 0.9);
+        border-radius: 8px;
+        white-space: nowrap !important;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+      }
+
+      .card {
+        padding: 1.5rem 1.15rem !important;
+      }
     }
 
     /* KARTLAR */
@@ -144,6 +205,7 @@
     h1, h2, h3, h4 {
       font-family: 'Lora', serif;
       color: var(--primary);
+      word-wrap: break-word;
     }
 
     .abstract-quote {
@@ -186,6 +248,7 @@
       border-radius: 8px;
       text-decoration: none;
       color: var(--text) !important;
+      gap: 0.5rem;
     }
     .portal-item:hover {
       background: #ffffff;
@@ -198,6 +261,7 @@
       background: #edf2f7;
       padding: 0.2rem 0.6rem;
       border-radius: 4px;
+      white-space: nowrap;
     }
 
     footer {
@@ -305,6 +369,12 @@
         <div class="badge-free">Ücretsiz (Öğrenci & Mezun Dayanışması)</div>
         <div class="option-title">🎧 SDL Trados Studio & Subtitle Edit Eğitimi</div>
         <div class="option-desc">Çeviribilim ve mütercim-tercümanlık öğrencileri/mezunları için Zoom üzerinden ücretsiz yazılım eğitimleri.</div>
+      </a>
+
+      <a href="mailto:{{ site.email }}?subject=Tez%20Formatlama%20Talebi%20(Word)&body=Merhaba,%0D%0A%0D%0AYüksek%20Lisans%20/%20Doktora%20tezim%20için%20üniversite%20enstitü%20kılavuzuna%20uygun%20Word%20şablonu%20ve%20formatlama%20desteği%20almak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AÜniversite/Enstitü:%20%0D%0ASayfa%20Sayısı:%20" class="service-option paid">
+        <div class="badge-paid">Ücretli Hizmet</div>
+        <div class="option-title">📄 Tez Word Şablonu & Formatlama</div>
+        <div class="option-desc">Tezli Yüksek Lisans ve Doktora tezleri için üniversite yazım kılavuzlarına tam uyumlu profesyonel Word dosyası hazırlama.</div>
       </a>
 
       <a href="mailto:{{ site.email }}?subject=Web%20Sitesi%20Kurulum%20Talebi&body=Merhaba,%0D%0A%0D%0APortfolyo%20/%20Akademik%20tanıtım%20için%20web%20sitesi%20kurulumu%20hakkında%20bilgi%20almak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AIstediğim%20Site%20Türü:%20" class="service-option paid">
