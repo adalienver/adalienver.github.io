@@ -23,7 +23,57 @@ title: Ana Sayfa
     </a>
   </div>
 </div>
+<!-- BİREBİR & ONLİNE ÖZEL DERS ALANI -->
+<div class="card" style="border-left: 5px solid var(--accent); background: rgba(255, 255, 255, 0.94);">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.8rem;">
+    <div>
+      <span style="font-size: 0.78rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 1px;">Eğitim & Danışmanlık</span>
+      <h2 style="font-family: 'Cinzel', serif; font-size: 1.45rem; color: var(--primary); margin-top: 0.2rem;">İngilizce Birebir & Online Özel Ders</h2>
+    </div>
+    <span style="background: #e8f5e9; color: #1b5e20; font-size: 0.8rem; font-weight: 600; padding: 0.3rem 0.75rem; border-radius: 999px; border: 1px solid #c8e6c9;">
+      Kontenjan Açık
+    </span>
+  </div>
 
+  <p style="font-size: 0.95rem; color: #374151; line-height: 1.7; margin-bottom: 1.25rem;">
+    Ortaokul okul derslerine takviye, LGS hazırlık, lise düzeyinde dil gelişimi ile yetişkinler ve çevirmen adayları için akademik sınavlara (YDS, YÖKDİL) yönelik kişiye özel çalışma programı.
+  </p>
+
+  <!-- ÖNE ÇIKAN DERS ALANLARI (GRID) -->
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.75rem; margin-bottom: 1.4rem;">
+    <div style="background: rgba(248, 250, 252, 0.85); border: 1px solid var(--border); padding: 0.75rem 0.9rem; border-radius: 8px;">
+      <strong style="color: var(--primary); font-size: 0.9rem; display: block; margin-bottom: 0.2rem;">🎯 LGS & Okul Takviye</strong>
+      <span style="font-size: 0.82rem; color: var(--muted); line-height: 1.4; display: block;">5, 6, 7 ve 8. sınıf MEB müfredatına tam uyumlu kazanım ve sınav hazırlığı.</span>
+    </div>
+
+    <div style="background: rgba(248, 250, 252, 0.85); border: 1px solid var(--border); padding: 0.75rem 0.9rem; border-radius: 8px;">
+      <strong style="color: var(--primary); font-size: 0.9rem; display: block; margin-bottom: 0.2rem;">📚 YDS / YÖKDİL / YDT</strong>
+      <span style="font-size: 0.82rem; color: var(--muted); line-height: 1.4; display: block;">Akademik kelime dağarcığı, ileri okuma teknikleri ve soru çözüm stratejileri.</span>
+    </div>
+
+    <div style="background: rgba(248, 250, 252, 0.85); border: 1px solid var(--border); padding: 0.75rem 0.9rem; border-radius: 8px;">
+      <strong style="color: var(--primary); font-size: 0.9rem; display: block; margin-bottom: 0.2rem;">🗣️ Konuşma & Telaffuz</strong>
+      <span style="font-size: 0.82rem; color: var(--muted); line-height: 1.4; display: block;">Akıcı iletişim, doğru fonetik telaffuz ve günlük/mesleki konuşma pratiği.</span>
+    </div>
+  </div>
+
+  <!-- DERS TALEP BUTONU -->
+  <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; border-top: 1px solid rgba(0, 0, 0, 0.06); padding-top: 1rem;">
+    <span style="font-size: 0.85rem; color: var(--muted);">Dersler yüz yüze veya Zoom üzerinden interaktif işlenmektedir.</span>
+    <a href="mailto:enveradali195@gmail.com?subject=İngilizce%20Özel%20Ders%20Talebi&body=Merhaba%20Enver%20Hocam,%0D%0A%0D%0AÖzel%20ders%20almak%20istiyorum.%0D%0A%0D%0AÖğrenci%20Adı-Soyadı:%20%0D%0ASınıf%20/%20Hedef%20(LGS,%20YDS,%20Okul%20vb.):%20%0D%0ATerch%20Edilen%20Format%20(Yüz%20yüze%20/%20Online):%20%0D%0Aİletişim%20Numarası:%20" 
+       style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--accent); color: #ffffff !important; padding: 0.55rem 1.25rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 600; box-shadow: 0 3px 8px rgba(30, 107, 71, 0.2); transition: all 0.2s ease;">
+      ✉ Ders Talebi Oluştur ↗
+    </a>
+  </div>
+</div>
+<!-- DERS TALEP BUTONU -->
+<div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; border-top: 1px solid rgba(0, 0, 0, 0.06); padding-top: 1rem;">
+  <span style="font-size: 0.85rem; color: var(--muted);">Ders planı, seviye tespiti ve detaylar için iletişime geçebilirsiniz.</span>
+  <a href="mailto:enveradali195@gmail.com?subject=İngilizce%20Özel%20Ders%20Talebi&body=Merhaba%20Enver%20Hocam,%0D%0A%0D%0AÖzel%20ders%20hakkında%20bilgi%20almak%20istiyorum.%0D%0A%0D%0AÖğrenci%20Adı-Soyadı:%20%0D%0ASınıf%20/%20Hedef%20(LGS,%20YDS,%20Okul%20vb.):%20%0D%0ATercih%20Edilen%20Format%20(Yüz%20yüze%20/%20Online):%20%0D%0Aİletişim%20Numarası:%20" 
+     style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--accent); color: #ffffff !important; padding: 0.55rem 1.25rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 600; box-shadow: 0 3px 8px rgba(30, 107, 71, 0.2); transition: all 0.2s ease;">
+    ✉ Bilgi Al & İletişime Geç ↗
+  </a>
+</div>
 <!-- AKADEMİK VE DANIŞMANLIK BÖLÜMÜ -->
 <div class="card">
   <h2>Yapay Zekâ Çağında Çeviribilim ve Beşeri Bilimlerin Geleceği</h2>
