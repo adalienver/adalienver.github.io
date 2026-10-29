@@ -83,7 +83,7 @@ title: Ana Sayfa
       — Enver Adalı | Mütercim ve Tercümanlık Lisans • İngiliz Dili ve Edebiyatı Tezli Yüksek Lisans
     </div>
   </div>
-</div>
+
 
 <!-- SINAV HAZIRLIK & DANIŞMANLIK -->
 <div class="card" style="border-left: 5px solid var(--accent); background: #ffffff;">
