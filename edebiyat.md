@@ -17,7 +17,9 @@ permalink: /edebiyat/
   </blockquote>
 
   <p style="font-size: 0.95rem; line-height: 1.7; color: #374151; margin-top: 0.8rem;">
-    Miranda, ilk kez başka insanlarla karşılaştığında bu sözleri saf bir hayranlıkla dile getirir. Aldous Huxley’nin <em>Brave New World</em> distopyasında ise Vahşi John (John the Savage) bu dizeyi alıntılar; ancak onun dilinde bu hayranlık, yapay ve mekanik Dünya Devleti'ne duyulan derin bir tiksintiye dönüşür.
+    Shakespeare’in <em>The Tempest</em> oyununda Miranda, babası Prospero’yla birlikte, dış dünyadan uzakta bir adada büyür. Adaya gelen insanları görünce heyecanını gizleyemez; onların kim olduğunu, geçmişte neler yaptıklarını bilmeden insanlığa hayranlık duyar. Huxley’nin adını bu dizelerden alan Cesur Yeni Dünya romanında ise insanlar daha doğmadan toplumsal rollerine göre belirlenir, sonra da bu hayattan memnun olacak şekilde yetiştirilir. Bu düzenin dışında büyüyen John da yeni tanışacağı dünyaya önce Miranda’nın sözleriyle seslenir. Fakat insanları tanıdıkça, umutla söylediği sözler giderek acı bir anlam kazanır.
+
+
   </p>
 </div>
 
@@ -38,7 +40,7 @@ permalink: /edebiyat/
   </blockquote>
 
   <p style="font-size: 0.95rem; line-height: 1.7; color: #374151; margin-top: 0.8rem;">
-    Cadıların sis ve fırtına içindeki tekinsiz açılışı, ahlaki ve ontolojik düzenin tersyüz oluşunu müjdeler: İyilik kötülüğe, kötülük ise görünürdeki düzene bürünür.
+    Macbeth, kral olacağına dair bir kehanet duyan ve bu ihtimali aklından çıkaramayan bir komutanın hikâyesidir. Karısının da teşvikiyle kralı öldürür; ardından tahtını korumak için başka cinayetlere yönelir. Açılışta cadıların söylediği “İyi kötüdür, kötü iyidir” sözü, bu hikâyeyi anlamanın bir anahtarıdır: Macbeth’in iyi haber olarak karşıladığı kehanet, felaketinin başlangıcı olur. Daha ilk sahnede, duyduklarımızın ve gördüklerimizin göründüğü kadar güvenilir olmadığını hissederiz.
   </p>
 </div>
 
@@ -59,7 +61,7 @@ permalink: /edebiyat/
   </blockquote>
 
   <p style="font-size: 0.95rem; line-height: 1.7; color: #374151; margin-top: 0.8rem;">
-    Ölümsüzlük peşinde kederle koşan Gılgamış'a Siduri'nin çağrısı nettir: İmkânsız olan tanrısal ölümsüzlüğü terk edip sıradan insan yaşamının sıcaklığına, aileye ve anın kıymetine dönmek.
+    Gılgamış Destanı’nda, yakın dostu Enkidu’yu kaybeden Gılgamış, bir gün kendisinin de öleceği düşüncesine dayanamaz ve ölümsüzlüğü aramak üzere yola çıkar. Karşılaştığı Siduri ona büyük bir sır ya da kurtuluş yolu sunmaz. Karnını doyurmasını, temiz giysiler giymesini, elini tutan çocuğu sevmesini, eşine sarılmasını öğütler. Gılgamış ölümden kaçmanın bir yolunu ararken Siduri, hâlâ yaşamakta olduğu hayatı hatırlatır.
   </p>
 </div>
 
