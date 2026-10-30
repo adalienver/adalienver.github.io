@@ -232,7 +232,7 @@ permalink: /kaynaklar/
 <div class="resource-hero">
   <h1>İngilizce Öğrenme & Çalışma Kaynakları</h1>
   <p>
-    Öğrenciler, çevirmen adayları, lisansüstü araştırmacılar ve dil sınavlarına (YDS, YÖKDİL, TOEFL, IELTS) hazırlananlar için derlenmiş korpus dizinleri, dinleme istasyonları, sözlükler ve akademik yazım kılavuzları.
+    Öğrenciler, çevirmen adayları, lisansüstü araştırmacılar ve dil sınavlarına (YDS, YÖKDİL, TOEFL, IELTS) hazırlananlar için derlenmiş korpus veri tabanları, dinleme ve telaffuz arşivleri, sözlükler ile akademik yazım kılavuzları.
   </p>
 </div>
 
@@ -267,7 +267,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-corpus">Akademik Korpus</span>
         </div>
         <p class="res-desc">
-          1 milyardan fazla sözcükten oluşan; akademik, kurgusal ve gazete dillerindeki sıklık, türsel dağılım ve eşdizimleri incelemek için en güçlü dilbilimsel veri tabanı.
+          Milyarlarca kelimelik devasa veri tabanıyla bir sözcüğün akademik makalelerde, edebiyatta veya basında nasıl kullanıldığını ve hangi kalıplarla eşleştiğini görmenizi sağlar.
         </p>
       </div>
       <div class="res-footer">Korpusu İncele <span>↗</span></div>
@@ -280,7 +280,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-context">Cümle Doğrulama</span>
         </div>
         <p class="res-desc">
-          Yazdığınız İngilizce cümlenin doğruluğunu The New York Times, BBC ve hakemli dergilerdeki geçmiş kullanımlarla karşılaştırarak teyit eden arama motoru.
+          Yazdığınız İngilizce cümlenin doğal olup olmadığını The New York Times, BBC veya bilimsel makalelerdeki gerçek örneklerle kıyaslayarak teyit eden pratik bir arama motoru.
         </p>
       </div>
       <div class="res-footer">Cümleyi Test Et <span>↗</span></div>
@@ -293,7 +293,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-context">Bağlam Çevirisi</span>
         </div>
         <p class="res-desc">
-          Sözcük ve deyimleri milyonlarca iki dilli gerçek paralel metin içerisinde tarayarak en doğal eşdeğerlerini ve kullanım bağlamlarını sıralayan çevirmen başucu aracı.
+          Kelimeleri ve kalıpları bağlamından koparmadan, milyonlarca iki dilli gerçek çeviri cümlesi içinde yan yana görmenizi sağlayan çevirmen dostu bir platform.
         </p>
       </div>
       <div class="res-footer">Sözlüğü Aç <span>↗</span></div>
@@ -306,7 +306,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-context">Örnek Cümleler</span>
         </div>
         <p class="res-desc">
-          Aranan sözcüğün farklı düzeylerdeki (temel, orta, ileri) cümleler içindeki gerçek kullanım kalıplarını tek bir sayfada listeleyen pratik motor.
+          Öğrenmek istediğiniz kelimenin farklı seviyelerdeki hazır cümlelerde nasıl yer aldığını derli toplu listeleyen hızlı bir örnekleme aracı.
         </p>
       </div>
       <div class="res-footer">Cümle Bul <span>↗</span></div>
@@ -319,7 +319,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-corpus">Paralel Metinler</span>
         </div>
         <p class="res-desc">
-          Milyarlarca gerçek çeviri tümcesini yan yana inceleyebileceğiniz, terim ve kalıp aktarımlarında çevirmenler için devasa çok dilli korpus sözlüğü.
+          Farklı dillerdeki resmi ve sektörel çevirileri eşleştiren, özellikle terim çevirilerinde güvenilir karşılıklar bulmaya yarayan geniş bir bellek sözlüğü.
         </p>
       </div>
       <div class="res-footer">Glosbe'yi Aç <span>↗</span></div>
@@ -340,7 +340,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-vocab">Çevirmen Başucu</span>
         </div>
         <p class="res-desc">
-          İngilizce sözcüklerin hangi sıfat, edat ve fiillerle doğal olarak bağlandığını gösteren (örneğin <em>heavy rain</em> / <em>make a decision</em>) vazgeçilmez eşdizim kılavuzu.
+          İngilizcede hangi kelimenin hangi fiil, sıfat veya edatla doğal bir ikili oluşturduğunu (make a decision, heavy rain gibi) gösteren temel başvuru kaynağı.
         </p>
       </div>
       <div class="res-footer">Sözlüğü Aç <span>↗</span></div>
@@ -353,7 +353,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-vocab">Eşdizim Analizi</span>
         </div>
         <p class="res-desc">
-          British National Corpus verileriyle kelimeler arasındaki eşdizimsel bağı yeşil ve kırmızı güven barlarıyla test eden eşsiz bir akademik eşleşme aracı.
+          İngiliz Ulusal Külliyatı (BNC) verilerine dayanarak kelime eşleşmelerinin sıklığını ve kullanım güvenilirliğini görsel çubuklarla sunan sade bir denetim motoru.
         </p>
       </div>
       <div class="res-footer">Analizi Başlat <span>↗</span></div>
@@ -366,7 +366,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-vocab">Kapsamlı Thesaurus</span>
         </div>
         <p class="res-desc">
-          Tek bir sözcüğün tüm eşanlamlılarını, zıt anlamlarını, farklı bağlamlardaki karşılıklarını ve örnek cümlelerini anında listeleyen sözcük haznesi kılavuzu.
+          Aradığınız kelimenin en ince anlamına kadar eşanlamlılarını, zıt anlamlarını, bağlama göre alternatiflerini ve kafiyelerini tek sayfada sunan zengin bir kelime platformu.
         </p>
       </div>
       <div class="res-footer">Kelime İncele <span>↗</span></div>
@@ -379,7 +379,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-vocab">Akıllı Kelime Motoru</span>
         </div>
         <p class="res-desc">
-          Kelimeleri edebi ve felsefi bağlamlarıyla açıklayan, akıllı tekrar algoritmalarına dayalı ileri düzey kelime geliştirme platformu.
+          Kelimeleri ezberletmek yerine hikâyeleri, edebi kullanımları ve akıllı soru sistemiyle zihinde kalıcı hale getiren etkileşimli bir öğrenme alanı.
         </p>
       </div>
       <div class="res-footer">Kelime Çalış <span>↗</span></div>
@@ -392,7 +392,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-vocab">Uzmanlık Alanları</span>
         </div>
         <p class="res-desc">
-          Genel tanımların ötesinde tıp, hukuk, finans ve bilişim terminolojisini, deyimleri ve uluslararası kısaltmaları bir araya toplayan devasa referans portalı.
+          Genel sözlüklerin ötesine geçerek hukuk, tıp, iktisat terimlerini ve kısaltmaları bir araya toplayan devasa bir dijital başvuru kütüphanesi.
         </p>
       </div>
       <div class="res-footer">Portalda Ara <span>↗</span></div>
@@ -405,7 +405,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-vocab">Deyim Arşivi</span>
         </div>
         <p class="res-desc">
-          İngilizcede sık karşılaşılan deyim ve mecazları alfabetik sırayla, gerçek kullanım örnekleri ve sade açıklamalarla sunan köklü arşiv.
+          İngilizcede gündelik hayatın ve sokak dilinin vazgeçilmezi olan deyimleri, net açıklamalar ve gerçek hayat örnekleriyle alfabetik olarak sıralayan klasik bir arşiv.
         </p>
       </div>
       <div class="res-footer">Deyimleri İncele <span>↗</span></div>
@@ -426,7 +426,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-youtube">Canlı Telaffuz</span>
         </div>
         <p class="res-desc">
-          Herhangi bir sözcüğün Amerikan, İngiliz veya Avustralya aksanlarıyla YouTube videolarında nasıl telaffuz edildiğini anında getiren telaffuz motoru.
+          Yazdığınız herhangi bir ifadenin YouTube videolarında gerçek insanlar tarafından Amerikan, İngiliz veya Avustralya aksanlarıyla nasıl seslendirildiğini anında önünüze getiren benzersiz bir araç.
         </p>
       </div>
       <div class="res-footer">Telaffuz Dinle <span>↗</span></div>
@@ -439,7 +439,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-official">Podcast & Transkript</span>
         </div>
         <p class="res-desc">
-          Güncel bilimsel ve kültürel konuları her bölümde 6 dakikalık ses kaydı, tam metin transkripti ve kelime listesiyle işleyen dünya klasiği.
+          Her bölümde altı dakikalık ilgi çekici konular işleyen, kelime listeleri ve tam metin dökümleriyle dinleme pratiği için eşsiz bir podcast serisi.
         </p>
       </div>
       <div class="res-footer">Bölümleri Dinle <span>↗</span></div>
@@ -452,7 +452,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-audio">Ses & Yavaş Haber</span>
         </div>
         <p class="res-desc">
-          Basitleştirilmiş kelime kadrosu ve anlaşılır konuşma temposuyla dünya haberleri; dinleme, gölgeleme (shadowing) ve dikte pratikleri için idealdir.
+          Normalden daha sakin bir tempoyla ve duru bir dille seslendirilen dünya haberleri; dikte, kulak dolgunluğu ve gölgeleme (shadowing) çalışmaları için idealdir.
         </p>
       </div>
       <div class="res-footer">Haberleri İncele <span>↗</span></div>
@@ -465,7 +465,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-youtube">Video Ders</span>
         </div>
         <p class="res-desc">
-          Doğal konuşma dili, sokak dili ve kafa karıştıran gramer ayrımlarını samimi ve akılda kalıcı bir üslupla anlatan popüler video kanalı.
+          Kitabi kurallardan uzak, günlük yaşamın sokak dilini, esprileri ve kafa karıştıran gramer inceliklerini samimi ve mizahi bir üslupla anlatan video dersler.
         </p>
       </div>
       <div class="res-footer">Kanala Git <span>↗</span></div>
@@ -478,7 +478,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-official">Kurumsal / Sınav</span>
         </div>
         <p class="res-desc">
-          A1'den C1'e seviyelendirilmiş ses kayıtları, IELTS hazırlık ipuçları, etkileşimli dinleme testleri ve profesyonel iş İngilizcesi kaynakları.
+          Temel seviyeden ileri düzeye kadar yapılandırılmış ses kayıtları, IELTS hazırlık ipuçları ve mesleki İngilizceye yönelik kapsamlı alıştırma seti.
         </p>
       </div>
       <div class="res-footer">Materyalleri Aç <span>↗</span></div>
@@ -499,7 +499,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-academic">Akademik Standart</span>
         </div>
         <p class="res-desc">
-          Tez, makale ve deneme yazımında paragraf yapısı, tez cümlesi (thesis statement) geliştirme, APA ve MLA kaynak gösterme standartlarında küresel kılavuz.
+          Tez, makale ve akademik denemelerde argüman kurgulama, paragraf yapısı ile APA ve MLA kaynak gösterme standartlarında dünyaca kabul gören bir rehber.
         </p>
       </div>
       <div class="res-footer">Kılavuza Git <span>↗</span></div>
@@ -512,7 +512,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-academic">Akademik Kalıplar</span>
         </div>
         <p class="res-desc">
-          Akademik makalelerin giriş, literatür taraması, yöntem ve tartışma bölümlerinde tarafsız ve bilimsel argüman kurmak için hazır kalıp bankası.
+          Akademik metinlerin giriş, literatür taraması, yöntem ve sonuç bölümlerinde bilimsel tarafsızlığı koruyarak fikirleri akıcı şekilde bağlamaya yarayan ifade hazinesi.
         </p>
       </div>
       <div class="res-footer">Kalıpları İncele <span>↗</span></div>
@@ -533,7 +533,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-grammar">Bağlaçlar</span>
         </div>
         <p class="res-desc">
-          Zaman bağlaçları (when, while, until vb.), yan tümce yapıları ve akademik metinlerde mantıksal geçiş ilişkilerinin detaylı kuralları.
+          Zaman bağlaçları, yan cümleler ve metin içi mantıksal geçişlerin doğru kullanımı üzerine Cambridge güvencesiyle hazırlanmış ayrıntılı bir kaynak.
         </p>
       </div>
       <div class="res-footer">Kılavuzu Oku <span>↗</span></div>
@@ -546,7 +546,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-grammar">Fiil Yapıları</span>
         </div>
         <p class="res-desc">
-          Hangi fiillerin ardından "-ing", hangilerinin ardından "to + verb" geldiğini örnek tümcelerle gruplandıran pratik başvuru tablosu.
+          Hangi fiilden sonra "-ing", hangisinden sonra "to" geldiğini net ayrımlarla ve örneklerle gösteren pratik bir başvuru tablosu.
         </p>
       </div>
       <div class="res-footer">Tabloyu İncele <span>↗</span></div>
@@ -559,7 +559,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-grammar">Miktar Belirteçleri</span>
         </div>
         <p class="res-desc">
-          Much/many, few/little, some/any gibi sayılabilen ve sayılamayan isim belirteçlerinin incelikleri ve kullanım prensipleri.
+          Much/many, few/little gibi sayılabilen ve sayılamayan isimlerle kullanılan belirteçlerin ayrımını yalın örneklerle açıklayan rehber.
         </p>
       </div>
       <div class="res-footer">Rehbere Git <span>↗</span></div>
@@ -572,7 +572,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-grammar">Referans</span>
         </div>
         <p class="res-desc">
-          İngilizce belirteç sistemine dair sade kurallar, test soruları ve sık yapılan hataların analizi.
+          Belirteç sistemini sade kurallar, test soruları ve en sık yapılan hatalar üzerinden pratik yaptıran faydalı bir çalışma sayfası.
         </p>
       </div>
       <div class="res-footer">Alıştırmaları Gör <span>↗</span></div>
@@ -593,7 +593,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-reading">Seviye Testi</span>
         </div>
         <p class="res-desc">
-          Başlangıç ve temel seviye okuma metinleri, ipuçları ve anında puanlama yapan etkileşimli kavrama alıştırmaları.
+          Başlangıç düzeyindeki okuma parçaları ve anında dönüt veren testleriyle temel kavrama becerilerini ölçen pratik bir çalışma alanı.
         </p>
       </div>
       <div class="res-footer">Testi Çöz <span>↗</span></div>
@@ -606,7 +606,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-reading">Metin Okuma</span>
         </div>
         <p class="res-desc">
-          Farklı zorluk derecelerinde kısa öyküler, makaleler ve metin değerlendirme sorularıyla anlama hızını ölçen portal.
+          Farklı seviyelere göre ayrılmış kısa öykü ve metinler üzerinden okuma hızını ve anlama yetisini geliştiren sorular içeren bir portal.
         </p>
       </div>
       <div class="res-footer">Metinleri Oku <span>↗</span></div>
