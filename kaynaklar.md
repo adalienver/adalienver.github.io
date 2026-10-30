@@ -306,7 +306,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-context">Örnek Cümleler</span>
         </div>
         <p class="res-desc">
-          Öğrenmek istediğiniz kelimenin farklı seviyelerdeki hazır cümlelerde nasıl yer aldığını derli toplu listeleyen hızlı bir örnekleme aracı.
+          Aranan kelimenin farklı seviyelerdeki hazır cümlelerde nasıl yer aldığını derli toplu listeleyen hızlı bir örnekleme aracı.
         </p>
       </div>
       <div class="res-footer">Cümle Bul <span>↗</span></div>
@@ -340,7 +340,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-vocab">Çevirmen Başucu</span>
         </div>
         <p class="res-desc">
-          İngilizcede hangi kelimenin hangi fiil, sıfat veya edatla doğal bir ikili oluşturduğunu (make a decision, heavy rain gibi) gösteren temel başvuru kaynağı.
+          İngilizcede hangi kelimenin hangi fiil, sıfat veya edatla kalıp türettiğini (make a decision, heavy rain gibi) gösteren temel başvuru kaynağı.
         </p>
       </div>
       <div class="res-footer">Sözlüğü Aç <span>↗</span></div>
@@ -353,7 +353,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-vocab">Eşdizim Analizi</span>
         </div>
         <p class="res-desc">
-          İngiliz Ulusal Külliyatı (BNC) verilerine dayanarak kelime eşleşmelerinin sıklığını ve kullanım güvenilirliğini görsel çubuklarla sunan sade bir denetim motoru.
+          İngilizce Külliyatı  verilerini temel alan kelime eşleşmelerinin sıklığını ve kullanım sıklığını s.
         </p>
       </div>
       <div class="res-footer">Analizi Başlat <span>↗</span></div>
@@ -405,7 +405,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-vocab">Deyim Arşivi</span>
         </div>
         <p class="res-desc">
-          İngilizcede gündelik hayatın ve sokak dilinin vazgeçilmezi olan deyimleri, net açıklamalar ve gerçek hayat örnekleriyle alfabetik olarak sıralayan klasik bir arşiv.
+          İngilizcede gündelik hayatın ve sokak dilinde yaygın olan, net açıklamalar ve gerçek hayat örnekleriyle alfabetik olarak sıralayan klasik bir arşiv.
         </p>
       </div>
       <div class="res-footer">Deyimleri İncele <span>↗</span></div>
@@ -439,7 +439,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-official">Podcast & Transkript</span>
         </div>
         <p class="res-desc">
-          Her bölümde altı dakikalık ilgi çekici konular işleyen, kelime listeleri ve tam metin dökümleriyle dinleme pratiği için eşsiz bir podcast serisi.
+          Her bölümde altı dakikalık  konular işleyen, kelime listeleri ve tam metin dökümleriyle dinleme pratiği içeren pdocast serisi.
         </p>
       </div>
       <div class="res-footer">Bölümleri Dinle <span>↗</span></div>
@@ -452,7 +452,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-audio">Ses & Yavaş Haber</span>
         </div>
         <p class="res-desc">
-          Normalden daha sakin bir tempoyla ve duru bir dille seslendirilen dünya haberleri; dikte, kulak dolgunluğu ve gölgeleme (shadowing) çalışmaları için idealdir.
+          Normalden  bir tempoyla  seslendirilen dünya haberleri, shadowing çalışmaları için .
         </p>
       </div>
       <div class="res-footer">Haberleri İncele <span>↗</span></div>
@@ -465,7 +465,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-youtube">Video Ders</span>
         </div>
         <p class="res-desc">
-          Kitabi kurallardan uzak, günlük yaşamın sokak dilini, esprileri ve kafa karıştıran gramer inceliklerini samimi ve mizahi bir üslupla anlatan video dersler.
+          Kitabi kurallardan dışında, günlük yaşamın sokak dilini, esprileri ve kafa karıştıran dilbilgisi nüancslarını samimi  bir üslupla ele alan İngilizce  dersler.
         </p>
       </div>
       <div class="res-footer">Kanala Git <span>↗</span></div>
@@ -499,7 +499,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-academic">Akademik Standart</span>
         </div>
         <p class="res-desc">
-          Tez, makale ve akademik denemelerde argüman kurgulama, paragraf yapısı ile APA ve MLA kaynak gösterme standartlarında dünyaca kabul gören bir rehber.
+          Tez, makale ve akademik yazımlarda  argüman, paragraf yapısı ile APA ve MLA kaynak  standartlarında  bir rehber.
         </p>
       </div>
       <div class="res-footer">Kılavuza Git <span>↗</span></div>
@@ -512,7 +512,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-academic">Akademik Kalıplar</span>
         </div>
         <p class="res-desc">
-          Akademik metinlerin giriş, literatür taraması, yöntem ve sonuç bölümlerinde bilimsel tarafsızlığı koruyarak fikirleri akıcı şekilde bağlamaya yarayan ifade hazinesi.
+          Akademik metinlerin yazımında gerekli ifadeler ve bilinmesi gereken kalıplar.
         </p>
       </div>
       <div class="res-footer">Kalıpları İncele <span>↗</span></div>
