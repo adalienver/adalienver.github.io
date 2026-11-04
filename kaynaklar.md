@@ -483,7 +483,18 @@ permalink: /kaynaklar/
       </div>
       <div class="res-footer">Materyalleri Aç <span>↗</span></div>
     </a>
-
+<a href="https://lingua.com/tr/ingilizce/dikte/" target="_blank" rel="noopener noreferrer" class="res-card" data-category="audio" data-keywords="lingua dikte dictation dinleme listening yazma transkript alıştırma ses seviye test">
+      <div>
+        <div class="res-header">
+          <span class="res-title">Lingua: İngilizce Dikte Alıştırmaları</span>
+          <span class="tag-badge tag-audio">Dikte & Yazma</span>
+        </div>
+        <p class="res-desc">
+          Farklı seviyelerdeki ses kayıtlarını dinleyerek duyduğunu yazıya aktarma (dikte) alıştırmaları; dinleme kavrayışını ve yazım kurallarını (spelling) pekiştiren pratik araç.
+        </p>
+      </div>
+      <div class="res-footer">Dikte Çalış <span>↗</span></div>
+    </a>
   </div>
 </div>
 
