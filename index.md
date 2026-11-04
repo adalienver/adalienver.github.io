@@ -105,13 +105,10 @@ title: Ana Sayfa
   <p style="font-size: 0.9rem; color: #4b5563; line-height: 1.65; margin: 0.6rem 0;">
     Akademik dil hazırlığı ve bilgisayar destekli çeviri iş akışlarına dair Zoom atölyeleri için iletişim kurabilirsiniz.
   </p>
-  <div style="margin-top: 0.8rem;">
-    <a href="javascript:void(0)" onclick="openContactModal()" style="display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.88rem; font-weight: 600; color: var(--primary); text-decoration: underline;">
-      🎧 Ücretsiz Atölye Talebi İçin Tıklayın ↗
-    </a>
-  </div>
-</div>
-      🎧 Ücretsiz Atölye Talebi İçin Tıklayın ↗
+  <div style="margin-top: 0.9rem;">
+    <a href="mailto:enveradali195@gmail.com?subject=Ücretsiz%20Atölye%20Talebi%20(Trados%20/%20Subtitle%20Edit)&body=Merhaba%20Enver%20Hocam,%0D%0A%0D%0AMesleki%20dayanışma%20kapsamındaki%20ücretsiz%20çeviri%20teknolojileri%20(Trados%20/%20Subtitle%20Edit)%20atölyesine%20katılmak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AÜniversite%20/%20Bölüm:%20%0D%0ASınıf%20/%20Mezuniyet%20Durumu:%20%0D%0AÖğrenmek%20İstediğim%20Araç%20(Trados%20/%20Subtitle%20Edit%20/%20Her%20ikisi):%20" 
+       style="display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(21, 50, 91, 0.08); color: var(--primary) !important; padding: 0.5rem 1.1rem; border-radius: 6px; text-decoration: none; font-size: 0.88rem; font-weight: 600; border: 1px solid rgba(21, 50, 91, 0.2); transition: all 0.2s ease;">
+      🎧 Ücretsiz Atölye Talebi Oluştur ↗
     </a>
   </div>
 </div>
