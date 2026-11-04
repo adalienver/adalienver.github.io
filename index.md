@@ -3,112 +3,123 @@ layout: default
 title: Ana Sayfa
 ---
 
-<!-- PROFİL KARTI -->
-<div class="card" style="text-align: center; border-bottom: 3px solid var(--primary);">
-  <h1 style="font-family: 'Cinzel', serif; font-size: 2.5rem; color: var(--primary); margin-bottom: 0.5rem;">Enver Adalı</h1>
-  <p style="color: var(--muted); margin: 0; font-size: 1.1rem; letter-spacing: 0.5px;">
+<!-- PROFİL KARTI (SADE VE AKADEMİK) -->
+<div class="card" style="text-align: center; padding: 1.6rem 1.4rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--primary);">
+  <h1 style="font-family: 'Lora', serif; font-size: 1.55rem; font-weight: 600; color: var(--primary); margin: 0 0 0.35rem; letter-spacing: 0.2px;">
+    Enver Adalı
+  </h1>
+  <p style="color: var(--muted); font-size: 0.95rem; margin: 0; font-weight: 500;">
     Mütercim ve Tercümanlık • İngiliz Dili ve Edebiyatı
   </p>
-  <p style="color: var(--muted); font-size: 0.95rem; margin-top: 0.4rem;">
+  <p style="color: #64748b; font-size: 0.85rem; margin-top: 0.25rem;">
     İstanbul Beykent Üniversitesi Mezunu
   </p>
   
-  <!-- ETKİLEŞİM BUTONLARI (LINKEDIN & E-POSTA) -->
-  <div style="margin-top: 1.5rem; display: flex; justify-content: center; align-items: center; gap: 0.75rem; flex-wrap: wrap;">
-    <a href="{{ site.linkedin_url }}" target="_blank" rel="noopener noreferrer" class="btn-linkedin" style="margin-top: 0;">
-      LinkedIn Profilim ↗ 
+  <!-- ETKİLEŞİM BUTONLARI -->
+  <div style="margin-top: 1.1rem; display: flex; justify-content: center; align-items: center; gap: 0.6rem; flex-wrap: wrap;">
+    <a href="{{ site.linkedin_url }}" target="_blank" rel="noopener noreferrer" class="btn-linkedin" style="margin-top: 0; padding: 0.4rem 0.95rem; font-size: 0.85rem;">
+      LinkedIn ↗ 
     </a>
-    <a href="mailto:enveradali195@gmail.com" class="btn-email" style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(21, 50, 91, 0.08); color: var(--primary) !important; padding: 0.5rem 1.1rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 600; border: 1px solid rgba(21, 50, 91, 0.2); transition: all 0.2s ease;">
+    <a href="mailto:enveradali195@gmail.com" style="display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(21, 50, 91, 0.06); color: var(--primary) !important; padding: 0.4rem 0.95rem; border-radius: 6px; text-decoration: none; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(21, 50, 91, 0.15);">
       ✉ enveradali195@gmail.com
     </a>
   </div>
 </div>
-<!-- BİREBİR & ONLİNE ÖZEL DERS ALANI -->
-<div class="card" style="border-left: 5px solid var(--accent); background: rgba(255, 255, 255, 0.94);">
-  <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.8rem;">
-    <div>
-      <span style="font-size: 0.78rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 1px;">Eğitim & Danışmanlık</span>
-      <h2 style="font-family: 'Cinzel', serif; font-size: 1.45rem; color: var(--primary); margin-top: 0.2rem;">İngilizce Birebir & Online Özel Ders</h2>
+
+<!-- MANİFESTO: YAPAY ZEKÂ ÇAĞINDA ÇEVİRİBİLİM -->
+<div class="card" style="border-left: 4px solid var(--primary); background: #ffffff; padding: 1.6rem; margin-bottom: 1.5rem;">
+  <span style="font-size: 0.75rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 0.8px;">Perspektif & Vizyon</span>
+  <h2 style="font-family: 'Lora', serif; font-size: 1.35rem; color: var(--primary); margin: 0.25rem 0 0.85rem;">Yapay Zekâ Çağında Çeviribilim Neden Hâlâ Hayatidir?</h2>
+
+  <p style="font-size: 0.93rem; color: #374151; line-height: 1.75; margin-bottom: 0.85rem;">
+    Büyük Dil Modelleri ve makine çevirisi teknik hız kazandırmış olsa da çeviri, mekanik bir kelime eşleme süreci değildir. Metnin tarihsel katmanlarını, ideolojik nüanslarını ve edebi dokusunu anlamlandıracak insan bilincine her zamankinden çok ihtiyaç vardır.
+  </p>
+
+  <div class="abstract-quote" style="margin: 0.9rem 0; font-size: 0.9rem; line-height: 1.7; padding: 0.85rem 1rem;">
+    <em>"Yapay zekâ istatistiksel olasılıklarla sözcük dizer; çevirmen ise metnin ruhunu, etik sorumluluğunu ve estetik dengesini kurar."</em>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.75rem; margin-top: 1rem;">
+    <div style="background: rgba(248, 250, 252, 0.85); border: 1px solid var(--border); padding: 0.75rem 0.9rem; border-radius: 8px;">
+      <strong style="color: var(--primary); font-size: 0.88rem; display: block; margin-bottom: 0.2rem;">🧠 Yorumbilim & Kültürel Bağlam</strong>
+      <span style="font-size: 0.82rem; color: var(--muted); line-height: 1.45; display: block;">Makineler kültürel hafızayı, örtük anlamları ve edebi ironiyi sezgisel olarak kavrayamaz.</span>
     </div>
-    <span style="background: #e8f5e9; color: #1b5e20; font-size: 0.8rem; font-weight: 600; padding: 0.3rem 0.75rem; border-radius: 999px; border: 1px solid #c8e6c9;">
+
+    <div style="background: rgba(248, 250, 252, 0.85); border: 1px solid var(--border); padding: 0.75rem 0.9rem; border-radius: 8px;">
+      <strong style="color: var(--primary); font-size: 0.88rem; display: block; margin-bottom: 0.2rem;">⚙️ Teknolojiyle Birlikte Dönüşüm</strong>
+      <span style="font-size: 0.82rem; color: var(--muted); line-height: 1.45; display: block;">Geleceğin çevirmeni yapay zekânın rakibi değil; araçları eleştirel gözle yöneten entelektüel denetleyicidir.</span>
+    </div>
+  </div>
+</div>
+
+<!-- BİREBİR & ONLİNE ÖZEL DERS ALANI -->
+<div class="card" style="border-left: 4px solid var(--accent); background: rgba(255, 255, 255, 0.96); padding: 1.6rem; margin-bottom: 1.5rem;">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.6rem;">
+    <div>
+      <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.8px;">Eğitim & Danışmanlık</span>
+      <h2 style="font-family: 'Lora', serif; font-size: 1.35rem; color: var(--primary); margin-top: 0.15rem;">İngilizce Birebir & Online Özel Ders</h2>
+    </div>
+    <span style="background: #e8f5e9; color: #1b5e20; font-size: 0.78rem; font-weight: 600; padding: 0.25rem 0.65rem; border-radius: 999px; border: 1px solid #c8e6c9;">
       Kontenjan Açık
     </span>
   </div>
 
-  <p style="font-size: 0.95rem; color: #374151; line-height: 1.7; margin-bottom: 1.25rem;">
-    Ortaokul okul derslerine takviye, LGS hazırlık, lise düzeyinde dil gelişimi ile yetişkinler ve çevirmen adayları için akademik sınavlara (YDS, YÖKDİL) yönelik kişiye özel çalışma programı.
+  <p style="font-size: 0.93rem; color: #374151; line-height: 1.7; margin-bottom: 1.1rem;">
+    Ortaokul derslerine takviye, LGS hazırlık, lise düzeyinde dil gelişimi ile yetişkinler ve çevirmen adayları için akademik sınavlara (YDS, YÖKDİL) yönelik kişiye özel çalışma programı.
   </p>
 
-  <!-- ÖNE ÇIKAN DERS ALANLARI (GRID) -->
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.75rem; margin-bottom: 1.4rem;">
-    <div style="background: rgba(248, 250, 252, 0.85); border: 1px solid var(--border); padding: 0.75rem 0.9rem; border-radius: 8px;">
-      <strong style="color: var(--primary); font-size: 0.9rem; display: block; margin-bottom: 0.2rem;">🎯 LGS & Okul Takviye</strong>
-      <span style="font-size: 0.82rem; color: var(--muted); line-height: 1.4; display: block;">5, 6, 7 ve 8. sınıf MEB müfredatına tam uyumlu kazanım ve sınav hazırlığı.</span>
+  <!-- ÖNE ÇIKAN DERS ALANLARI -->
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 0.7rem; margin-bottom: 1.2rem;">
+    <div style="background: rgba(248, 250, 252, 0.85); border: 1px solid var(--border); padding: 0.7rem 0.85rem; border-radius: 8px;">
+      <strong style="color: var(--primary); font-size: 0.88rem; display: block; margin-bottom: 0.2rem;">🎯 LGS & Okul Takviye</strong>
+      <span style="font-size: 0.8rem; color: var(--muted); line-height: 1.4; display: block;">5, 6, 7 ve 8. sınıf MEB müfredatına tam uyumlu kazanım ve sınav hazırlığı.</span>
     </div>
 
-    <div style="background: rgba(248, 250, 252, 0.85); border: 1px solid var(--border); padding: 0.75rem 0.9rem; border-radius: 8px;">
-      <strong style="color: var(--primary); font-size: 0.9rem; display: block; margin-bottom: 0.2rem;">📚 YDS / YÖKDİL / YDT</strong>
-      <span style="font-size: 0.82rem; color: var(--muted); line-height: 1.4; display: block;">Akademik kelime dağarcığı, ileri okuma teknikleri ve soru çözüm stratejileri.</span>
+    <div style="background: rgba(248, 250, 252, 0.85); border: 1px solid var(--border); padding: 0.7rem 0.85rem; border-radius: 8px;">
+      <strong style="color: var(--primary); font-size: 0.88rem; display: block; margin-bottom: 0.2rem;">📚 YDS / YÖKDİL / YDT</strong>
+      <span style="font-size: 0.8rem; color: var(--muted); line-height: 1.4; display: block;">Akademik kelime dağarcığı, ileri okuma teknikleri ve soru çözüm stratejileri.</span>
     </div>
 
-    <div style="background: rgba(248, 250, 252, 0.85); border: 1px solid var(--border); padding: 0.75rem 0.9rem; border-radius: 8px;">
-      <strong style="color: var(--primary); font-size: 0.9rem; display: block; margin-bottom: 0.2rem;">🗣️ Konuşma & Telaffuz</strong>
-      <span style="font-size: 0.82rem; color: var(--muted); line-height: 1.4; display: block;">Akıcı iletişim, doğru fonetik telaffuz ve günlük/mesleki konuşma pratiği.</span>
+    <div style="background: rgba(248, 250, 252, 0.85); border: 1px solid var(--border); padding: 0.7rem 0.85rem; border-radius: 8px;">
+      <strong style="color: var(--primary); font-size: 0.88rem; display: block; margin-bottom: 0.2rem;">🗣️ Konuşma & Telaffuz</strong>
+      <span style="font-size: 0.8rem; color: var(--muted); line-height: 1.4; display: block;">Akıcı iletişim, doğru fonetik telaffuz ve günlük/mesleki konuşma pratiği.</span>
     </div>
   </div>
 
-  <!-- DERS TALEP BUTONU -->
-  <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; border-top: 1px solid rgba(0, 0, 0, 0.06); padding-top: 1rem;">
-    <span style="font-size: 0.85rem; color: var(--muted);">Dersler yüz yüze veya Zoom üzerinden interaktif işlenmektedir.</span>
-     <a href="mailto:enveradali195@gmail.com?subject=İngilizce%20Özel%20Ders%20Talebi&body=Merhaba,%0D%0A%0D%0AÖzel%20ders%20hakkında%20bilgi%20almak%20istiyorum.%0D%0A%0D%0AÖğrenci%20Adı-Soyadı:%20%0D%0ASınıf%20/%20Hedef%20(LGS,%20YDS,%20Okul%20vb.):%20%0D%0ATercih%20Edilen%20Format%20(Yüz%20yüze%20/%20Online):%20%0D%0Aİletişim%20Numarası:%20"
-       style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--accent); color: #ffffff !important; padding: 0.55rem 1.25rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 600; box-shadow: 0 3px 8px rgba(30, 107, 71, 0.2); transition: all 0.2s ease;">
-      ✉ Ders Talebi Oluştur ↗
+  <!-- TEK VE NET DERS TALEP BUTONU -->
+  <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.6rem; border-top: 1px solid rgba(0, 0, 0, 0.06); padding-top: 0.85rem;">
+    <span style="font-size: 0.82rem; color: var(--muted);">Ders planı ve seviye tespiti için iletişime geçebilirsiniz.</span>
+    <a href="mailto:enveradali195@gmail.com?subject=İngilizce%20Özel%20Ders%20Talebi&body=Merhaba%20Enver%20Hocam,%0D%0A%0D%0AÖzel%20ders%20hakkında%20bilgi%20almak%20istiyorum.%0D%0A%0D%0AÖğrenci%20Adı-Soyadı:%20%0D%0ASınıf%20/%20Hedef%20(LGS,%20YDS,%20Okul%20vb.):%20%0D%0ATercih%20Edilen%20Format%20(Yüz%20yüze%20/%20Online):%20%0D%0Aİletişim%20Numarası:%20" 
+       style="display: inline-flex; align-items: center; gap: 0.4rem; background: var(--accent); color: #ffffff !important; padding: 0.45rem 1.1rem; border-radius: 6px; text-decoration: none; font-size: 0.85rem; font-weight: 600; box-shadow: 0 2px 6px rgba(30, 107, 71, 0.2);">
+      ✉ Bilgi Al & İletişime Geç ↗
     </a>
   </div>
 </div>
-<!-- DERS TALEP BUTONU -->
-<div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; border-top: 1px solid rgba(0, 0, 0, 0.06); padding-top: 1rem;">
-  <span style="font-size: 0.85rem; color: var(--muted);">Ders planı, seviye tespiti ve detaylar için iletişime geçebilirsiniz.</span>
-  <a href="mailto:enveradali195@gmail.com?subject=İngilizce%20Özel%20Ders%20Talebi&body=Merhaba,%0D%0A%0D%0AÖzel%20ders%20hakkında%20bilgi%20almak%20istiyorum.%0D%0A%0D%0AÖğrenci%20Adı-Soyadı:%20%0D%0ASınıf%20/%20Hedef%20(LGS,%20YDS,%20Okul%20vb.):%20%0D%0ATercih%20Edilen%20Format%20(Yüz%20yüze%20/%20Online):%20%0D%0Aİletişim%20Numarası:%20" 
-     style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--accent); color: #ffffff !important; padding: 0.55rem 1.25rem; border-radius: 6px; text-decoration: none; font-size: 0.9rem; font-weight: 600; box-shadow: 0 3px 8px rgba(30, 107, 71, 0.2); transition: all 0.2s ease;">
-    ✉ Bilgi Al & İletişime Geç ↗
-  </a>
-</div>
 
-
-  <div class="abstract-quote" style="border-left: 4px solid var(--accent); background: #f8fafc; padding: 1.1rem; margin-top: 1.2rem;">
-    <strong>Mesleki Dayanışma ve Çeviribilime Destek:</strong><br>
-    Çeviribilim disiplinine ve mesleki farkındalığa katkı sunmak amacıyla; <strong>SDL Trados Studio</strong> gibi Bilgisayar Destekli Çeviri (CAT) yazılımları ile <strong>Subtitle Edit</strong> gibi görsel-işitsel çeviri araçlarına yönelik eğitimleri öğrenciler ve araştırmacılar için gönüllü olarak sunmayı mesleki bir dayanışma sorumluluğu olarak görmekteyim.
-    <div style="margin-top: 0.8rem; font-size: 0.9rem; color: var(--muted); font-style: normal; font-weight: 500;">
-      — Enver Adalı | Mütercim ve Tercümanlık Lisans • İngiliz Dili ve Edebiyatı Tezli Yüksek Lisans
-    </div>
+<!-- MESLEKİ DAYANIŞMA & ÇEVİRİ TEKNOLOJİLERİ -->
+<div class="card" style="border-left: 4px solid var(--primary); padding: 1.6rem; margin-bottom: 1.5rem;">
+  <h2 style="font-family: 'Lora', serif; font-size: 1.3rem; color: var(--primary); margin: 0 0 0.6rem;">Mesleki Dayanışma & Çeviribilim Destek</h2>
+  <div class="abstract-quote" style="margin: 0.8rem 0; font-size: 0.9rem; line-height: 1.65; padding: 0.85rem 1rem;">
+    Çeviribilim disiplinine katkı sunmak amacıyla; <strong>SDL Trados Studio</strong> gibi CAT yazılımları ile <strong>Subtitle Edit</strong> gibi araçlara yönelik eğitimleri öğrenciler ve meslektaş adayları için gönüllü olarak sunmayı mesleki bir dayanışma olarak görüyorum.
   </div>
-
-
-<!-- SINAV HAZIRLIK & DANIŞMANLIK -->
-<div class="card" style="border-left: 5px solid var(--accent); background: #ffffff;">
-  <h2>Sınav Hazırlık & Akademik Danışmanlık</h2>
-  <p style="margin-top: 0.6rem; font-size: 0.98rem; color: #2d3748;">
-    Akademik yeterlilik ve dil sınavları için sunduğum uzmanlık alanları:
+  <p style="font-size: 0.9rem; color: #4b5563; line-height: 1.65; margin: 0.6rem 0;">
+    Akademik dil hazırlığı ve bilgisayar destekli çeviri iş akışlarına dair Zoom atölyeleri için iletişim kurabilirsiniz.
   </p>
-  <ul style="margin: 0.8rem 0 1.2rem 1.4rem; font-size: 0.95rem; color: #374151; line-height: 1.8;">
-    <li><strong>Sınav Stratejileri:</strong> YDS, YÖKDİL, TOEFL ve IELTS hazırlık süreçlerinde akademik vokabüler ve metin analizi odaklı çalışma.</li>
-    <li><strong>Akademik Danışmanlık:</strong> Lisansüstü İngilizce yeterliliği, akademik yazım ve terminoloji yönetimi.</li>
-    <li><strong>Teknoloji Entegrasyonu:</strong> SDL Trados Studio ve Subtitle Edit ile bilgisayar destekli çeviri iş akışları.</li>
-  </ul>
-  <p style="font-size: 1.05rem; font-weight: 600; color: var(--primary);">
-    ✉️ <a href="javascript:void(0)" onclick="openContactModal()" style="color: var(--primary); text-decoration: underline;">İletişim & Talep İçin Tıklayın</a>
-  </p>
+  <div style="margin-top: 0.8rem;">
+    <a href="javascript:void(0)" onclick="openContactModal()" style="display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.88rem; font-weight: 600; color: var(--primary); text-decoration: underline;">
+      🎧 Ücretsiz Atölye Talebi İçin Tıklayın ↗
+    </a>
+  </div>
 </div>
 
 <!-- KURUMSAL BAĞLANTILAR -->
-<div class="card">
-  <h2>Kurumsal Bağlantılar</h2>
+<div class="card" style="padding: 1.6rem; margin-bottom: 1.5rem;">
+  <h2 style="font-family: 'Lora', serif; font-size: 1.3rem; color: var(--primary); margin: 0 0 0.8rem;">Kurumsal Bağlantılar</h2>
   <div class="portal-grid">
     <a href="https://www.beykent.edu.tr/aday-ogrenci/bolumler-programlar/lisans/fen-edebiyat-fakultesi/ingilizce-mutercim-ve-tercumanlik" target="_blank" rel="noopener noreferrer" class="portal-item">
       <div>
         <strong>İngilizce Mütercim ve Tercümanlık</strong><br>
-        <span style="font-size: 0.85rem; color: var(--muted);">İstanbul Beykent Üniversitesi • Bölüm Detayı</span>
+        <span style="font-size: 0.82rem; color: var(--muted);">İstanbul Beykent Üniversitesi • Bölüm Detayı</span>
       </div>
       <span class="portal-tag">Bölüm Portalı ↗</span>
     </a>
@@ -116,58 +127,20 @@ title: Ana Sayfa
     <a href="https://lisansustu.beykent.edu.tr/yuksek-lisans/ingiliz-dili-ve-edebiyati-abd" target="_blank" rel="noopener noreferrer" class="portal-item">
       <div>
         <strong>İngiliz Dili ve Edebiyatı Anabilim Dalı</strong><br>
-        <span style="font-size: 0.85rem; color: var(--muted);">Lisansüstü Eğitim Enstitüsü Sayfası</span>
+        <span style="font-size: 0.82rem; color: var(--muted);">Lisansüstü Eğitim Enstitüsü Sayfası</span>
       </div>
       <span class="portal-tag">Enstitü Portalı ↗</span>
     </a>
   </div>
 </div>
 
-<!-- KAYNAKLAR KARTI -->
-<div class="card" style="text-align: center; background: #fafbfc; border: 1px dashed var(--primary);">
-  <h3> Kaynaklar Merkezi</h3>
-  <p style="font-size: 0.95rem; color: var(--muted); margin: 0.5rem 0 1rem;">
-    Dilbilgisi rehberleri, eşdizimlilik sözlükleri, BBC/British Council materyalleri ve okuma parçaları.
+<!-- KAYNAKLAR MERKEZİ KARTI -->
+<div class="card" style="text-align: center; background: rgba(250, 251, 252, 0.85); border: 1px dashed var(--primary); padding: 1.5rem;">
+  <h3 style="font-family: 'Lora', serif; font-size: 1.15rem; color: var(--primary); margin: 0 0 0.35rem;">📚 Kaynaklar Merkezi</h3>
+  <p style="font-size: 0.88rem; color: var(--muted); margin: 0 0 0.9rem;">
+    Korpus veri tabanları, collocation sözlükleri ve akademik yazım kılavuzları.
   </p>
-  <a href="{{ '/kaynaklar' | relative_url }}" style="font-weight: 700; color: var(--primary); text-decoration: none; border-bottom: 2px solid var(--primary);">
+  <a href="{{ '/kaynaklar' | relative_url }}" style="font-weight: 600; font-size: 0.9rem; color: var(--primary); text-decoration: none; border-bottom: 2px solid var(--primary); padding-bottom: 2px;">
     Kaynaklar Sayfasını Görüntüle →
   </a>
 </div>
-
-<!-- İLETİŞİM & HİZMETLER MODALI (AÇILIR PENCERE) -->
-<div id="contactModal" style="display: none; position: fixed; inset: 0; background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(3px); z-index: 10000; align-items: center; justify-content: center; padding: 16px;">
-  <div style="position: relative; background: #ffffff; width: 100%; max-width: 540px; border-radius: 14px; padding: 24px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2); z-index: 10001; text-align: left;">
-    <button onclick="closeContactModal()" style="position: absolute; top: 14px; right: 16px; background: none; border: none; font-size: 24px; cursor: pointer; color: #94a3b8;">&times;</button>
-    
-    <h3 style="margin-top: 0; color: #1e293b; font-size: 1.25rem;">İletişim & Hizmet Talebi</h3>
-    <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 16px;">
-      İlgilendiğiniz alana tıklayarak doğrudan e-posta taslağı oluşturabilirsiniz:
-    </p>
-
-    <!-- Ücretsiz Seçenek -->
-    <a href="mailto:{{ site.email }}?subject=Ücretsiz%20Eğitim%20Talebi%20(Trados%20/%20Subtitle%20Edit)&body=Merhaba,%0D%0A%0D%0AMütercim-Tercümanlık%20dayanışması%20kapsamındaki%20Trados%20SDL%20Studio%20/%20Subtitle%20Edit%20eğitimine%20katılmak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AÜniversite/Bölüm:%20" style="display: block; text-decoration: none; border-radius: 10px; padding: 12px 14px; margin-bottom: 10px; background: #f0fdf4; border: 1px solid #bbf7d0;">
-      <div style="font-size: 0.72rem; font-weight: 700; color: #166534; text-transform: uppercase;">Ücretsiz (Öğrenci & Mezun Dayanışması)</div>
-      <div style="font-size: 0.95rem; font-weight: 600; color: #0f172a; margin: 4px 0;">🎧 SDL Trados Studio & Subtitle Edit Eğitimi</div>
-      <div style="font-size: 0.82rem; color: #64748b; line-height: 1.4;">Çeviribilim ve mütercim-tercümanlık öğrencileri/mezunları için Zoom üzerinden ücretsiz yazılım eğitimleri.</div>
-    </a>
-
- 
-
-    <!-- Ücretli Seçenek  -->
-    <a href="mailto:{{ site.email }}?subject=Web%20Sitesi%20Kurulum%20Talebi&body=Merhaba,%0D%0A%0D%0APortfolyo%20/%20Akademik%20tanıtım%20için%20web%20sitesi%20kurulumu%20hakkında%20bilgi%20almak%20istiyorum.%0D%0A%0D%0AAd-Soyad:%20%0D%0AIstediğim%20Site%20Türü:%20" style="display: block; text-decoration: none; border-radius: 10px; padding: 12px 14px; margin-bottom: 10px; background: #f8fafc; border: 1px solid #e2e8f0;">
-      <div style="font-size: 0.72rem; font-weight: 700; color: #475569; text-transform: uppercase;">Ücretli Hizmet</div>
-      <div style="font-size: 0.95rem; font-weight: 600; color: #0f172a; margin: 4px 0;">🌐 Kişisel / Akademik Web Sitesi Kurulumu</div>
-      <div style="font-size: 0.82rem; color: #64748b; line-height: 1.4;">Akademisyenler, çevirmenler ve bireysel kullanım için modern portfolyo ve tanıtım sitesi kurulumu.</div>
-    </a>
-  </div>
-</div>
-
-<!-- JAVASCRIPT KODLARI -->
-<script>
-function openContactModal() {
-  document.getElementById('contactModal').style.display = 'flex';
-}
-function closeContactModal() {
-  document.getElementById('contactModal').style.display = 'none';
-}
-</script>
