@@ -100,13 +100,17 @@ title: Ana Sayfa
 <div class="card" style="border-left: 4px solid var(--primary); padding: 1.6rem; margin-bottom: 1.5rem;">
   <h2 style="font-family: 'Lora', serif; font-size: 1.3rem; color: var(--primary); margin: 0 0 0.6rem;">Mesleki Dayanışma & Çeviribilim Destek</h2>
   <div class="abstract-quote" style="margin: 0.8rem 0; font-size: 0.9rem; line-height: 1.65; padding: 0.85rem 1rem;">
-    Çeviribilim disiplinine katkı sunmak amacıyla; <strong>SDL Trados Studio</strong> gibi CAT yazılımları ile <strong>Subtitle Edit</strong> gibi araçlara yönelik eğitimleri öğrenciler ve meslektaş adayları için gönüllü olarak sunmayı mesleki bir dayanışma olarak görüyorum.
+    Çeviribilim disiplinine katkı sunmak amacıyla; <strong>SDL Trados Studio</strong> gibi CAT yazılımları ile <strong>Subtitle Edit</strong> gibi araçlara yönelik <strong>Mütercim ve Tercümanlık</strong>, <strong>Çeviribilim</strong> ve <strong>Uygulamalı İngilizce Çevirmenlik</strong> öğrencileri ile mezunlarına gönüllü olarak sunumlar ve eğitimler vermeyi mesleki bir dayanışma olarak görüyorum.
   </div>
   <p style="font-size: 0.9rem; color: #4b5563; line-height: 1.65; margin: 0.6rem 0;">
     Akademik dil hazırlığı ve bilgisayar destekli çeviri iş akışlarına dair Zoom atölyeleri için iletişim kurabilirsiniz.
   </p>
   <div style="margin-top: 0.8rem;">
     <a href="javascript:void(0)" onclick="openContactModal()" style="display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.88rem; font-weight: 600; color: var(--primary); text-decoration: underline;">
+      🎧 Ücretsiz Atölye Talebi İçin Tıklayın ↗
+    </a>
+  </div>
+</div>
       🎧 Ücretsiz Atölye Talebi İçin Tıklayın ↗
     </a>
   </div>
