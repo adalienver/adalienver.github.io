@@ -89,7 +89,7 @@ title: Ana Sayfa
   <!-- TEK VE NET DERS TALEP BUTONU -->
   <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.6rem; border-top: 1px solid rgba(0, 0, 0, 0.06); padding-top: 0.85rem;">
     <span style="font-size: 0.82rem; color: var(--muted);">Ders planı ve seviye tespiti için iletişime geçebilirsiniz.</span>
-    <a href="mailto:enveradali195@gmail.com?subject=İngilizce%20Özel%20Ders%20Talebi&body=Merhaba%20Enver%20Hocam,%0D%0A%0D%0AÖzel%20ders%20hakkında%20bilgi%20almak%20istiyorum.%0D%0A%0D%0AÖğrenci%20Adı-Soyadı:%20%0D%0ASınıf%20/%20Hedef%20(LGS,%20YDS,%20Okul%20vb.):%20%0D%0ATercih%20Edilen%20Format%20(Yüz%20yüze%20/%20Online):%20%0D%0Aİletişim%20Numarası:%20" 
+    <a href="mailto:enveradali195@gmail.com?subject=İngilizce%20Özel%20Ders%20Talebi&body=Merhaba%0D%0A%0D%0AÖzel%20ders%20hakkında%20bilgi%20almak%20istiyorum.%0D%0A%0D%0AÖğrenci%20Adı-Soyadı:%20%0D%0ASınıf%20/%20Hedef%20(LGS,%20YDS,%20Okul%20vb.):%20%0D%0ATercih%20Edilen%20Format%20(Yüz%20yüze%20/%20Online):%20%0D%0Aİletişim%20Numarası:%20" 
        style="display: inline-flex; align-items: center; gap: 0.4rem; background: var(--accent); color: #ffffff !important; padding: 0.45rem 1.1rem; border-radius: 6px; text-decoration: none; font-size: 0.85rem; font-weight: 600; box-shadow: 0 2px 6px rgba(30, 107, 71, 0.2);">
       ✉ Bilgi Al & İletişime Geç ↗
     </a>
