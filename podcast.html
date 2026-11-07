@@ -1,142 +1,7 @@
----
-layout: null
-permalink: /podcast.html
----
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Student Portal · Exclusive Audio</title>
-
-  <style>
-    :root {
-      --background: #f5f4ef;
-      --ink: #182921;
-      --muted: #626b65;
-      --green: #225c45;
-      --border: #d9ded8;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      background: var(--background);
-      color: var(--ink);
-      font-family: system-ui, -apple-system, sans-serif;
-      padding: 24px;
-    }
-
-    .player-card {
-      background: white;
-      width: 100%;
-      max-width: 520px;
-      padding: 44px 36px;
-      border-radius: 24px;
-      border: 1px solid var(--border);
-      box-shadow: 0 20px 60px rgba(24, 41, 33, 0.08);
-      text-align: center;
-    }
-
-    .icon-badge {
-      width: 56px;
-      height: 56px;
-      border-radius: 16px;
-      background: #edf4ee;
-      color: var(--green);
-      font-size: 28px;
-      display: grid;
-      place-items: center;
-      margin: 0 auto 20px;
-    }
-
-    h1 {
-      font-size: 24px;
-      margin: 0 0 8px;
-      letter-spacing: -0.5px;
-    }
-
-    .user-greeting {
-      color: var(--muted);
-      font-size: 14px;
-      margin-bottom: 28px;
-      word-break: break-all;
-    }
-
-    .audio-wrapper {
-      margin: 28px 0;
-      background: #fbfbf9;
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 16px;
-    }
-
-    audio {
-      width: 100%;
-      display: block;
-      outline: none;
-    }
-
-    .status-msg {
-      font-size: 14px;
-      margin: 16px 0;
-    }
-
-    .status-msg[data-state="error"] {
-      color: #a52c2c;
-    }
-
-    .status-msg[data-state="loading"] {
-      color: var(--muted);
-    }
-
-    .logout-btn {
-      background: transparent;
-      border: 1px solid var(--border);
-      color: var(--muted);
-      padding: 10px 22px;
-      border-radius: 10px;
-      cursor: pointer;
-      font-size: 14px;
-      font-weight: 600;
-      transition: all 0.2s;
-    }
-
-    .logout-btn:hover {
-      background: #fce8e8;
-      border-color: #f7c5c5;
-      color: #a52c2c;
-    }
-  </style>
-</head>
-<body>
-
-  <main class="player-card">
-    <div class="icon-badge">♫</div>
-    <h1>Special Lecture & Podcast</h1>
-    <p id="user-greeting" class="user-greeting">Checking authentication…</p>
-
-    <div class="audio-wrapper">
-      <p id="status-msg" class="status-msg" data-state="loading">Generating secure session link…</p>
-      <audio id="audio-player" controls style="display: none;"></audio>
-    </div>
-
-    <button id="logout-btn" class="logout-btn" type="button">Log Out</button>
-  </main>
-
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script>
-    // 1. Paste the exact same URL and Anon Key used in login.html:
-    const PROJECT_URL = "PASTE_YOUR_PROJECT_URL";
-    const PUBLISHABLE_KEY = "PASTE_YOUR_PUBLISHABLE_KEY";
-
-    const client = window.supabase.createClient(PROJECT_URL, PUBLISHABLE_KEY);
+    const PROJECT_URL = "https://kigjblhzauhyagrckkwj.supabase.co";
+    const PUBLISHABLE_KEY = "sb_publishable_LsuTpgVDAANBu1VB0Qh69Q_ENRCJKy0";
 
     const greeting = document.getElementById("user-greeting");
     const statusMsg = document.getElementById("status-msg");
@@ -144,40 +9,54 @@ permalink: /podcast.html
     const logoutBtn = document.getElementById("logout-btn");
 
     async function loadSecurePodcast() {
-      // Step A: Verify student session
-      const { data: { session } } = await client.auth.getSession();
+      try {
+        if (!window.supabase) {
+          statusMsg.textContent = "Supabase kütüphanesi yüklenemedi.";
+          return;
+        }
 
-      if (!session) {
-        // Kick unauthenticated visitors back to login
-        window.location.href = "/login.html";
-        return;
-      }
+        const client = window.supabase.createClient(PROJECT_URL, PUBLISHABLE_KEY);
 
-      greeting.textContent = `Signed in as: ${session.user.email}`;
+        // 1. Oturum kontrolü
+        const { data: { session }, error: sessionError } = await client.auth.getSession();
 
-      // Step B: Generate a temporary signed URL valid for 60 minutes (3600 seconds)
-      const { data, error } = await client
-        .storage
-        .from('subtitle edit sunum')
-        .createSignedUrl('sunum.mp3', 3600);
+        if (sessionError || !session) {
+          window.location.href = "/login.html";
+          return;
+        }
 
-      if (error || !data?.signedUrl) {
-        statusMsg.textContent = "Could not load lecture audio. Ensure your account is authorized.";
+        greeting.textContent = "Öğrenci: " + session.user.email;
+
+        // 2. Güvenli ses linki oluşturma (60 dakika geçerli)
+        const { data, error } = await client
+          .storage
+          .from('subtitle edit sunum')
+          .createSignedUrl('sunum.mp3', 3600);
+
+        if (error) {
+          console.error("Storage hatası:", error);
+          statusMsg.textContent = "Hata: " + (error.message || "Dosyaya erişilemedi.");
+          statusMsg.dataset.state = "error";
+          return;
+        }
+
+        if (data && data.signedUrl) {
+          statusMsg.style.display = "none";
+          player.src = data.signedUrl;
+          player.style.display = "block";
+        }
+      } catch (err) {
+        console.error("Beklenmeyen hata:", err);
+        statusMsg.textContent = "Bağlantı hatası: " + err.message;
         statusMsg.dataset.state = "error";
-      } else {
-        statusMsg.style.display = "none";
-        player.src = data.signedUrl;
-        player.style.display = "block";
       }
     }
 
-    // Step C: Handle logout
     logoutBtn.addEventListener("click", async () => {
+      const client = window.supabase.createClient(PROJECT_URL, PUBLISHABLE_KEY);
       await client.auth.signOut();
       window.location.href = "/login.html";
     });
 
     loadSecurePodcast();
   </script>
-</body>
-</html>
