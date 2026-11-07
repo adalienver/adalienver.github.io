@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/svg+xml" href="{{ '/assets/images/icon.svg' | relative_url }}">
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/icon.svg' | relative_url }}">
   <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
   <meta
     name="description"
@@ -26,79 +26,75 @@
 
 <body>
   <!-- DİKKAT DAĞITMAYAN ENTELEKTÜEL ARKA PLAN -->
-<canvas id="bg-canvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; pointer-events: none;"></canvas>
+  <canvas id="bg-canvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; pointer-events: none;"></canvas>
 
-<script>
-  (function() {
-    const canvas = document.getElementById('bg-canvas');
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
+  <script>
+    (function() {
+      const canvas = document.getElementById('bg-canvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
 
-    // Kullanıcı hareketi azaltmak istiyorsa animasyonu durdur
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    let width, height;
-    function resize() {
-      width = canvas.width = window.innerWidth;
-      height = canvas.height = window.innerHeight;
-    }
-    window.addEventListener('resize', resize);
-    resize();
-
-    let step = 0;
-
-    function draw() {
-      // Temel zemin rengi: Parşömen / Sıcak Açık Fildişi
-      ctx.fillStyle = '#f8f5ee';
-      ctx.fillRect(0, 0, width, height);
-
-      // 1. Yumuşak Işık Halesi (Radial Glow)
-      const grad = ctx.createRadialGradient(
-        width * 0.5, height * 0.2, 50,
-        width * 0.5, height * 0.5, Math.max(width, height) * 0.8
-      );
-      grad.addColorStop(0, 'rgba(21, 50, 91, 0.04)'); // Gece laciverti esintisi
-      grad.addColorStop(0.5, 'rgba(30, 107, 71, 0.03)'); // Zümrüt dokunuşu
-      grad.addColorStop(1, 'rgba(248, 245, 238, 0)');
-      ctx.fillStyle = grad;
-      ctx.fillRect(0, 0, width, height);
-
-      // 2. Harmonik Katmanlı Dalgalar (3 Katman)
-      const layers = [
-        { color: 'rgba(21, 50, 91, 0.04)', speed: 0.0008, freq: 0.002, amp: 28, yOffset: 0.35 },
-        { color: 'rgba(30, 107, 71, 0.035)', speed: 0.0012, freq: 0.0015, amp: 35, yOffset: 0.55 },
-        { color: 'rgba(180, 83, 9, 0.025)', speed: 0.0006, freq: 0.0025, amp: 22, yOffset: 0.75 }
-      ];
-
-      layers.forEach((layer, index) => {
-        ctx.beginPath();
-        const baseLine = height * layer.yOffset;
-        ctx.moveTo(0, height);
-        ctx.lineTo(0, baseLine);
-
-        for (let x = 0; x <= width; x += 15) {
-          // Çift sinüs fonksiyonu ile organik gelgit efekti
-          const y = baseLine + 
-            Math.sin(x * layer.freq + step * (index + 1) * 0.8) * layer.amp + 
-            Math.cos(x * 0.0008 - step * 0.5) * (layer.amp * 0.5);
-          ctx.lineTo(x, y);
-        }
-
-        ctx.lineTo(width, height);
-        ctx.closePath();
-        ctx.fillStyle = layer.color;
-        ctx.fill();
-      });
-
-      if (!prefersReducedMotion) {
-        step += 0.015;
-        requestAnimationFrame(draw);
+      let width, height;
+      function resize() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
       }
-    }
+      window.addEventListener('resize', resize);
+      resize();
 
-    draw();
-  })();
-</script>
+      let step = 0;
+
+      function draw() {
+        ctx.fillStyle = '#f8f5ee';
+        ctx.fillRect(0, 0, width, height);
+
+        const grad = ctx.createRadialGradient(
+          width * 0.5, height * 0.2, 50,
+          width * 0.5, height * 0.5, Math.max(width, height) * 0.8
+        );
+        grad.addColorStop(0, 'rgba(21, 50, 91, 0.04)');
+        grad.addColorStop(0.5, 'rgba(30, 107, 71, 0.03)');
+        grad.addColorStop(1, 'rgba(248, 245, 238, 0)');
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, 0, width, height);
+
+        const layers = [
+          { color: 'rgba(21, 50, 91, 0.04)', speed: 0.0008, freq: 0.002, amp: 28, yOffset: 0.35 },
+          { color: 'rgba(30, 107, 71, 0.035)', speed: 0.0012, freq: 0.0015, amp: 35, yOffset: 0.55 },
+          { color: 'rgba(180, 83, 9, 0.025)', speed: 0.0006, freq: 0.0025, amp: 22, yOffset: 0.75 }
+        ];
+
+        layers.forEach((layer, index) => {
+          ctx.beginPath();
+          const baseLine = height * layer.yOffset;
+          ctx.moveTo(0, height);
+          ctx.lineTo(0, baseLine);
+
+          for (let x = 0; x <= width; x += 15) {
+            const y = baseLine + 
+              Math.sin(x * layer.freq + step * (index + 1) * 0.8) * layer.amp + 
+              Math.cos(x * 0.0008 - step * 0.5) * (layer.amp * 0.5);
+            ctx.lineTo(x, y);
+          }
+
+          ctx.lineTo(width, height);
+          ctx.closePath();
+          ctx.fillStyle = layer.color;
+          ctx.fill();
+        });
+
+        if (!prefersReducedMotion) {
+          step += 0.015;
+          requestAnimationFrame(draw);
+        }
+      }
+
+      draw();
+    })();
+  </script>
+
   {% assign contact_email = site.email | default: 'enveradali195@gmail.com' %}
 
   <a class="skip-link" href="#main-content">İçeriğe geç</a>
@@ -134,6 +130,12 @@
             href="{{ '/kaynaklar' | relative_url }}"
             {% if page.url contains '/kaynaklar' %}aria-current="page"{% endif %}
           >Kaynaklar</a>
+
+          <!-- ÖĞRENCİ GİRİŞİ BAĞLANTISI -->
+          <a
+            href="{{ '/login.html' | relative_url }}"
+            {% if page.url contains '/login' or page.url contains '/podcast' %}aria-current="page"{% endif %}
+          >Öğrenci Girişi</a>
 
           <button
             type="button"
@@ -229,7 +231,6 @@
   <script>
     function openContactModal() {
       const dialog = document.getElementById('contactModal');
-
       if (dialog && !dialog.open) {
         dialog.showModal();
       }
@@ -237,7 +238,6 @@
 
     function closeContactModal() {
       const dialog = document.getElementById('contactModal');
-
       if (dialog && dialog.open) {
         dialog.close();
       }
@@ -247,9 +247,7 @@
 
     contactDialog.addEventListener('click', function (event) {
       if (event.target !== contactDialog) return;
-
       const bounds = contactDialog.getBoundingClientRect();
-
       const outside =
         event.clientX < bounds.left ||
         event.clientX > bounds.right ||
