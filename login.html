@@ -2,9 +2,6 @@
 layout: null
 permalink: /login.html
 ---
-const PROJECT_URL = "https://sb_publishable_LsuTpgVDAANBu1VB0Qh69Q_ENRCJKy0";
-const PUBLISHABLE_KEY = "sb_secret_h-BekNjlHp-4-HiOkmD6Vg_e-S1Q3kF"";
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -359,9 +356,8 @@ const PUBLISHABLE_KEY = "sb_secret_h-BekNjlHp-4-HiOkmD6Vg_e-S1Q3kF"";
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
   <script>
-    // Replace these two strings with your values from Supabase: Project Settings -> API
-    const PROJECT_URL = "PASTE_YOUR_PROJECT_URL";
-    const PUBLISHABLE_KEY = "PASTE_YOUR_PUBLISHABLE_KEY";
+    const PROJECT_URL = "https://kigjblhzauhyagrckkwj.supabase.co";
+    const PUBLISHABLE_KEY = "sb_publishable_LsuTpgVDAANBu1VB0Qh69Q_ENRCJKy0";
 
     const form = document.getElementById("login-form");
     const message = document.getElementById("message");
@@ -390,17 +386,6 @@ const PUBLISHABLE_KEY = "sb_secret_h-BekNjlHp-4-HiOkmD6Vg_e-S1Q3kF"";
     // Handle form submit
     form.addEventListener("submit", async function (event) {
       event.preventDefault();
-
-      if (
-        PROJECT_URL === "PASTE_YOUR_PROJECT_URL" ||
-        PUBLISHABLE_KEY === "PASTE_YOUR_PUBLISHABLE_KEY"
-      ) {
-        showMessage(
-          "Setup required: Please add your Supabase URL and key inside the script tag.",
-          "error"
-        );
-        return;
-      }
 
       loginButton.disabled = true;
       loginButton.textContent = "Signing in…";
@@ -432,7 +417,6 @@ const PUBLISHABLE_KEY = "sb_secret_h-BekNjlHp-4-HiOkmD6Vg_e-S1Q3kF"";
           passwordInput.value = "";
           showMessage("Welcome! Redirecting to the podcast library…", "success");
           
-          // Automatically redirect student to the audio player page
           setTimeout(() => {
             window.location.href = "/podcast.html";
           }, 1000);
