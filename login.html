@@ -1,0 +1,449 @@
+---
+layout: null
+permalink: /login.html
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Login · Podcast Library</title>
+
+  <style>
+    :root {
+      --background: #f5f4ef;
+      --ink: #182921;
+      --muted: #626b65;
+      --green: #225c45;
+      --border: #d9ded8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100svh;
+      padding: 32px;
+      display: grid;
+      place-items: center;
+      background: var(--background);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 1050px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background: white;
+      box-shadow: 0 24px 70px rgba(24, 41, 33, 0.08);
+    }
+
+    .intro {
+      padding: 56px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 56px;
+      background: var(--green);
+      color: white;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 17px;
+      font-weight: 650;
+    }
+
+    .brand-icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 12px;
+      font-size: 24px;
+    }
+
+    .eyebrow {
+      font-size: 12px;
+      font-weight: 650;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #c7dfcf;
+    }
+
+    .intro h1 {
+      margin: 16px 0;
+      font-size: clamp(32px, 4vw, 48px);
+      line-height: 1.12;
+      letter-spacing: -1.5px;
+    }
+
+    .intro p {
+      max-width: 340px;
+      color: #dce9df;
+      line-height: 1.7;
+    }
+
+    .intro-footer {
+      font-size: 13px;
+      color: #c7dfcf;
+    }
+
+    .login-panel {
+      padding: 56px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .badge {
+      align-self: flex-start;
+      padding: 7px 12px;
+      border-radius: 30px;
+      background: #edf4ee;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 650;
+    }
+
+    h2 {
+      margin: 24px 0 8px;
+      font-size: 30px;
+      letter-spacing: -0.8px;
+    }
+
+    .subtitle {
+      margin: 0 0 30px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .field {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    input {
+      width: 100%;
+      min-width: 0;
+      padding: 14px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: #fcfcfa;
+      color: var(--ink);
+      font-size: 16px;
+    }
+
+    input:focus-visible,
+    button:focus-visible {
+      outline: 3px solid #91b6a1;
+      outline-offset: 3px;
+    }
+
+    .password-wrapper {
+      position: relative;
+    }
+
+    .password-wrapper input {
+      padding-right: 74px;
+    }
+
+    .toggle-password {
+      position: absolute;
+      right: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      background: transparent;
+      color: var(--green);
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    .login-button {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      background: var(--green);
+      color: white;
+      cursor: pointer;
+      font-weight: 650;
+      transition: background 0.2s;
+    }
+
+    .login-button:hover {
+      background: #174531;
+    }
+
+    .login-button:disabled {
+      opacity: 0.65;
+      cursor: wait;
+    }
+
+    .message {
+      min-height: 24px;
+      margin: 16px 0 0;
+      font-size: 14px;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+    }
+
+    .message[data-state="error"] {
+      color: #a52c2c;
+    }
+
+    .message[data-state="success"] {
+      color: var(--green);
+    }
+
+    .help {
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 760px) {
+      body {
+        padding: 20px;
+      }
+
+      .page {
+        max-width: 500px;
+        grid-template-columns: 1fr;
+      }
+
+      .intro,
+      .login-panel {
+        padding: 32px;
+      }
+
+      .intro {
+        gap: 28px;
+      }
+
+      .intro h1 {
+        font-size: 34px;
+      }
+
+      .intro-footer {
+        display: none;
+      }
+    }
+
+    @media (max-width: 380px) {
+      body {
+        padding: 12px;
+      }
+
+      .intro,
+      .login-panel {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <section class="intro" aria-labelledby="intro-title">
+      <div class="brand">
+        <span class="brand-icon" aria-hidden="true">♫</span>
+        <span>Podcast Library</span>
+      </div>
+
+      <div>
+        <div class="eyebrow">Listen · Learn · Explore</div>
+        <h1 id="intro-title">A space for<br>curious minds.</h1>
+        <p>
+          Explore your professor’s podcast collection
+          and keep learning beyond the classroom.
+        </p>
+      </div>
+
+      <div class="intro-footer">
+        Access for approved students
+      </div>
+    </section>
+
+    <section class="login-panel" aria-labelledby="login-title">
+      <span class="badge">Student access</span>
+
+      <h2 id="login-title">Welcome back</h2>
+      <p class="subtitle">
+        Sign in with the account provided to you.
+      </p>
+
+      <form id="login-form">
+        <div class="field">
+          <label for="email">Email address</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Your student email"
+            autocomplete="username"
+            required
+          >
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <div class="password-wrapper">
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Enter your password"
+              autocomplete="current-password"
+              required
+            >
+            <button
+              id="toggle-password"
+              class="toggle-password"
+              type="button"
+              aria-controls="password"
+              aria-label="Show password"
+              aria-pressed="false"
+            >Show</button>
+          </div>
+        </div>
+
+        <button class="login-button" id="login-button" type="submit">
+          Sign in
+        </button>
+
+        <p class="message" id="message" role="status" aria-live="polite"></p>
+      </form>
+
+      <div class="help">
+        <strong>Need access or forgot your password?</strong><br>
+        Contact your professor for account assistance.
+      </div>
+    </section>
+  </main>
+
+  <!-- Supabase JS Client -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <script>
+    // Replace these two strings with your values from Supabase: Project Settings -> API
+    const PROJECT_URL = "PASTE_YOUR_PROJECT_URL";
+    const PUBLISHABLE_KEY = "PASTE_YOUR_PUBLISHABLE_KEY";
+
+    const form = document.getElementById("login-form");
+    const message = document.getElementById("message");
+    const loginButton = document.getElementById("login-button");
+    const passwordInput = document.getElementById("password");
+    const toggleButton = document.getElementById("toggle-password");
+
+    let client;
+
+    function showMessage(text, state = "") {
+      message.textContent = text;
+      message.dataset.state = state;
+    }
+
+    // Toggle password visibility
+    toggleButton.addEventListener("click", function () {
+      const show = passwordInput.type === "password";
+      passwordInput.type = show ? "text" : "password";
+      toggleButton.textContent = show ? "Hide" : "Show";
+      toggleButton.setAttribute("aria-pressed", String(show));
+      toggleButton.setAttribute(
+        "aria-label", show ? "Hide password" : "Show password"
+      );
+    });
+
+    // Handle form submit
+    form.addEventListener("submit", async function (event) {
+      event.preventDefault();
+
+      if (
+        PROJECT_URL === "PASTE_YOUR_PROJECT_URL" ||
+        PUBLISHABLE_KEY === "PASTE_YOUR_PUBLISHABLE_KEY"
+      ) {
+        showMessage(
+          "Setup required: Please add your Supabase URL and key inside the script tag.",
+          "error"
+        );
+        return;
+      }
+
+      loginButton.disabled = true;
+      loginButton.textContent = "Signing in…";
+      showMessage("");
+
+      try {
+        if (!window.supabase) {
+          throw new Error("Supabase library not loaded.");
+        }
+
+        if (!client) {
+          client = window.supabase.createClient(PROJECT_URL, PUBLISHABLE_KEY);
+        }
+
+        const emailVal = document.getElementById("email").value.trim();
+        const passVal = passwordInput.value;
+
+        const { data, error } = await client.auth.signInWithPassword({
+          email: emailVal,
+          password: passVal
+        });
+
+        if (error) {
+          showMessage(
+            "Could not sign in. Please verify your credentials.",
+            "error"
+          );
+        } else {
+          passwordInput.value = "";
+          showMessage("Welcome! Redirecting to the podcast library…", "success");
+          
+          // Automatically redirect student to the audio player page
+          setTimeout(() => {
+            window.location.href = "/podcast.html";
+          }, 1000);
+        }
+      } catch (err) {
+        showMessage(
+          "Unable to connect. Check your internet connection.",
+          "error"
+        );
+      } finally {
+        loginButton.disabled = false;
+        loginButton.textContent = "Sign in";
+      }
+    });
+  </script>
+</body>
+</html>
