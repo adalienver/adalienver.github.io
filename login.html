@@ -110,10 +110,17 @@ permalink: /login.html
       display: flex;
       flex-direction: column;
       justify-content: center;
+      position: relative;
+    }
+
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
     }
 
     .badge {
-      align-self: flex-start;
       padding: 7px 12px;
       border-radius: 30px;
       background: #edf4ee;
@@ -122,8 +129,28 @@ permalink: /login.html
       font-weight: 650;
     }
 
+    .back-home-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      transition: all 0.2s;
+    }
+
+    .back-home-link:hover {
+      background: #edf4ee;
+      color: var(--green);
+      border-color: #bad3c2;
+    }
+
     h2 {
-      margin: 24px 0 8px;
+      margin: 20px 0 8px;
       font-size: 30px;
       letter-spacing: -0.8px;
     }
@@ -296,7 +323,11 @@ permalink: /login.html
     </section>
 
     <section class="login-panel" aria-labelledby="login-title">
-      <span class="badge">Student access</span>
+      <!-- Üst Çubuk: Student Access Rozeti ve Ana Sayfa Linki -->
+      <div class="panel-header">
+        <span class="badge">Student access</span>
+        <a href="{{ '/' | relative_url }}" class="back-home-link">← Ana Sayfa</a>
+      </div>
 
       <h2 id="login-title">Welcome back</h2>
       <p class="subtitle">
@@ -372,7 +403,6 @@ permalink: /login.html
       message.dataset.state = state;
     }
 
-    // Toggle password visibility
     toggleButton.addEventListener("click", function () {
       const show = passwordInput.type === "password";
       passwordInput.type = show ? "text" : "password";
@@ -383,7 +413,6 @@ permalink: /login.html
       );
     });
 
-    // Handle form submit
     form.addEventListener("submit", async function (event) {
       event.preventDefault();
 
@@ -418,7 +447,7 @@ permalink: /login.html
           showMessage("Welcome! Redirecting to the podcast library…", "success");
           
           setTimeout(() => {
-            window.location.href = "/podcast.html";
+            window.location.href = "{{ '/podcast.html' | relative_url }}";
           }, 1000);
         }
       } catch (err) {
