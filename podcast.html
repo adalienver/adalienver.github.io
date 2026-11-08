@@ -7,15 +7,22 @@ permalink: /podcast.html
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Özel Podcast & Sunum Alanı</title>
+  <meta name="robots" content="noindex, nofollow">
+  <title>Podcast · Çeviri Teknolojileri & Altyazı Eğitimi</title>
 
   <style>
     :root {
-      --background: #f5f4ef;
-      --ink: #182921;
-      --muted: #626b65;
-      --green: #225c45;
-      --border: #d9ded8;
+      --background: #f8f6f0;
+      --surface: #ffffff;
+      --ink: #192620;
+      --muted: #5e6b63;
+      --border: #dce3dd;
+      --green: #215943;
+      --green-dark: #153e2e;
+      --green-soft: #edf4ef;
+      --amber-bg: #fffbeb;
+      --amber-border: #fef3c7;
+      --amber-text: #92400e;
     }
 
     * { box-sizing: border-box; }
@@ -23,107 +30,328 @@ permalink: /podcast.html
     body {
       margin: 0;
       min-height: 100vh;
-      display: grid;
-      place-items: center;
       background: var(--background);
       color: var(--ink);
-      font-family: system-ui, -apple-system, sans-serif;
-      padding: 24px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      padding: 32px 16px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
     }
 
-    .player-card {
-      background: white;
+    .container {
       width: 100%;
-      max-width: 520px;
-      padding: 40px 32px;
-      border-radius: 24px;
+      max-width: 680px;
+      background: var(--surface);
       border: 1px solid var(--border);
-      box-shadow: 0 20px 60px rgba(24, 41, 33, 0.08);
+      border-radius: 24px;
+      box-shadow: 0 20px 60px rgba(25, 38, 32, 0.06);
+      overflow: hidden;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 28px;
+      border-bottom: 1px solid var(--border);
+      background: #fafaf7;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: white;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 8px 14px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .nav-btn:hover {
+      background: var(--green-soft);
+      color: var(--green);
+      border-color: #bcd4c4;
+    }
+
+    .logout-btn:hover {
+      background: #fdf2f2;
+      color: #b91c1c;
+      border-color: #fecaca;
+    }
+
+    .content-body {
+      padding: 32px 28px;
+    }
+
+    .header-section {
       text-align: center;
+      margin-bottom: 28px;
     }
 
     .icon-badge {
-      width: 54px;
-      height: 54px;
+      width: 56px;
+      height: 56px;
       border-radius: 16px;
-      background: #edf4ee;
+      background: var(--green-soft);
       color: var(--green);
       font-size: 26px;
       display: grid;
       place-items: center;
-      margin: 0 auto 16px;
+      margin: 0 auto 14px;
     }
 
     h1 {
-      font-size: 22px;
-      margin: 0 0 8px;
+      font-size: 24px;
+      margin: 0 0 6px;
+      letter-spacing: -0.5px;
     }
 
     .user-greeting {
       color: var(--muted);
-      font-size: 14px;
-      margin-bottom: 24px;
-      word-break: break-all;
+      font-size: 13px;
+      margin: 0;
     }
 
-    .audio-wrapper {
-      margin: 24px 0;
+    /* Özel Ses Oynatıcı Kartı (Tarayıcı varsayılanı gizlendiği için indirme menüsü oluşmaz) */
+    .custom-player {
+      display: none;
       background: #fbfbf9;
       border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 16px;
+      border-radius: 20px;
+      padding: 24px;
+      margin-bottom: 32px;
     }
 
-    audio {
+    .progress-wrap {
+      margin-bottom: 10px;
+    }
+
+    .progress-slider {
       width: 100%;
-      display: block;
-      outline: none;
+      height: 6px;
+      accent-color: var(--green);
+      cursor: pointer;
+    }
+
+    .time-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: var(--muted);
+      font-family: monospace;
+    }
+
+    .controls-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .ctrl-btn {
+      background: white;
+      border: 1px solid var(--border);
+      color: var(--ink);
+      border-radius: 12px;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 10px 14px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.15s;
+    }
+
+    .ctrl-btn:hover {
+      background: var(--green-soft);
+      border-color: #bcd4c4;
+    }
+
+    .play-pause-btn {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: var(--green);
+      color: white;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      transition: transform 0.1s, background 0.2s;
+    }
+
+    .play-pause-btn:hover {
+      background: var(--green-dark);
+      transform: scale(1.04);
     }
 
     .status-msg {
+      text-align: center;
       font-size: 14px;
-      margin: 12px 0;
+      margin: 20px 0;
       color: var(--muted);
     }
 
     .status-msg[data-state="error"] {
-      color: #a52c2c;
+      color: #b91c1c;
       font-weight: 500;
     }
 
-    .logout-btn {
-      background: transparent;
-      border: 1px solid var(--border);
-      color: var(--muted);
-      padding: 10px 20px;
-      border-radius: 10px;
-      cursor: pointer;
-      font-size: 14px;
-      font-weight: 600;
+    /* Açıklama & Ders Notları Alanı */
+    .notes-section {
+      border-top: 1px solid var(--border);
+      padding-top: 28px;
     }
 
-    .logout-btn:hover {
-      background: #fce8e8;
-      color: #a52c2c;
+    .section-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 0 0 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .notes-content p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #374151;
+      margin: 0 0 16px;
+    }
+
+    .step-list {
+      margin: 0 0 20px;
+      padding-left: 20px;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #374151;
+    }
+
+    .step-list li {
+      margin-bottom: 8px;
+    }
+
+    .notice-box {
+      background: var(--amber-bg);
+      border: 1px solid var(--amber-border);
+      border-radius: 12px;
+      padding: 16px;
+      margin: 20px 0;
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--amber-text);
+    }
+
+    .signature {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px dashed var(--border);
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .signature-badge {
+      font-weight: 700;
+      color: var(--green);
+      letter-spacing: 0.5px;
     }
   </style>
 </head>
-<body>
+<body oncontextmenu="return false;">
 
-  <main class="player-card">
-    <div class="icon-badge">♫</div>
-    <h1>Özel Ders & Podcast</h1>
-    <p id="user-greeting" class="user-greeting">Oturum kontrol ediliyor…</p>
-
-    <div class="audio-wrapper">
-      <p id="status-msg" class="status-msg">Ses kaydı hazırlanıyor…</p>
-      <audio id="audio-player" controls style="display: none;"></audio>
+  <div class="container">
+    <!-- Üst Gezinme Çubuğu -->
+    <div class="top-bar">
+      <a href="{{ '/' | relative_url }}" class="nav-btn">← Ana Sayfa</a>
+      <button id="logout-btn" class="nav-btn logout-btn" type="button">Çıkış Yap</button>
     </div>
 
-    <button id="logout-btn" class="logout-btn" type="button">Çıkış Yap</button>
-  </main>
+    <div class="content-body">
+      <!-- Başlık -->
+      <div class="header-section">
+        <div class="icon-badge">♫</div>
+        <h1>Podcast</h1>
+        <p id="user-greeting" class="user-greeting">Oturum doğrulanıyor…</p>
+      </div>
 
-  <!-- Supabase Kütüphanesi -->
+      <!-- Durum Mesajı -->
+      <p id="status-msg" class="status-msg">Ses kaydı hazırlanıyor…</p>
+
+      <!-- Görünmez HTML5 Ses Nesnesi (Doğrudan indirme menüsü yoktur) -->
+      <audio id="audio-element" preload="metadata" style="display: none;"></audio>
+
+      <!-- Şık Oynatıcı Paneli -->
+      <div id="custom-player" class="custom-player">
+        <div class="progress-wrap">
+          <input type="range" id="seek-slider" class="progress-slider" value="0" min="0" max="100" step="0.1">
+          <div class="time-labels">
+            <span id="current-time">00:00</span>
+            <span id="total-duration">00:00</span>
+          </div>
+        </div>
+
+        <div class="controls-row">
+          <button id="speed-btn" class="ctrl-btn" type="button" title="Oynatma Hızı">1.0x</button>
+          <button id="rewind-btn" class="ctrl-btn" type="button" title="10 Saniye Geri">↺ 10s</button>
+          <button id="play-pause-btn" class="play-pause-btn" type="button" title="Oynat / Duraklat">▶</button>
+          <button id="forward-btn" class="ctrl-btn" type="button" title="10 Saniye İleri">10s ↻</button>
+        </div>
+      </div>
+
+      <!-- Akademik Açıklama ve Yönergeler -->
+      <div class="notes-section">
+        <div class="section-title">
+          <span>Ders Notları & Rehber</span>
+        </div>
+
+        <div class="notes-content">
+          <p>
+            Bu podcast serimizde profesyonel çevirmenlerin ve yerelleştirme uzmanlarının temel araçlarından biri olan <strong>Subtitle Edit</strong> yazılımının kurulumunu, arayüz dinamiklerini ve altyazı senkronizasyon mantığını ele alıyoruz.
+          </p>
+
+          <ol class="step-list">
+            <li>
+              <strong>Yazılım Temini:</strong> Subtitle Edit tamamen ücretsiz ve açık kaynaklıdır. Resmî web sitesi üzerinden işletim sisteminize uygun sürümü (Windows, Linux, macOS) indirip güncel tutabilirsiniz.
+            </li>
+            <li>
+              <strong>Medya & Codec Hazırlığı:</strong> Altyazı çalışırken video önizlemesinde ses dalgası (waveform) ve senkron hataları yaşamamak için bilgisayarınızda VLC Media Player'ın ve güncel video codec paketlerinin yüklü olduğundan emin olunuz.
+            </li>
+            <li>
+              <strong>Kaynak Metinler:</strong> Pratik yapmak için internetteki güvenilir açık arşivlerden altyazı kaynaklarını araştırabilir ve çalışmaları doğrudan <code>.srt</code> uzantısı ile içe/dışa aktarabilirsiniz.
+            </li>
+          </ol>
+
+          <div class="notice-box">
+            <strong>Etik Kullanım ve Lisans Hatırlatması:</strong><br>
+            Sektör standardı bilgisayar destekli çeviri (CAT) araçlarından biri olan <strong>SDL Trados Studio</strong> eğitimleri için yazılımı resmî lisansıyla veya öğrenci deneme sürümüyle temin ediniz; etik ve yasal açıdan korsan/kaçak yazılım kullanmaktan kaçınınız.
+          </div>
+
+          <p>
+            Yakın zamanda yayınlanacak kapsamlı <strong>SDL Trados Studio Eğitimi</strong> serisi için portalı takipte kalabilirsiniz.
+          </p>
+        </div>
+
+        <div class="signature">
+          <span>İyi çalışmalar ve verimli dinlemeler dilerim.</span>
+          <span class="signature-badge">E.A.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script>
     const PROJECT_URL = "https://kigjblhzauhyagrckkwj.supabase.co";
@@ -131,58 +359,120 @@ permalink: /podcast.html
 
     const greeting = document.getElementById("user-greeting");
     const statusMsg = document.getElementById("status-msg");
-    const player = document.getElementById("audio-player");
+    const customPlayer = document.getElementById("custom-player");
+    const audio = document.getElementById("audio-element");
+    const playPauseBtn = document.getElementById("play-pause-btn");
+    const seekSlider = document.getElementById("seek-slider");
+    const currentTimeEl = document.getElementById("current-time");
+    const totalDurationEl = document.getElementById("total-duration");
+    const speedBtn = document.getElementById("speed-btn");
+    const rewindBtn = document.getElementById("rewind-btn");
+    const forwardBtn = document.getElementById("forward-btn");
     const logoutBtn = document.getElementById("logout-btn");
+
+    function formatTime(seconds) {
+      if (isNaN(seconds)) return "00:00";
+      const m = Math.floor(seconds / 60);
+      const s = Math.floor(seconds % 60);
+      return `${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
+    }
 
     async function loadSecurePodcast() {
       try {
         if (!window.supabase) {
-          statusMsg.textContent = "Supabase kütüphanesi yüklenemedi. Sayfayı yenileyin.";
+          statusMsg.textContent = "Bağlantı kütüphanesi yüklenemedi.";
           statusMsg.dataset.state = "error";
           return;
         }
 
         const client = window.supabase.createClient(PROJECT_URL, PUBLISHABLE_KEY);
 
-        // 1. Öğrenci oturum kontrolü
+        // Oturum Kontrolü
         const { data: { session }, error: sessionError } = await client.auth.getSession();
 
         if (sessionError || !session) {
-          window.location.href = "/login.html";
+          window.location.href = "{{ '/login.html' | relative_url }}";
           return;
         }
 
-        greeting.textContent = "Giriş yapıldı: " + session.user.email;
+        greeting.textContent = "Öğrenci: " + session.user.email;
 
-        // 2. 60 dakikalık imzalı URL üretimi
+        // İmzalı URL Üretimi (60 dakika)
         const { data, error } = await client
           .storage
           .from('subtitle edit sunum')
           .createSignedUrl('sunum.mp3', 3600);
 
         if (error) {
-          console.error("Storage Hatası:", error);
-          statusMsg.textContent = "Hata: " + (error.message || "Dosyaya ulaşılamadı.");
+          statusMsg.textContent = "Kayıt bulunamadı veya erişim izniniz yok.";
           statusMsg.dataset.state = "error";
           return;
         }
 
         if (data && data.signedUrl) {
+          audio.src = data.signedUrl;
           statusMsg.style.display = "none";
-          player.src = data.signedUrl;
-          player.style.display = "block";
+          customPlayer.style.display = "block";
         }
       } catch (err) {
-        console.error("Genel Hata:", err);
         statusMsg.textContent = "Bağlantı hatası: " + err.message;
         statusMsg.dataset.state = "error";
       }
     }
 
+    // Çıkış Yap Butonu -> Oturumu kapatıp ana sayfaya yönlendirir
     logoutBtn.addEventListener("click", async () => {
       const client = window.supabase.createClient(PROJECT_URL, PUBLISHABLE_KEY);
       await client.auth.signOut();
-      window.location.href = "/login.html";
+      window.location.href = "{{ '/' | relative_url }}";
+    });
+
+    // Oynatıcı Kontrolleri
+    playPauseBtn.addEventListener("click", () => {
+      if (audio.paused) {
+        audio.play();
+        playPauseBtn.textContent = "❚❚";
+      } else {
+        audio.pause();
+        playPauseBtn.textContent = "▶";
+      }
+    });
+
+    audio.addEventListener("loadedmetadata", () => {
+      seekSlider.max = Math.floor(audio.duration);
+      totalDurationEl.textContent = formatTime(audio.duration);
+    });
+
+    audio.addEventListener("timeupdate", () => {
+      seekSlider.value = Math.floor(audio.currentTime);
+      currentTimeEl.textContent = formatTime(audio.currentTime);
+    });
+
+    audio.addEventListener("ended", () => {
+      playPauseBtn.textContent = "▶";
+      seekSlider.value = 0;
+    });
+
+    seekSlider.addEventListener("input", () => {
+      audio.currentTime = seekSlider.value;
+    });
+
+    rewindBtn.addEventListener("click", () => {
+      audio.currentTime = Math.max(0, audio.currentTime - 10);
+    });
+
+    forwardBtn.addEventListener("click", () => {
+      audio.currentTime = Math.min(audio.duration, audio.currentTime + 10);
+    });
+
+    const speeds = [1.0, 1.25, 1.5, 2.0];
+    let currentSpeedIndex = 0;
+
+    speedBtn.addEventListener("click", () => {
+      currentSpeedIndex = (currentSpeedIndex + 1) % speeds.length;
+      const speed = speeds[currentSpeedIndex];
+      audio.playbackRate = speed;
+      speedBtn.textContent = `${speed.toFixed(speed === 1 ? 1 : 2)}x`;
     });
 
     loadSecurePodcast();
