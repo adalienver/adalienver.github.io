@@ -138,6 +138,22 @@ keywords: "silivri ingilizce özel ders, silivri yds kursu, toefl hazırlık sil
     </a>
   </div>
 </div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Enver Adalı - İngilizce Özel Ders & Sınav Hazırlığı",
+  "url": "https://adalienver.site",
+  "description": "Silivri ve çevresinde yüz yüze ve online YDS, TOEFL ve LGS İngilizce özel ders.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Silivri",
+    "addressRegion": "İstanbul",
+    "addressCountry": "TR"
+  },
+  "areaServed": ["Silivri", "Selimpaşa", "Değirmenköy", "Çorlu", "Çatalca"]
+}
+</script>
 
 <!-- KAYNAKLAR MERKEZİ KARTI -->
 <div class="card" style="text-align: center; background: rgba(250, 251, 252, 0.85); border: 1px dashed var(--primary); padding: 1.5rem;">
@@ -149,3 +165,22 @@ keywords: "silivri ingilizce özel ders, silivri yds kursu, toefl hazırlık sil
     Kaynaklar Sayfasını Görüntüle →
   </a>
 </div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Birebir ve Online İngilizce Özel Ders",
+  "description": "YDS, TOEFL, YÖKDİL ve LGS sınavlarına yönelik profesyonel birebir ve online özel ders programı.",
+  "provider": {
+    "@type": "Person",
+    "name": "Enver Adalı",
+    "url": "https://adalienver.site"
+  },
+  "educationalCredentialAwarded": "Sınav Başarısı ve Dil Yeterliliği",
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "Online",
+    "courseWorkload": "PT2H"
+  }
+}
+</script>
