@@ -1,6 +1,8 @@
 ---
 layout: default
-title: "İngilizce Özel Ders | YDS & TOEFL Hazırlık - Enver Adalı"
+title: "Online & Birebir İngilizce Özel Ders | YDS, TOEFL & Akademik Sınav Hazırlığı - Enver Adalı"
+description: "Birebir ve online İngilizce özel ders. YDS, YÖKDİL, TOEFL ve LGS sınav hazırlığı, akademik çeviri ve bireye özel çalışma programı."
+keywords: "ingilizce özel ders, online ingilizce dersi, yds özel ders, toefl hazırlık, yökdil dersi, akademik çeviri"
 ---
 
 <!-- PROFİL KARTI (SADE VE AKADEMİK) -->
@@ -177,6 +179,44 @@ title: "İngilizce Özel Ders | YDS & TOEFL Hazırlık - Enver Adalı"
     "@type": "CourseInstance",
     "courseMode": "Online",
     "courseWorkload": "PT2H"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOccupationalCredential",
+  "name": "Birebir ve Online İngilizce Özel Ders",
+  "description": "Akademik sınavlara (YDS, TOEFL, LGS) ve dil yeterliliğine yönelik birebir ve online İngilizce eğitimi.",
+  "provider": {
+    "@type": "Person",
+    "name": "Enver Adalı",
+    "url": "https://adalienver.site",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "İstanbul",
+      "postalCode": "34570",
+      "addressCountry": "TR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.0742,
+      "longitude": 28.2483
+    }
+  },
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 41.0742,
+      "longitude": 28.2483
+    },
+    "geoRadius": 35000
+  },
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "https://adalienver.site",
+    "serviceType": "Online Education"
   }
 }
 </script>
