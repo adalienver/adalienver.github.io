@@ -1,9 +1,6 @@
 ---
----
 layout: default
 title: "İngilizce Özel Ders | YDS & TOEFL Hazırlık - Enver Adalı"
-
----
 ---
 
 <!-- PROFİL KARTI (SADE VE AKADEMİK) -->
