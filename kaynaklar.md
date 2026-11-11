@@ -134,7 +134,6 @@ permalink: /kaynaklar/
     overflow: hidden;
   }
 
-  /* Kart sol kenarındaki şık vurgu çizgisi */
   .res-card::before {
     content: '';
     position: absolute;
@@ -222,9 +221,85 @@ permalink: /kaynaklar/
     border: 1px dashed var(--border);
   }
 
+  /* KAYNAKLAR İÇİN ÖZEL İLETİŞİM FORMU BÖLÜMÜ */
+  .resource-contact-section {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  }
+  .contact-box {
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    border-radius: 16px;
+    padding: 2rem;
+    max-width: 680px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px -10px rgba(21, 50, 91, 0.06);
+  }
+  .contact-box p {
+    color: #4b5563;
+    font-size: 0.93rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  .custom-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .form-group label {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--primary);
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem 0.9rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.93rem;
+    background: #ffffff;
+    color: var(--text);
+    box-sizing: border-box;
+    font-family: inherit;
+    transition: all 0.2s ease;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(21, 50, 91, 0.1);
+  }
+  .submit-btn {
+    background: var(--primary);
+    color: #ffffff;
+    padding: 0.75rem 1.6rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: all 0.2s ease;
+  }
+  .submit-btn:hover {
+    background: #0f2442;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(21, 50, 91, 0.15);
+  }
+
   @media (max-width: 640px) {
     .resource-grid {
       grid-template-columns: 1fr;
+    }
+    .contact-box {
+      padding: 1.4rem;
     }
   }
 </style>
@@ -353,7 +428,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-vocab">Eşdizim Analizi</span>
         </div>
         <p class="res-desc">
-          İngilizce Külliyatı  verilerini temel alan kelime eşleşmelerinin sıklığını ve kullanım sıklığını s.
+          İngiliz Ulusal Külliyatı (BNC) verilerini temel alarak kelime eşleşmelerinin sıklığını ve kullanım güvenilirliğini puanlayan analitik bir araç.
         </p>
       </div>
       <div class="res-footer">Analizi Başlat <span>↗</span></div>
@@ -405,7 +480,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-vocab">Deyim Arşivi</span>
         </div>
         <p class="res-desc">
-          İngilizcede gündelik hayatın ve sokak dilinde yaygın olan, net açıklamalar ve gerçek hayat örnekleriyle alfabetik olarak sıralayan klasik bir arşiv.
+          İngilizcede gündelik hayatın ve sokak dilinde yaygın olan deyimleri net açıklamalar ve gerçek hayat örnekleriyle alfabetik olarak sıralayan klasik bir arşiv.
         </p>
       </div>
       <div class="res-footer">Deyimleri İncele <span>↗</span></div>
@@ -439,7 +514,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-official">Podcast & Transkript</span>
         </div>
         <p class="res-desc">
-          Her bölümde altı dakikalık  konular işleyen, kelime listeleri ve tam metin dökümleriyle dinleme pratiği içeren pdocast serisi.
+          Her bölümde altı dakikalık güncel konular işleyen, kelime listeleri ve tam metin dökümleriyle dinleme pratiği sunan klasik podcast serisi.
         </p>
       </div>
       <div class="res-footer">Bölümleri Dinle <span>↗</span></div>
@@ -452,7 +527,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-audio">Ses & Yavaş Haber</span>
         </div>
         <p class="res-desc">
-          Normalden  bir tempoyla  seslendirilen dünya haberleri, shadowing çalışmaları için .
+          Normalden daha yavaş bir tempoyla anlaşılır seslendirilen dünya haberleri; dinleme kavrayışı ve shadowing çalışmaları için ideal bir kaynak.
         </p>
       </div>
       <div class="res-footer">Haberleri İncele <span>↗</span></div>
@@ -465,7 +540,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-youtube">Video Ders</span>
         </div>
         <p class="res-desc">
-          Kitabi kurallardan dışında, günlük yaşamın sokak dilini, esprileri ve kafa karıştıran dilbilgisi nüancslarını samimi  bir üslupla ele alan İngilizce  dersler.
+          Kitabi kuralların dışına çıkarak günlük yaşamın sokak dilini, esprileri ve kafa karıştıran dilbilgisi nüanslarını samimi bir üslupla ele alan popüler video dersler.
         </p>
       </div>
       <div class="res-footer">Kanala Git <span>↗</span></div>
@@ -483,7 +558,8 @@ permalink: /kaynaklar/
       </div>
       <div class="res-footer">Materyalleri Aç <span>↗</span></div>
     </a>
-<a href="https://lingua.com/tr/ingilizce/dikte/" target="_blank" rel="noopener noreferrer" class="res-card" data-category="audio" data-keywords="lingua dikte dictation dinleme listening yazma transkript alıştırma ses seviye test">
+
+    <a href="https://lingua.com/tr/ingilizce/dikte/" target="_blank" rel="noopener noreferrer" class="res-card" data-category="audio" data-keywords="lingua dikte dictation dinleme listening yazma transkript alıştırma ses seviye test">
       <div>
         <div class="res-header">
           <span class="res-title">Lingua: İngilizce Dikte Alıştırmaları</span>
@@ -495,6 +571,7 @@ permalink: /kaynaklar/
       </div>
       <div class="res-footer">Dikte Çalış <span>↗</span></div>
     </a>
+
   </div>
 </div>
 
@@ -510,7 +587,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-academic">Akademik Standart</span>
         </div>
         <p class="res-desc">
-          Tez, makale ve akademik yazımlarda  argüman, paragraf yapısı ile APA ve MLA kaynak  standartlarında  bir rehber.
+          Tez, makale ve akademik yazımlarda argüman geliştirme, paragraf yapısı ile APA ve MLA kaynak gösterme standartlarında küresel bir başvuru kılavuzu.
         </p>
       </div>
       <div class="res-footer">Kılavuza Git <span>↗</span></div>
@@ -523,7 +600,7 @@ permalink: /kaynaklar/
           <span class="tag-badge tag-academic">Akademik Kalıplar</span>
         </div>
         <p class="res-desc">
-          Akademik metinlerin yazımında gerekli ifadeler ve bilinmesi gereken kalıplar.
+          Akademik makale ve tez yazımında giriş, yöntem, literatür taraması ve tartışma bölümlerinde ihtiyaç duyulan standart kalıp ifadeler bankası.
         </p>
       </div>
       <div class="res-footer">Kalıpları İncele <span>↗</span></div>
@@ -626,6 +703,35 @@ permalink: /kaynaklar/
   </div>
 </div>
 
+<!-- İLETİŞİM & DERS TALEBİ FORMU (SADE VE GİZLİLİK ODAKLI) -->
+<div class="resource-contact-section">
+  <div class="contact-box">
+    <h2 class="category-title" style="border: none; padding-bottom: 0; margin-bottom: 0.5rem;">📬 İletişim & Ders Talebi</h2>
+    <p>
+      Birebir veya online özel ders (YDS, TOEFL, konuşma pratiği vb.), çeviri danışmanlığı veya kaynaklarla ilgili sormak istedikleriniz için doğrudan bana mesaj gönderebilirsiniz.
+    </p>
+
+    <form action="https://formspree.io/f/xbjnbqpw" method="POST" class="custom-contact-form">
+      <div class="form-group">
+        <label for="name">Adınız Soyadınız *</label>
+        <input type="text" id="name" name="name" placeholder="Adınız Soyadınız" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-posta Adresiniz *</label>
+        <input type="email" id="email" name="_replyto" placeholder="ornek@email.com" required />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Mesajınız *</label>
+        <textarea id="message" name="message" rows="4" placeholder="Almak istediğiniz eğitim veya iletmek istediğiniz not..." required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Mesajı Gönder ↗</button>
+    </form>
+  </div>
+</div>
+
 <!-- ANINDA FİLTRELEME VE ARAMA JAVASCRIPT KODU -->
 <script>
   (function() {
@@ -661,7 +767,6 @@ permalink: /kaynaklar/
           }
         });
 
-        // Başlık altında kart kalmadıysa o kategori başlığını gizle
         sec.style.display = sectionVisibleCount > 0 ? 'block' : 'none';
       });
 
