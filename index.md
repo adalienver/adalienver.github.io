@@ -1,6 +1,10 @@
 ---
+---
 layout: default
-title: Ana Sayfa
+title: "Silivri İngilizce Özel Ders | YDS & TOEFL Hazırlık - Enver Adalı"
+description: "Silivri ve çevresinde yüz yüze ve online İngilizce özel ders. YDS, TOEFL, LGS sınav hazırlığı ve akademik çeviri odaklı birebir eğitim."
+keywords: "silivri ingilizce özel ders, silivri yds kursu, toefl hazırlık silivri, online ingilizce özel ders"
+---
 ---
 
 <!-- PROFİL KARTI (SADE VE AKADEMİK) -->
