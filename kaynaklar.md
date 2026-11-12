@@ -711,7 +711,7 @@ permalink: /kaynaklar/
       Birebir veya online özel ders (YDS, TOEFL, konuşma pratiği vb.), çeviri danışmanlığı veya kaynaklarla ilgili sormak istedikleriniz için doğrudan bana mesaj gönderebilirsiniz.
     </p>
 
-    <form action="https://formspree.io/f/xbjnbqpw" method="POST" class="custom-contact-form">
+   <form action="https://formspree.io/f/myewyjgq" method="POST" class="custom-contact-form">
       <div class="form-group">
         <label for="name">Adınız Soyadınız *</label>
         <input type="text" id="name" name="name" placeholder="Adınız Soyadınız" required />
