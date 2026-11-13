@@ -597,7 +597,6 @@ layout: none
       </a>
       <ul class="nav-menu">
         <li><a href="/" class="active">Ana Sayfa</a></li>
-        <li><a href="#dersler">Özel Ders</a></li>
         <li><a href="/edebiyat/">Edebiyat</a></li>
         <li><a href="/kaynaklar/">Kaynaklar</a></li>
         <li><a href="/iletisim.html">İletişim</a></li>
