@@ -1,15 +1,21 @@
 ---
 layout: none
 ---
-
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online & Birebir İngilizce Özel Ders | YDS, TOEFL & Akademik Çeviri - Enver Adalı</title>
-  <meta name="description" content="Birebir ve online İngilizce özel ders. YDS, YÖKDİL, TOEFL ve LGS sınav hazırlığı, akademik çeviri ve bireye özel çalışma programı.">
-  <meta name="keywords" content="ingilizce özel ders, online ingilizce dersi, yds özel ders, toefl hazırlık, yökdil dersi, akademik çeviri">
+  <title>Online & Birebir İngilizce Özel Ders | YDS, YÖKDİL, TOEFL, SDL Trados Studio - Enver Adalı</title>
+  <meta name="description" content="Birebir ve online İngilizce özel ders. YDS, YÖKDİL, TOEFL ve LGS sınav hazırlığı ile SDL Trados Studio ve Subtitle Edit çeviri teknolojileri eğitimleri.">
+  <meta name="keywords" content="İngilizce özel ders, online İngilizce özel ders, Silivri İngilizce özel ders, Beylikdüzü İngilizce özel ders, Büyükçekmece İngilizce özel ders, YDS özel ders, YÖKDİL özel ders, TOEFL hazırlık, SDL Trados Studio eğitimi, Subtitle Edit eğitimi, çeviribilim">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://adalienver.site/">
+
+  <!-- Open Graph / Sosyal Medya Önizleme -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Enver Adalı — İngilizce Özel Ders & Çeviri Teknolojileri">
+  <meta property="og:description" content="Birebir ve online YDS, YÖKDİL, TOEFL, LGS İngilizce özel dersleri ile SDL Trados Studio & Subtitle Edit atölyeleri.">
+  <meta property="og:url" content="https://adalienver.site/">
 
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -216,7 +222,7 @@ layout: none
     .social-links {
       display: flex;
       justify-content: center;
-      gap: 1.2rem;
+      gap: 1rem;
       flex-wrap: wrap;
       margin-top: 1.5rem;
     }
@@ -225,7 +231,7 @@ layout: none
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      padding: 0.6rem 1.2rem;
+      padding: 0.65rem 1.25rem;
       background: var(--primary);
       color: #fff;
       text-decoration: none;
@@ -250,6 +256,18 @@ layout: none
 
     .social-links a.secondary:hover {
       background: var(--primary);
+      color: #fff;
+    }
+
+    .social-links a.accent-link {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    .social-links a.accent-link:hover {
+      background: var(--primary);
+      border-color: var(--primary);
       color: #fff;
     }
 
@@ -356,6 +374,7 @@ layout: none
       display: flex;
       gap: 1rem;
       flex-wrap: wrap;
+      align-items: center;
       margin-top: 1.8rem;
       padding-top: 1.5rem;
       border-top: 1px solid var(--border);
@@ -639,19 +658,75 @@ layout: none
     <!-- HERO -->
     <header id="ana-sayfa">
       <h1>Enver Adalı</h1>
-      <p class="tagline">Çeviribilim • Mütercim Tercümanlık • İngiliz Dili</p>
+      <p class="tagline">İngilizce Özel Ders • Çeviribilim • Çeviri Teknolojileri</p>
       <div class="credentials">
         <span>İstanbul Beykent Üniversitesi Mezunu</span>
       </div>
       <div class="social-links">
-        <a href="https://www.linkedin.com/in/enver-adalı-195" target="_blank" rel="noopener noreferrer">
-          💼 LinkedIn Profili
+        <a href="/kaynaklar/#name" class="accent-link">
+          ✉ Ücretsiz Ön Görüşme & Ders Talebi
         </a>
         <a href="mailto:enveradali195@gmail.com" class="secondary">
-          ✉ enveradali195@gmail.com
+          enveradali195@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/enver-adalı-195" target="_blank" rel="noopener noreferrer">
+          💼 LinkedIn
         </a>
       </div>
     </header>
+
+    <!-- ÖZEL DERS -->
+    <section class="section accent" id="dersler">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
+        <div>
+          <span class="section-label">Birebir & Online Eğitim</span>
+          <h2>İngilizce Özel Ders (YDS, YÖKDİL, TOEFL & LGS)</h2>
+        </div>
+        <span class="badge">Kontenjan Açık</span>
+      </div>
+
+      <p>Her öğrencinin hedefine ve mevcut dil seviyesine göre yapılandırılmış, yüz yüze ve canlı <strong>online İngilizce özel ders</strong> programları. Sınav stratejilerinden akademik okumaya ve akıcı konuşmaya kadar kişiselleştirilmiş çalışma planı.</p>
+
+      <div class="features-grid">
+        <div class="feature-box">
+          <strong>📚 YDS, YÖKDİL & TOEFL Hazırlık</strong>
+          <p>Akademik okuma stratejileri, ileri düzey sözcük dağarcığı, bağlaç analizi ve akademik çeviri odaklı sınav hazırlığı.</p>
+        </div>
+        <div class="feature-box">
+          <strong>🎯 LGS & Ortaokul-Lise Takviyesi</strong>
+          <p>5–8. sınıf MEB müfredatına tam uyumlu kazanım pekiştirme, LGS İngilizce soru çözüm teknikleri ve okul sınavı desteği.</p>
+        </div>
+        <div class="feature-box">
+          <strong>🗣️ Konuşma & Telaffuz Pratiği</strong>
+          <p>Yetişkinler ve profesyoneller için akıcı konuşma, fonetik telaffuz düzeltme ve iş/akademik İngilizce ifade becerisi.</p>
+        </div>
+      </div>
+
+      <div class="cta-group">
+        <p style="flex: 1; color: var(--muted); font-size: 0.9rem;">Telefon görüşmesi veya seviye tespiti randevusu için form üzerinden numaranızı iletebilirsiniz; en kısa sürede dönüş sağlanır.</p>
+        <a href="/kaynaklar/#name" class="btn btn-secondary">
+          📞 Görüşme & Ders Talep Et
+        </a>
+      </div>
+    </section>
+
+    <!-- MESLEKİ DAYANIŞMA & ÇEVİRİ YAZILIMLARI -->
+    <section class="section success" id="ceviribilim-atolye">
+      <span class="section-label success">CAT Araçları & Gönüllü Atölyeler</span>
+      <h2>SDL Trados Studio & Subtitle Edit Eğitimleri</h2>
+      <p>Çeviribilim ve Mütercim Tercümanlık disiplinine katkı sunmak amacıyla; bölüm öğrencilerine ve mezunlarına yönelik uygulamalı <strong>SDL Trados Studio</strong> ve <strong>Subtitle Edit</strong> atölyeleri düzenliyorum.</p>
+      
+      <div class="quote">
+        <strong>SDL Trados Studio</strong> ile çeviri belleği (Translation Memory), terim tabanı (MultiTerm) ve kalite kontrol süreçleri; <strong>Subtitle Edit</strong> ile zaman kodlama, senkronizasyon ve altyazı çevirisi standartları üzerine pratik iş akışları.
+      </div>
+
+      <div class="cta-group">
+        <p style="flex: 1; color: var(--muted); font-size: 0.9rem;">Atölye takvimi ve birebir yazılım danışmanlığı için iletişime geçebilirsiniz.</p>
+        <a href="/kaynaklar/#name" class="btn btn-success">
+          🎧 Atölye & Bilgi Talebi
+        </a>
+      </div>
+    </section>
 
     <!-- HAKKINDA / PERSPEKTİF -->
     <section class="section" id="hakkinda">
@@ -679,59 +754,6 @@ layout: none
       </div>
     </section>
 
-    <!-- ÖZEL DERS -->
-    <section class="section accent" id="dersler">
-      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
-        <div>
-          <span class="section-label">Eğitim & Danışmanlık</span>
-          <h2>İngilizce Özel Ders</h2>
-        </div>
-        <span class="badge">Kontenjan Açık</span>
-      </div>
-
-      <p>Ortaokul takviyesinden LGS hazırlığına, lise dil gelişiminden yetişkinlere ve akademik sınavlara (YDS, YÖKDİL, TOEFL) kadar kişiselleştirilmiş birebir ve online çalışma programları.</p>
-
-      <div class="features-grid">
-        <div class="feature-box">
-          <strong>🎯 LGS & Okul Takviyesi</strong>
-          <p>5–8. sınıf MEB müfredatına tam uyumlu kazanım pekiştirme ve yeni nesil soru çözümü.</p>
-        </div>
-        <div class="feature-box">
-          <strong>📚 Akademik Sınavlar</strong>
-          <p>YDS, YÖKDİL ve YDT hazırlığı. Akademik çeviri, sözcük dağarcığı ve strateji odaklı okuma.</p>
-        </div>
-        <div class="feature-box">
-          <strong>🗣️ İletişim & Telaffuz</strong>
-          <p>Akıcı konuşma pratiği, doğru fonetik telaffuz ve mesleki/akademik ifade becerisi.</p>
-        </div>
-      </div>
-
-      <div class="cta-group">
-        <p style="flex: 1; color: var(--muted); font-size: 0.9rem;">Ders programı ve seviye tespiti için iletişim formundan yazabilirsiniz.</p>
-        <a href="/kaynaklar/#name" class="btn btn-secondary">
-          ✉ Ders Talep Et
-        </a>
-      </div>
-    </section>
-
-    <!-- MESLEKİ DAYANIŞMA -->
-    <section class="section success">
-      <span class="section-label success">Ücretsiz Atölyeler</span>
-      <h2>Mesleki Dayanışma</h2>
-      <p>Çeviribilim disiplinine katkı sunmak amacıyla; Mütercim Tercümanlık, Çeviribilim ve Uygulamalı İngilizce Çevirmenlik öğrencilerine ve mezunlarına gönüllü olarak eğitimler sunuyorum.</p>
-      
-      <div class="quote">
-        <strong>SDL Trados Studio</strong> (CAT yazılımları) ve <strong>Subtitle Edit</strong> gibi araçlara yönelik pratik atölyeler. Bilgisayar destekli çeviri iş akışları ve teknik adaptasyon.
-      </div>
-
-      <div class="cta-group">
-        <p style="flex: 1; color: var(--muted); font-size: 0.9rem;">Planlanan Zoom atölyeleri için iletişim formundan ulaşabilirsiniz.</p>
-        <a href="/kaynaklar/#name" class="btn btn-success">
-          🎧 Atölye Talep Et
-        </a>
-      </div>
-    </section>
-
     <!-- KURUMSAL BAĞLANTILAR -->
     <section class="section">
       <h2>Kurumsal Bağlantılar</h2>
@@ -751,10 +773,10 @@ layout: none
 
     <!-- KAYNAKLAR MERKEZİ -->
     <section class="section" style="text-align: center; background: linear-gradient(135deg, var(--light) 0%, #fff 100%);">
-      <h3 style="margin-top: 0;">📚 Kaynaklar Merkezi</h3>
-      <p style="color: var(--muted); margin-bottom: 1.5rem;">Derlem (korpus) veri tabanları, collocation sözlükleri, dinleme platformları ve dikte alıştırmaları.</p>
+      <h3 style="margin-top: 0;">📚 Kaynaklar Merkezi & İletişim Formu</h3>
+      <p style="color: var(--muted); margin-bottom: 1.5rem;">Derlem (korpus) veri tabanları, collocation sözlükleri, dinleme platformları, dikte alıştırmaları ve doğrudan mesaj formu.</p>
       <a href="/kaynaklar/" class="btn btn-outline">
-        Kaynakları Görüntüle →
+        Kaynaklara & İletişim Formuna Git →
       </a>
     </section>
 
@@ -764,16 +786,16 @@ layout: none
   <footer id="iletisim">
     <div class="footer-container">
       <div class="footer-section">
-        <h4>İletişim</h4>
+        <h4>İletişim & Ön Görüşme</h4>
         <div class="footer-contact">
           <strong>E-posta:</strong>
           <a href="mailto:enveradali195@gmail.com">enveradali195@gmail.com</a>
           <br><br>
-          <strong>Ağ & İletişim:</strong>
-          <a href="https://www.linkedin.com/in/enver-adalı-195" target="_blank" rel="noopener noreferrer">LinkedIn Profili</a>
+          <strong>Telefonla Geri Dönüş Talebi:</strong>
+          <a href="/kaynaklar/#name">İletişim Formundan Numara Bırak →</a>
           <br><br>
-          <strong>Mesaj & Ders Formu:</strong>
-          <a href="/kaynaklar/#name">İletişim Formuna Git →</a>
+          <strong>Profesyonel Ağ:</strong>
+          <a href="https://www.linkedin.com/in/enver-adalı-195" target="_blank" rel="noopener noreferrer">LinkedIn Profili</a>
         </div>
       </div>
 
@@ -782,19 +804,20 @@ layout: none
         <ul>
           <li><a href="/">Ana Sayfa</a></li>
           <li><a href="/edebiyat/">Edebî Seçki</a></li>
-          <li><a href="/kaynaklar/">Kaynaklar</a></li>
+          <li><a href="/kaynaklar/">Kaynaklar & İletişim Formu</a></li>
           <li><a href="/podcast.html">Podcast</a></li>
           <li><a href="/login.html">Öğrenci Girişi</a></li>
         </ul>
       </div>
 
       <div class="footer-section">
-        <h4>Hizmetler & Odak</h4>
+        <h4>Eğitim & Uzmanlık Alanları</h4>
         <ul>
-          <li><a href="#dersler">Birebir Özel Ders</a></li>
-          <li><a href="#dersler">LGS & Okul Takviyesi</a></li>
-          <li><a href="#dersler">Akademik Sınavlar (YDS / TOEFL)</a></li>
-          <li><a href="#hakkinda">Gönüllü CAT Araçları Atölyesi</a></li>
+          <li><a href="#dersler">Birebir & Online İngilizce Özel Ders</a></li>
+          <li><a href="#dersler">YDS, YÖKDİL & TOEFL Hazırlık</a></li>
+          <li><a href="#dersler">LGS & Okul İngilizce Takviyesi</a></li>
+          <li><a href="#ceviribilim-atolye">SDL Trados Studio Eğitimi</a></li>
+          <li><a href="#ceviribilim-atolye">Subtitle Edit Altyazı Atölyesi</a></li>
         </ul>
       </div>
     </div>
@@ -832,43 +855,69 @@ layout: none
     });
   </script>
 
-  <!-- GİZLİ COĞRAFİ VE AKADEMİK SCHEMA KODU -->
+  <!-- ARKA PLAN YEREL & EĞİTİM SCHEMA.ORG (JSON-LD) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "EducationalOccupationalCredential",
-    "name": "Birebir ve Online İngilizce Özel Ders",
-    "description": "Akademik sınavlara (YDS, TOEFL, LGS) ve dil yeterliliğine yönelik birebir ve online İngilizce eğitimi.",
-    "provider": {
-      "@type": "Person",
-      "name": "Enver Adalı",
-      "url": "https://adalienver.site",
-      "address": {
-        "@type": "PostalAddress",
-        "addressRegion": "İstanbul",
-        "postalCode": "34570",
-        "addressCountry": "TR"
+    "@graph": [
+      {
+        "@type": "EducationalOrganization",
+        "@id": "https://adalienver.site/#organization",
+        "name": "Enver Adalı — İngilizce Özel Ders & Çeviri Teknolojileri",
+        "url": "https://adalienver.site/",
+        "email": "enveradali195@gmail.com",
+        "description": "Birebir ve online İngilizce özel ders (YDS, YÖKDİL, TOEFL, LGS) ile SDL Trados Studio ve Subtitle Edit eğitimleri.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Silivri",
+          "addressRegion": "İstanbul",
+          "postalCode": "34570",
+          "addressCountry": "TR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 41.0742,
+          "longitude": 28.2483
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Silivri" },
+          { "@type": "City", "name": "Beylikdüzü" },
+          { "@type": "City", "name": "Büyükçekmece" },
+          { "@type": "AdministrativeArea", "name": "İstanbul" },
+          { "@type": "Country", "name": "Türkiye" }
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/enver-adalı-195"
+        ]
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 41.0742,
-        "longitude": 28.2483
+      {
+        "@type": "ItemList",
+        "name": "Eğitim ve Danışmanlık Hizmetleri",
+        "itemListElement": [
+          {
+            "@type": "Course",
+            "position": 1,
+            "name": "YDS, YÖKDİL ve TOEFL İngilizce Özel Ders",
+            "description": "Akademik sınavlara yönelik birebir ve online İngilizce eğitimi.",
+            "provider": { "@id": "https://adalienver.site/#organization" }
+          },
+          {
+            "@type": "Course",
+            "position": 2,
+            "name": "LGS ve Ortaokul-Lise İngilizce Özel Ders",
+            "description": "5-8. sınıf müfredatına ve LGS sınavına yönelik birebir İngilizce takviye dersleri.",
+            "provider": { "@id": "https://adalienver.site/#organization" }
+          },
+          {
+            "@type": "Course",
+            "position": 3,
+            "name": "SDL Trados Studio & Subtitle Edit Uygulamalı Eğitimi",
+            "description": "Çeviribilim ve Mütercim Tercümanlık öğrencileri ile mezunlarına yönelik CAT araçları ve altyazı çevirisi eğitimi.",
+            "provider": { "@id": "https://adalienver.site/#organization" }
+          }
+        ]
       }
-    },
-    "areaServed": {
-      "@type": "GeoCircle",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": 41.0742,
-        "longitude": 28.2483
-      },
-      "geoRadius": 35000
-    },
-    "availableChannel": {
-      "@type": "ServiceChannel",
-      "serviceUrl": "https://adalienver.site",
-      "serviceType": "Online Education"
-    }
+    ]
   }
   </script>
 
