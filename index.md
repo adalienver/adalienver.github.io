@@ -1,7 +1,7 @@
 ---
 layout: none
 ---
-
+<!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
@@ -36,6 +36,8 @@ layout: none
 
     html, body {
       height: 100%;
+      overflow-x: hidden;
+      width: 100%;
     }
 
     body {
@@ -61,13 +63,14 @@ layout: none
     }
 
     .nav-container {
-      max-width: 960px;
+      max-width: 980px;
       margin: 0 auto;
       padding: 0 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
       height: 70px;
+      position: relative;
     }
 
     .nav-brand {
@@ -91,7 +94,7 @@ layout: none
     .nav-menu {
       display: flex;
       list-style: none;
-      gap: 1.5rem;
+      gap: 1.35rem;
       align-items: center;
     }
 
@@ -147,6 +150,12 @@ layout: none
       flex-direction: column;
       cursor: pointer;
       gap: 5px;
+      padding: 10px;
+      margin-right: -10px;
+      z-index: 1001;
+      position: relative;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
     }
 
     .hamburger span {
@@ -155,11 +164,13 @@ layout: none
       background: var(--primary);
       border-radius: 2px;
       transition: all 0.3s ease;
+      display: block;
     }
 
     /* LAYOUT */
     .container {
       max-width: 900px;
+      width: 100%;
       margin: 0 auto;
       padding: 3rem 2rem;
       flex: 1;
@@ -309,7 +320,7 @@ layout: none
 
     .features-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1.5rem;
       margin-top: 1.5rem;
     }
@@ -424,7 +435,7 @@ layout: none
 
     .portal-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 1.5rem;
       margin-top: 1.5rem;
     }
@@ -532,7 +543,11 @@ layout: none
     }
 
     /* RESPONSIVE */
-    @media (max-width: 820px) {
+    @media (max-width: 860px) {
+      .nav-container {
+        padding: 0 1.2rem;
+      }
+
       .nav-menu {
         display: none;
         position: absolute;
@@ -543,6 +558,8 @@ layout: none
         background: white;
         padding: 1.5rem;
         border-bottom: 1px solid var(--border);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        z-index: 1000;
         gap: 1rem;
       }
 
@@ -555,7 +572,12 @@ layout: none
       }
 
       .container {
-        padding: 2rem 1.5rem;
+        padding: 1.5rem 1.2rem;
+      }
+
+      .features-grid,
+      .portal-grid {
+        grid-template-columns: 1fr;
       }
 
       h1 {
@@ -567,7 +589,7 @@ layout: none
       }
 
       .section {
-        padding: 1.8rem;
+        padding: 1.5rem;
       }
 
       .social-links {
@@ -596,13 +618,14 @@ layout: none
         Çeviribilim & Dil
       </a>
       <ul class="nav-menu">
-        <li><a href="/" class="active">Ana Sayfa</a></li>
-        <li><a href="/edebiyat/">Edebiyat</a></li>
+        <li><a href="/" class="active" aria-current="page">Ana Sayfa</a></li>
+        <li><a href="/edebiyat/">Edebî Seçki</a></li>
         <li><a href="/kaynaklar/">Kaynaklar</a></li>
-        <li><a href="/iletisim.html">İletişim</a></li>
+        <li><a href="/podcast.html">Podcast</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
         <li><a href="/login.html" class="nav-login-btn">Öğrenci Girişi</a></li>
       </ul>
-      <div class="hamburger">
+      <div class="hamburger" role="button" aria-label="Menüyü Aç/Kapat" tabindex="0">
         <span></span>
         <span></span>
         <span></span>
@@ -675,4 +698,179 @@ layout: none
         </div>
         <div class="feature-box">
           <strong>📚 Akademik Sınavlar</strong>
-          <p>YDS, YÖKDİL ve YDT hazırlığı. Akademik çeviri,
+          <p>YDS, YÖKDİL ve YDT hazırlığı. Akademik çeviri, sözcük dağarcığı ve strateji odaklı okuma.</p>
+        </div>
+        <div class="feature-box">
+          <strong>🗣️ İletişim & Telaffuz</strong>
+          <p>Akıcı konuşma pratiği, doğru fonetik telaffuz ve mesleki/akademik ifade becerisi.</p>
+        </div>
+      </div>
+
+      <div class="cta-group">
+        <p style="flex: 1; color: var(--muted); font-size: 0.9rem;">Ders programı ve seviye tespiti için iletişim formundan yazabilirsiniz.</p>
+        <a href="/kaynaklar/#name" class="btn btn-secondary">
+          ✉ Ders Talep Et
+        </a>
+      </div>
+    </section>
+
+    <!-- MESLEKİ DAYANIŞMA -->
+    <section class="section success">
+      <span class="section-label success">Ücretsiz Atölyeler</span>
+      <h2>Mesleki Dayanışma</h2>
+      <p>Çeviribilim disiplinine katkı sunmak amacıyla; Mütercim Tercümanlık, Çeviribilim ve Uygulamalı İngilizce Çevirmenlik öğrencilerine ve mezunlarına gönüllü olarak eğitimler sunuyorum.</p>
+      
+      <div class="quote">
+        <strong>SDL Trados Studio</strong> (CAT yazılımları) ve <strong>Subtitle Edit</strong> gibi araçlara yönelik pratik atölyeler. Bilgisayar destekli çeviri iş akışları ve teknik adaptasyon.
+      </div>
+
+      <div class="cta-group">
+        <p style="flex: 1; color: var(--muted); font-size: 0.9rem;">Planlanan Zoom atölyeleri için iletişim formundan ulaşabilirsiniz.</p>
+        <a href="/kaynaklar/#name" class="btn btn-success">
+          🎧 Atölye Talep Et
+        </a>
+      </div>
+    </section>
+
+    <!-- KURUMSAL BAĞLANTILAR -->
+    <section class="section">
+      <h2>Kurumsal Bağlantılar</h2>
+      <div class="portal-grid">
+        <a href="https://www.beykent.edu.tr/aday-ogrenci/bolumler-programlar/lisans/fen-edebiyat-fakultesi/ingilizce-mutercim-ve-tercumanlik" target="_blank" rel="noopener noreferrer" class="portal-card">
+          <strong>İngilizce Mütercim ve Tercümanlık</strong>
+          <div class="description">İstanbul Beykent Üniversitesi • Lisans Programı</div>
+          <span class="portal-tag">Bölüm Detayı →</span>
+        </a>
+        <a href="https://lisansustu.beykent.edu.tr/yuksek-lisans/ingiliz-dili-ve-edebiyati-abd" target="_blank" rel="noopener noreferrer" class="portal-card">
+          <strong>İngiliz Dili ve Edebiyatı</strong>
+          <div class="description">Lisansüstü Eğitim Enstitüsü</div>
+          <span class="portal-tag">Enstitü Portalı →</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- KAYNAKLAR MERKEZİ -->
+    <section class="section" style="text-align: center; background: linear-gradient(135deg, var(--light) 0%, #fff 100%);">
+      <h3 style="margin-top: 0;">📚 Kaynaklar Merkezi</h3>
+      <p style="color: var(--muted); margin-bottom: 1.5rem;">Derlem (korpus) veri tabanları, collocation sözlükleri, dinleme platformları ve dikte alıştırmaları.</p>
+      <a href="/kaynaklar/" class="btn btn-outline">
+        Kaynakları Görüntüle →
+      </a>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer id="iletisim">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>İletişim</h4>
+        <div class="footer-contact">
+          <strong>E-posta:</strong>
+          <a href="mailto:enveradali195@gmail.com">enveradali195@gmail.com</a>
+          <br><br>
+          <strong>Ağ & İletişim:</strong>
+          <a href="https://www.linkedin.com/in/enver-adalı-195" target="_blank" rel="noopener noreferrer">LinkedIn Profili</a>
+          <br><br>
+          <strong>Mesaj & Ders Formu:</strong>
+          <a href="/kaynaklar/#name">İletişim Formuna Git →</a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4>Sayfalar</h4>
+        <ul>
+          <li><a href="/">Ana Sayfa</a></li>
+          <li><a href="/edebiyat/">Edebî Seçki</a></li>
+          <li><a href="/kaynaklar/">Kaynaklar</a></li>
+          <li><a href="/podcast.html">Podcast</a></li>
+          <li><a href="/login.html">Öğrenci Girişi</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Hizmetler & Odak</h4>
+        <ul>
+          <li><a href="#dersler">Birebir Özel Ders</a></li>
+          <li><a href="#dersler">LGS & Okul Takviyesi</a></li>
+          <li><a href="#dersler">Akademik Sınavlar (YDS / TOEFL)</a></li>
+          <li><a href="#hakkinda">Gönüllü CAT Araçları Atölyesi</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-divider">
+      <p>© 2026 Enver Adalı. Tüm hakları saklıdır.</p>
+      <p style="margin-top: 0.4rem;">Çeviribilim • Mütercim Tercümanlık • İngiliz Dili Eğitimi</p>
+    </div>
+  </footer>
+
+  <!-- MOBİL MENÜ TETİKLEYİCİ -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const hamburger = document.querySelector('.hamburger');
+      const navMenu = document.querySelector('.nav-menu');
+
+      if (hamburger && navMenu) {
+        hamburger.addEventListener('click', function (e) {
+          e.stopPropagation();
+          navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-menu a').forEach(function (link) {
+          link.addEventListener('click', function () {
+            navMenu.classList.remove('active');
+          });
+        });
+
+        document.addEventListener('click', function (e) {
+          if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+            navMenu.classList.remove('active');
+          }
+        });
+      }
+    });
+  </script>
+
+  <!-- GİZLİ COĞRAFİ VE AKADEMİK SCHEMA KODU -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOccupationalCredential",
+    "name": "Birebir ve Online İngilizce Özel Ders",
+    "description": "Akademik sınavlara (YDS, TOEFL, LGS) ve dil yeterliliğine yönelik birebir ve online İngilizce eğitimi.",
+    "provider": {
+      "@type": "Person",
+      "name": "Enver Adalı",
+      "url": "https://adalienver.site",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "İstanbul",
+        "postalCode": "34570",
+        "addressCountry": "TR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.0742,
+        "longitude": 28.2483
+      }
+    },
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.0742,
+        "longitude": 28.2483
+      },
+      "geoRadius": 35000
+    },
+    "availableChannel": {
+      "@type": "ServiceChannel",
+      "serviceUrl": "https://adalienver.site",
+      "serviceType": "Online Education"
+    }
+  }
+  </script>
+
+</body>
+</html>
