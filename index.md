@@ -1,7 +1,7 @@
 ---
 layout: none
 ---
-
+<!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
@@ -61,7 +61,7 @@ layout: none
     }
 
     .nav-container {
-      max-width: 900px;
+      max-width: 960px;
       margin: 0 auto;
       padding: 0 2rem;
       display: flex;
@@ -91,14 +91,14 @@ layout: none
     .nav-menu {
       display: flex;
       list-style: none;
-      gap: 2rem;
+      gap: 1.5rem;
       align-items: center;
     }
 
     .nav-menu a {
       text-decoration: none;
       color: var(--text);
-      font-size: 0.92rem;
+      font-size: 0.9rem;
       font-weight: 500;
       transition: color 0.3s ease;
       position: relative;
@@ -123,6 +123,23 @@ layout: none
     .nav-menu a:hover::after,
     .nav-menu a.active::after {
       width: 100%;
+    }
+
+    .nav-login-btn {
+      background: var(--primary);
+      color: #ffffff !important;
+      padding: 0.45rem 0.95rem;
+      border-radius: 5px;
+      font-size: 0.85rem !important;
+      transition: background 0.25s ease !important;
+    }
+
+    .nav-login-btn:hover {
+      background: var(--secondary);
+    }
+
+    .nav-login-btn::after {
+      display: none !important;
     }
 
     .hamburger {
@@ -515,7 +532,7 @@ layout: none
     }
 
     /* RESPONSIVE */
-    @media (max-width: 768px) {
+    @media (max-width: 820px) {
       .nav-menu {
         display: none;
         position: absolute;
@@ -579,11 +596,12 @@ layout: none
         Çeviribilim & Dil
       </a>
       <ul class="nav-menu">
-        <li><a href="#ana-sayfa" class="active">Ana Sayfa</a></li>
-        <li><a href="#hakkinda">Perspektif</a></li>
+        <li><a href="/" class="active">Ana Sayfa</a></li>
         <li><a href="#dersler">Özel Ders</a></li>
+        <li><a href="/edebiyat/">Edebiyat</a></li>
         <li><a href="/kaynaklar/">Kaynaklar</a></li>
-        <li><a href="#iletisim">İletişim</a></li>
+        <li><a href="/iletisim.html">İletişim</a></li>
+        <li><a href="/login.html" class="nav-login-btn">Öğrenci Girişi</a></li>
       </ul>
       <div class="hamburger">
         <span></span>
@@ -617,7 +635,7 @@ layout: none
     <section class="section" id="hakkinda">
       <span class="section-label">İçgörü & Perspektif</span>
       <h2>Çeviribilim Neden Hayatidir?</h2>
-      <p>Büyük Dil Modelleri teknik hız kazandırmış olsa da, çeviri mekanik bir sözcük eşleme değildir. Metnin tarihsel katmanlarını, ideolojik nüanslarını ve edebi dokusunu anlamlandıracak <strong>insan bilinci</strong> her zamankından çok ihtiyaç duyuluyor.</p>
+      <p>Büyük Dil Modelleri teknik hız kazandırmış olsa da, çeviri mekanik bir sözcük eşleme değildir. Metnin tarihsel katmanlarını, ideolojik nüanslarını ve edebi dokusunu anlamlandıracak <strong>insan bilinci</strong> her zamankinden çok ihtiyaç duyuluyor.</p>
       
       <div class="quote">
         "Yapay zekâ istatistiksel olasılıklarla sözcük dizer; çevirmen ise metnin <em>ruhunu</em>, <em>etik sorumluluğunu</em> ve <em>estetik dengesini</em> kurar."
@@ -658,165 +676,4 @@ layout: none
         </div>
         <div class="feature-box">
           <strong>📚 Akademik Sınavlar</strong>
-          <p>YDS, YÖKDİL ve YDT hazırlığı. Akademik çeviri, sözcük dağarcığı ve strateji odaklı okuma.</p>
-        </div>
-        <div class="feature-box">
-          <strong>🗣️ İletişim & Telaffuz</strong>
-          <p>Akıcı konuşma pratiği, doğru fonetik telaffuz ve mesleki/akademik ifade becerisi.</p>
-        </div>
-      </div>
-
-      <div class="cta-group">
-        <p style="flex: 1; color: var(--muted); font-size: 0.9rem;">Ders programı ve seviye tespiti için doğrudan yazabilirsiniz.</p>
-        <a href="mailto:enveradali195@gmail.com?subject=İngilizce%20Özel%20Ders%20Talebi" class="btn btn-secondary">
-          ✉ Ders Talep Et
-        </a>
-      </div>
-    </section>
-
-    <!-- MESLEKİ DAYANIŞMA -->
-    <section class="section success">
-      <span class="section-label success">Ücretsiz Atölyeler</span>
-      <h2>Mesleki Dayanışma</h2>
-      <p>Çeviribilim disiplinine katkı sunmak amacıyla; Mütercim Tercümanlık, Çeviribilim ve Uygulamalı İngilizce Çevirmenlik öğrencilerine ve mezunlarına gönüllü olarak eğitimler sunuyorum.</p>
-      
-      <div class="quote">
-        <strong>SDL Trados Studio</strong> (CAT yazılımları) ve <strong>Subtitle Edit</strong> gibi araçlara yönelik pratik atölyeler. Bilgisayar destekli çeviri iş akışları ve teknik adaptasyon.
-      </div>
-
-      <div class="cta-group">
-        <p style="flex: 1; color: var(--muted); font-size: 0.9rem;">Planlanan Zoom atölyeleri için iletişime geçebilirsiniz.</p>
-        <a href="mailto:enveradali195@gmail.com?subject=Ücretsiz%20Atölye%20Talebi" class="btn btn-success">
-          🎧 Atölye Talep Et
-        </a>
-      </div>
-    </section>
-
-    <!-- KURUMSAL BAĞLANTILAR -->
-    <section class="section">
-      <h2>Kurumsal Bağlantılar</h2>
-      <div class="portal-grid">
-        <a href="https://www.beykent.edu.tr/aday-ogrenci/bolumler-programlar/lisans/fen-edebiyat-fakultesi/ingilizce-mutercim-ve-tercumanlik" target="_blank" rel="noopener noreferrer" class="portal-card">
-          <strong>İngilizce Mütercim ve Tercümanlık</strong>
-          <div class="description">İstanbul Beykent Üniversitesi • Lisans Programı</div>
-          <span class="portal-tag">Bölüm Detayı →</span>
-        </a>
-        <a href="https://lisansustu.beykent.edu.tr/yuksek-lisans/ingiliz-dili-ve-edebiyati-abd" target="_blank" rel="noopener noreferrer" class="portal-card">
-          <strong>İngiliz Dili ve Edebiyatı</strong>
-          <div class="description">Lisansüstü Eğitim Enstitüsü</div>
-          <span class="portal-tag">Enstitü Portalı →</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- KAYNAKLAR MERKEZİ -->
-    <section class="section" style="text-align: center; background: linear-gradient(135deg, var(--light) 0%, #fff 100%);">
-      <h3 style="margin-top: 0;">📚 Kaynaklar Merkezi</h3>
-      <p style="color: var(--muted); margin-bottom: 1.5rem;">Derlem (korpus) veri tabanları, collocation sözlükleri, dinleme platformları ve dikte alıştırmaları.</p>
-      <a href="/kaynaklar/" class="btn btn-outline">
-        Kaynakları Görüntüle →
-      </a>
-    </section>
-
-  </div>
-
-  <!-- FOOTER -->
-  <footer id="iletisim">
-    <div class="footer-container">
-      <div class="footer-section">
-        <h4>İletişim</h4>
-        <div class="footer-contact">
-          <strong>E-posta:</strong>
-          <a href="mailto:enveradali195@gmail.com">enveradali195@gmail.com</a>
-          <br><br>
-          <strong>Ağ & İletişim:</strong>
-          <a href="https://www.linkedin.com/in/enver-adalı-195" target="_blank" rel="noopener noreferrer">LinkedIn Profili</a>
-        </div>
-      </div>
-
-      <div class="footer-section">
-        <h4>Sayfalar</h4>
-        <ul>
-          <li><a href="#ana-sayfa">Ana Sayfa</a></li>
-          <li><a href="#hakkinda">Perspektif</a></li>
-          <li><a href="#dersler">Özel Ders</a></li>
-          <li><a href="/kaynaklar/">Kaynaklar & İletişim Formu</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-section">
-        <h4>Hizmetler & Odak</h4>
-        <ul>
-          <li><a href="#dersler">Birebir Özel Ders</a></li>
-          <li><a href="#dersler">LGS & Okul Takviyesi</a></li>
-          <li><a href="#dersler">Akademik Sınavlar (YDS / TOEFL)</a></li>
-          <li><a href="#hakkinda">Gönüllü CAT Araçları Atölyesi</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-divider">
-      <p>© 2026 Enver Adalı. Tüm hakları saklıdır.</p>
-      <p style="margin-top: 0.4rem;">Çeviribilim • Mütercim Tercümanlık • İngiliz Dili Eğitimi</p>
-    </div>
-  </footer>
-
-  <!-- MOBİL MENÜ TETİKLEYİCİ -->
-  <script>
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
-
-    hamburger.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-    });
-
-    document.querySelectorAll('.nav-menu a').forEach(link => {
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-      });
-    });
-  </script>
-
-  <!-- GİZLİ COĞRAFİ VE AKADEMİK SCHEMA KODU -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "EducationalOccupationalCredential",
-    "name": "Birebir ve Online İngilizce Özel Ders",
-    "description": "Akademik sınavlara (YDS, TOEFL, LGS) ve dil yeterliliğine yönelik birebir ve online İngilizce eğitimi.",
-    "provider": {
-      "@type": "Person",
-      "name": "Enver Adalı",
-      "url": "https://adalienver.site",
-      "address": {
-        "@type": "PostalAddress",
-        "addressRegion": "İstanbul",
-        "postalCode": "34570",
-        "addressCountry": "TR"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 41.0742,
-        "longitude": 28.2483
-      }
-    },
-    "areaServed": {
-      "@type": "GeoCircle",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": 41.0742,
-        "longitude": 28.2483
-      },
-      "geoRadius": 35000
-    },
-    "availableChannel": {
-      "@type": "ServiceChannel",
-      "serviceUrl": "https://adalienver.site",
-      "serviceType": "Online Education"
-    }
-  }
-    
-  </script>
-
-</body>
-</html>
+          <p>YDS, YÖKDİL ve YDT hazırlığı. Akademik çeviri,
