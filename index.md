@@ -703,7 +703,7 @@ layout: none
       </div>
 
       <div class="cta-group">
-        <p style="flex: 1; color: var(--muted); font-size: 0.9rem;">Telefon görüşmesi veya seviye tespiti randevusu için form üzerinden numaranızı iletebilirsiniz; en kısa sürede dönüş sağlanır.</p>
+        <p style="flex: 1; color: var(--muted); font-size: 0.9rem;"> seviye tespiti  için form üzerinden iletşime geçebilirsiniz ; en kısa sürede dönüş sağlanır.</p>
         <a href="/kaynaklar/#name" class="btn btn-secondary">
           📞 Görüşme & Ders Talep Et
         </a>
