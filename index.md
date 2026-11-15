@@ -791,8 +791,8 @@ layout: none
           <strong>E-posta:</strong>
           <a href="mailto:enveradali195@gmail.com">enveradali195@gmail.com</a>
           <br><br>
-          <strong>Telefonla Geri Dönüş Talebi:</strong>
-          <a href="/kaynaklar/#name">İletişim Formundan Numara Bırak →</a>
+          <strong>İletişim Formundan Geri Dönüş Talebi:</strong>
+          <a href="/kaynaklar/#name">İletişim Formundan İletişime Geçebilirsiniz →</a>
           <br><br>
           <strong>Profesyonel Ağ:</strong>
           <a href="https://www.linkedin.com/in/enver-adalı-195" target="_blank" rel="noopener noreferrer">LinkedIn Profili</a>
