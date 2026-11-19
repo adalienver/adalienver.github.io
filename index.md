@@ -5,16 +5,16 @@ layout: none
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online & Birebir İngilizce Özel Ders | YDS, YÖKDİL, TOEFL, SDL Trados Studio - Enver Adalı</title>
-  <meta name="description" content="Birebir ve online İngilizce özel ders. YDS, YÖKDİL, TOEFL ve LGS sınav hazırlığı ile SDL Trados Studio ve Subtitle Edit çeviri teknolojileri eğitimleri.">
-  <meta name="keywords" content="İngilizce özel ders, online İngilizce özel ders, Silivri İngilizce özel ders, Beylikdüzü İngilizce özel ders, Büyükçekmece İngilizce özel ders, YDS özel ders, YÖKDİL özel ders, TOEFL hazırlık, SDL Trados Studio eğitimi, Subtitle Edit eğitimi, çeviribilim">
+  <title>Silivri & Online İngilizce Özel Ders | YDS, YÖKDİL, TOEFL, LGS - Enver Adalı</title>
+  <meta name="description" content="Silivri, Beylikdüzü ve Büyükçekmece bölgelerinde yüz yüze; Türkiye genelinde canlı online İngilizce özel ders. YDS, YÖKDİL, TOEFL, LGS hazırlığı ile SDL Trados Studio ve Subtitle Edit eğitimleri.">
+  <meta name="keywords" content="Silivri İngilizce özel ders, Beylikdüzü İngilizce özel ders, Büyükçekmece İngilizce özel ders, online İngilizce özel ders, YDS özel ders, YÖKDİL özel ders, TOEFL hazırlık, LGS İngilizce özel ders, SDL Trados Studio eğitimi, Subtitle Edit eğitimi, Enver Adalı">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://adalienver.site/">
 
   <!-- Open Graph / Sosyal Medya Önizleme -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Enver Adalı — İngilizce Özel Ders & Çeviri Teknolojileri">
-  <meta property="og:description" content="Birebir ve online YDS, YÖKDİL, TOEFL, LGS İngilizce özel dersleri ile SDL Trados Studio & Subtitle Edit atölyeleri.">
+  <meta property="og:title" content="Enver Adalı — Silivri & Online İngilizce Özel Ders">
+  <meta property="og:description" content="YDS, YÖKDİL, TOEFL ve LGS sınavlarına yönelik birebir ve online İngilizce özel ders programları ile çeviri teknolojileri atölyeleri.">
   <meta property="og:url" content="https://adalienver.site/">
 
   <!-- FONTS -->
@@ -370,6 +370,16 @@ layout: none
       margin: 0;
     }
 
+    .service-scope {
+      margin-top: 1.35rem;
+      font-size: 0.88rem;
+      color: var(--muted);
+      background: #f8fafc;
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+    }
+
     .cta-group {
       display: flex;
       gap: 1rem;
@@ -685,7 +695,7 @@ layout: none
         <span class="badge">Kontenjan Açık</span>
       </div>
 
-      <p>Her öğrencinin hedefine ve mevcut dil seviyesine göre yapılandırılmış, yüz yüze ve canlı <strong>online İngilizce özel ders</strong> programları. Sınav stratejilerinden akademik okumaya ve akıcı konuşmaya kadar kişiselleştirilmiş çalışma planı.</p>
+      <p>Her öğrencinin hedefine ve mevcut dil seviyesine göre yapılandırılmış, birebir yüz yüze ve canlı <strong>online İngilizce özel ders</strong> programları. Sınav stratejilerinden akademik okumaya ve akıcı konuşmaya kadar kişiselleştirilmiş çalışma planı.</p>
 
       <div class="features-grid">
         <div class="feature-box">
@@ -702,8 +712,12 @@ layout: none
         </div>
       </div>
 
+      <p class="service-scope">
+        <strong>Eğitim Kapsamı:</strong> Silivri, Beylikdüzü ve Büyükçekmece çevresinde yüz yüze; tüm şehirler için etkileşimli online birebir dersler.
+      </p>
+
       <div class="cta-group">
-        <p style="flex: 1; color: var(--muted); font-size: 0.9rem;"> seviye tespiti  için form üzerinden iletşime geçebilirsiniz ; en kısa sürede dönüş sağlanır.</p>
+        <p style="flex: 1; color: var(--muted); font-size: 0.9rem;">Seviye tespiti ve ders planlaması için form üzerinden iletişime geçebilirsiniz; en kısa sürede dönüş sağlanır.</p>
         <a href="/kaynaklar/#name" class="btn btn-secondary">
           📞 Görüşme & Ders Talep Et
         </a>
@@ -791,8 +805,8 @@ layout: none
           <strong>E-posta:</strong>
           <a href="mailto:enveradali195@gmail.com">enveradali195@gmail.com</a>
           <br><br>
-          <strong>İletişim Formundan Geri Dönüş Talebi:</strong>
-          <a href="/kaynaklar/#name">İletişim Formundan İletişime Geçebilirsiniz →</a>
+          <strong>İletişim Formu:</strong>
+          <a href="/kaynaklar/#name">Mesaj & Görüşme Formuna Git →</a>
           <br><br>
           <strong>Profesyonel Ağ:</strong>
           <a href="https://www.linkedin.com/in/enver-adalı-195" target="_blank" rel="noopener noreferrer">LinkedIn Profili</a>
@@ -866,7 +880,7 @@ layout: none
         "name": "Enver Adalı — İngilizce Özel Ders & Çeviri Teknolojileri",
         "url": "https://adalienver.site/",
         "email": "enveradali195@gmail.com",
-        "description": "Birebir ve online İngilizce özel ders (YDS, YÖKDİL, TOEFL, LGS) ile SDL Trados Studio ve Subtitle Edit eğitimleri.",
+        "description": "Silivri, Beylikdüzü ve Büyükçekmece bölgelerinde yüz yüze; Türkiye genelinde canlı online İngilizce özel ders (YDS, YÖKDİL, TOEFL, LGS) ile SDL Trados Studio ve Subtitle Edit eğitimleri.",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Silivri",
@@ -897,7 +911,7 @@ layout: none
           {
             "@type": "Course",
             "position": 1,
-            "name": "YDS, YÖKDİL ve TOEFL İngilizce Özel Ders",
+            "name": "Silivri & Online YDS, YÖKDİL ve TOEFL İngilizce Özel Ders",
             "description": "Akademik sınavlara yönelik birebir ve online İngilizce eğitimi.",
             "provider": { "@id": "https://adalienver.site/#organization" }
           },
