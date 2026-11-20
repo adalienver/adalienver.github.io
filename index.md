@@ -6,15 +6,15 @@ layout: none
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Silivri & Online İngilizce Özel Ders | YDS, YÖKDİL, TOEFL, LGS - Enver Adalı</title>
-  <meta name="description" content="Silivri, Beylikdüzü ve Büyükçekmece bölgelerinde yüz yüze; Türkiye genelinde canlı online İngilizce özel ders. YDS, YÖKDİL, TOEFL, LGS hazırlığı ile SDL Trados Studio ve Subtitle Edit eğitimleri.">
-  <meta name="keywords" content="Silivri İngilizce özel ders, Beylikdüzü İngilizce özel ders, Büyükçekmece İngilizce özel ders, online İngilizce özel ders, YDS özel ders, YÖKDİL özel ders, TOEFL hazırlık, LGS İngilizce özel ders, SDL Trados Studio eğitimi, Subtitle Edit eğitimi, Enver Adalı">
+  <meta name="description" content="Silivri'de yüz yüze ve Türkiye genelinde canlı online İngilizce özel ders. YDS, YÖKDİL, TOEFL ve LGS sınav hazırlığı ile SDL Trados Studio ve Subtitle Edit eğitimleri.">
+  <meta name="keywords" content="Silivri İngilizce özel ders, Silivri YDS özel ders, Silivri LGS İngilizce özel ders, online İngilizce özel ders, YDS özel ders, YÖKDİL özel ders, TOEFL hazırlık, SDL Trados Studio eğitimi, Subtitle Edit eğitimi, Enver Adalı">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://adalienver.site/">
 
   <!-- Open Graph / Sosyal Medya Önizleme -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Enver Adalı — Silivri & Online İngilizce Özel Ders">
-  <meta property="og:description" content="YDS, YÖKDİL, TOEFL ve LGS sınavlarına yönelik birebir ve online İngilizce özel ders programları ile çeviri teknolojileri atölyeleri.">
+  <meta property="og:description" content="Silivri'de birebir yüz yüze ve Türkiye genelinde online YDS, YÖKDİL, TOEFL, LGS İngilizce özel dersleri ile çeviri teknolojileri atölyeleri.">
   <meta property="og:url" content="https://adalienver.site/">
 
   <!-- FONTS -->
@@ -636,7 +636,6 @@ layout: none
       }
     }
   </style>
-<meta name="google-site-verification" content="abRowW6czHKSj5P6uTd2GBxI_RTs3Qsc-1G9-ekJqjA" />
 </head>
 <body>
 
@@ -669,7 +668,7 @@ layout: none
     <!-- HERO -->
     <header id="ana-sayfa">
       <h1>Enver Adalı</h1>
-      <p class="tagline">İngilizce Özel Ders • Çeviribilim • Çeviri Teknolojileri</p>
+      <p class="tagline">Silivri & Online İngilizce Özel Ders • Çeviribilim • Çeviri Teknolojileri</p>
       <div class="credentials">
         <span>İstanbul Beykent Üniversitesi Mezunu</span>
       </div>
@@ -690,13 +689,13 @@ layout: none
     <section class="section accent" id="dersler">
       <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
         <div>
-          <span class="section-label">Birebir & Online Eğitim</span>
-          <h2>İngilizce Özel Ders (YDS, YÖKDİL, TOEFL & LGS)</h2>
+          <span class="section-label">Silivri Yüz Yüze & Online Eğitim</span>
+          <h2>Silivri & Online İngilizce Özel Ders (YDS, YÖKDİL, TOEFL & LGS)</h2>
         </div>
         <span class="badge">Kontenjan Açık</span>
       </div>
 
-      <p>Her öğrencinin hedefine ve mevcut dil seviyesine göre yapılandırılmış, birebir yüz yüze ve canlı <strong>online İngilizce özel ders</strong> programları. Sınav stratejilerinden akademik okumaya ve akıcı konuşmaya kadar kişiselleştirilmiş çalışma planı.</p>
+      <p>Her öğrencinin hedefine ve mevcut dil seviyesine göre yapılandırılmış, Silivri'de birebir yüz yüze ve canlı <strong>online İngilizce özel ders</strong> programları. Sınav stratejilerinden akademik okumaya ve akıcı konuşmaya kadar kişiselleştirilmiş çalışma planı.</p>
 
       <div class="features-grid">
         <div class="feature-box">
@@ -714,7 +713,7 @@ layout: none
       </div>
 
       <p class="service-scope">
-        <strong>Eğitim Kapsamı:</strong> Silivri, Beylikdüzü ve Büyükçekmece çevresinde yüz yüze; tüm şehirler için etkileşimli online birebir dersler.
+        <strong>Eğitim Kapsamı:</strong> Silivri ilçesinde birebir yüz yüze; Türkiye genelinde ise etkileşimli online özel ders imkânı.
       </p>
 
       <div class="cta-group">
@@ -828,7 +827,7 @@ layout: none
       <div class="footer-section">
         <h4>Eğitim & Uzmanlık Alanları</h4>
         <ul>
-          <li><a href="#dersler">Birebir & Online İngilizce Özel Ders</a></li>
+          <li><a href="#dersler">Silivri & Online İngilizce Özel Ders</a></li>
           <li><a href="#dersler">YDS, YÖKDİL & TOEFL Hazırlık</a></li>
           <li><a href="#dersler">LGS & Okul İngilizce Takviyesi</a></li>
           <li><a href="#ceviribilim-atolye">SDL Trados Studio Eğitimi</a></li>
@@ -878,10 +877,10 @@ layout: none
       {
         "@type": "EducationalOrganization",
         "@id": "https://adalienver.site/#organization",
-        "name": "Enver Adalı — İngilizce Özel Ders & Çeviri Teknolojileri",
+        "name": "Enver Adalı — Silivri & Online İngilizce Özel Ders",
         "url": "https://adalienver.site/",
         "email": "enveradali195@gmail.com",
-        "description": "Silivri, Beylikdüzü ve Büyükçekmece bölgelerinde yüz yüze; Türkiye genelinde canlı online İngilizce özel ders (YDS, YÖKDİL, TOEFL, LGS) ile SDL Trados Studio ve Subtitle Edit eğitimleri.",
+        "description": "Silivri'de birebir yüz yüze ve Türkiye genelinde canlı online İngilizce özel ders (YDS, YÖKDİL, TOEFL, LGS) ile SDL Trados Studio ve Subtitle Edit eğitimleri.",
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Silivri",
@@ -896,9 +895,6 @@ layout: none
         },
         "areaServed": [
           { "@type": "City", "name": "Silivri" },
-          { "@type": "City", "name": "Beylikdüzü" },
-          { "@type": "City", "name": "Büyükçekmece" },
-          { "@type": "AdministrativeArea", "name": "İstanbul" },
           { "@type": "Country", "name": "Türkiye" }
         ],
         "sameAs": [
@@ -913,13 +909,13 @@ layout: none
             "@type": "Course",
             "position": 1,
             "name": "Silivri & Online YDS, YÖKDİL ve TOEFL İngilizce Özel Ders",
-            "description": "Akademik sınavlara yönelik birebir ve online İngilizce eğitimi.",
+            "description": "Akademik sınavlara yönelik birebir yüz yüze ve online İngilizce eğitimi.",
             "provider": { "@id": "https://adalienver.site/#organization" }
           },
           {
             "@type": "Course",
             "position": 2,
-            "name": "LGS ve Ortaokul-Lise İngilizce Özel Ders",
+            "name": "Silivri LGS ve Ortaokul-Lise İngilizce Özel Ders",
             "description": "5-8. sınıf müfredatına ve LGS sınavına yönelik birebir İngilizce takviye dersleri.",
             "provider": { "@id": "https://adalienver.site/#organization" }
           },
