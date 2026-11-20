@@ -1,6 +1,7 @@
 ---
 layout: default
-title: İngilizce Öğrenme Materyalleri ve Faydalı Kaynaklar
+title: İngilizce Çalışma Kaynakları & Özel Ders İletişim Formu | Enver Adalı
+description: YDS, YÖKDİL, TOEFL, LGS hazırlığı ve çeviri çalışmaları için korpus veri tabanları, eşdizim (collocation) sözlükleri, dikte araçları ve Silivri / online İngilizce özel ders başvuru formu.
 permalink: /kaynaklar/
 ---
 
@@ -230,6 +231,7 @@ permalink: /kaynaklar/
   .contact-box {
     background: rgba(255, 255, 255, 0.92);
     border: 1px solid rgba(226, 232, 240, 0.9);
+    border-top: 3px solid var(--accent);
     border-radius: 16px;
     padding: 2rem;
     max-width: 680px;
@@ -247,6 +249,11 @@ permalink: /kaynaklar/
     flex-direction: column;
     gap: 1.1rem;
   }
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
   .form-group {
     display: flex;
     flex-direction: column;
@@ -258,6 +265,7 @@ permalink: /kaynaklar/
     color: var(--primary);
   }
   .form-group input,
+  .form-group select,
   .form-group textarea {
     width: 100%;
     padding: 0.75rem 0.9rem;
@@ -271,6 +279,7 @@ permalink: /kaynaklar/
     transition: all 0.2s ease;
   }
   .form-group input:focus,
+  .form-group select:focus,
   .form-group textarea:focus {
     outline: none;
     border-color: var(--primary);
@@ -279,7 +288,7 @@ permalink: /kaynaklar/
   .submit-btn {
     background: var(--primary);
     color: #ffffff;
-    padding: 0.75rem 1.6rem;
+    padding: 0.8rem 1.65rem;
     font-size: 0.95rem;
     font-weight: 600;
     border: none;
@@ -293,9 +302,30 @@ permalink: /kaynaklar/
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(21, 50, 91, 0.15);
   }
+  .internal-links-bar {
+    margin-top: 1.6rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.86rem;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1.2rem;
+    justify-content: center;
+  }
+  .internal-links-bar a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .internal-links-bar a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+  }
 
   @media (max-width: 640px) {
-    .resource-grid {
+    .resource-grid,
+    .form-row {
       grid-template-columns: 1fr;
     }
     .contact-box {
@@ -307,7 +337,7 @@ permalink: /kaynaklar/
 <div class="resource-hero">
   <h1>İngilizce Öğrenme & Çalışma Kaynakları</h1>
   <p>
-    Öğrenciler, çevirmen adayları, lisansüstü araştırmacılar ve dil sınavlarına (YDS, YÖKDİL, TOEFL, IELTS) hazırlananlar için derlenmiş korpus veri tabanları, dinleme ve telaffuz arşivleri, sözlükler ile akademik yazım kılavuzları.
+    Öğrenciler, çevirmen adayları, lisansüstü araştırmacılar ve dil sınavlarına (YDS, YÖKDİL, TOEFL, LGS) hazırlananlar için derlenmiş korpus veri tabanları, dinleme ve telaffuz arşivleri, sözlükler ile akademik yazım kılavuzları.
   </p>
 </div>
 
@@ -703,32 +733,58 @@ permalink: /kaynaklar/
   </div>
 </div>
 
-<!-- İLETİŞİM & DERS TALEBİ FORMU (SADE VE GİZLİLİK ODAKLI) -->
+<!-- İLETİŞİM & DERS TALEBİ FORMU -->
 <div class="resource-contact-section">
   <div class="contact-box">
-    <h2 class="category-title" style="border: none; padding-bottom: 0; margin-bottom: 0.5rem;">📬 İletişim & Ders Talebi</h2>
+    <h2 class="category-title" style="border: none; padding-bottom: 0; margin-bottom: 0.5rem;">📬 İletişim & Özel Ders Talebi</h2>
     <p>
-      Birebir veya online özel ders (YDS, TOEFL, konuşma pratiği vb.), çeviri danışmanlığı veya kaynaklarla ilgili sormak istedikleriniz için doğrudan bana mesaj gönderebilirsiniz.
+      Silivri, Beylikdüzü, Büyükçekmece bölgelerinde yüz yüze veya Türkiye geneli <strong>online İngilizce özel ders</strong> (YDS, YÖKDİL, TOEFL, LGS, konuşma pratiği) ile <strong>SDL Trados Studio & Subtitle Edit</strong> eğitimleri için form üzerinden ulaşabilirsiniz. Telefonla dönüş isterseniz numaranızı bırakmanız yeterlidir.
     </p>
 
    <form action="https://formspree.io/f/myewyjgq" method="POST" class="custom-contact-form">
-      <div class="form-group">
-        <label for="name">Adınız Soyadınız *</label>
-        <input type="text" id="name" name="name" placeholder="Adınız Soyadınız" required />
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Adınız Soyadınız *</label>
+          <input type="text" id="name" name="name" placeholder="Adınız Soyadınız" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-posta Adresiniz *</label>
+          <input type="email" id="email" name="_replyto" placeholder="ornek@email.com" required />
+        </div>
       </div>
 
-      <div class="form-group">
-        <label for="email">E-posta Adresiniz *</label>
-        <input type="email" id="email" name="_replyto" placeholder="ornek@email.com" required />
+      <div class="form-row">
+        <div class="form-group">
+          <label for="program">İlgilendiğiniz Eğitim / Alan</label>
+          <select id="program" name="program">
+            <option value="YDS / YÖKDİL / TOEFL Özel Ders">YDS / YÖKDİL / TOEFL Özel Ders</option>
+            <option value="LGS & Okul İngilizce Takviyesi">LGS & Ortaokul-Lise İngilizce</option>
+            <option value="Konuşma & Genel İngilizce">Konuşma & Genel İngilizce</option>
+            <option value="SDL Trados Studio / Subtitle Edit">SDL Trados Studio / Subtitle Edit Eğitimi</option>
+            <option value="Diğer / Akademik Danışmanlık">Diğer / Akademik Danışmanlık</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Telefon Numaranız (Sesli dönüş için — İsteğe bağlı)</label>
+          <input type="tel" id="phone" name="phone" placeholder="05XX XXX XX XX" />
+        </div>
       </div>
 
       <div class="form-group">
         <label for="message">Mesajınız *</label>
-        <textarea id="message" name="message" rows="4" placeholder="Almak istediğiniz eğitim veya iletmek istediğiniz not..." required></textarea>
+        <textarea id="message" name="message" rows="4" placeholder="Hedefiniz, mevcut dil seviyeniz veya yüz yüze / online tercihlerinizi kısaca belirtebilirsiniz..." required></textarea>
       </div>
 
-      <button type="submit" class="submit-btn">Mesajı Gönder ↗</button>
+      <button type="submit" class="submit-btn">Talebi Gönder ↗</button>
     </form>
+
+    <div class="internal-links-bar">
+      <a href="/#dersler">← Özel Ders Programlarını İncele</a>
+      <span>•</span>
+      <a href="/#ceviribilim-atolye">SDL Trados Studio & Subtitle Edit Atölyeleri</a>
+    </div>
   </div>
 </div>
 
@@ -784,4 +840,20 @@ permalink: /kaynaklar/
       });
     });
   })();
+</script>
+
+<!-- SCHEMA.ORG YAPISAL VERİ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "İngilizce Öğrenme & Çalışma Kaynakları",
+  "description": "YDS, YÖKDİL, TOEFL, LGS hazırlığı ve çeviri çalışmaları için korpus veri tabanları, eşdizim sözlükleri, dikte araçları ve özel ders iletişim formu.",
+  "url": "https://adalienver.site/kaynaklar/",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Enver Adalı — İngilizce Özel Ders & Çeviri Teknolojileri",
+    "url": "https://adalienver.site/"
+  }
+}
 </script>
