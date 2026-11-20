@@ -679,7 +679,7 @@ layout: none
         <a href="mailto:enveradali195@gmail.com" class="secondary">
           enveradali195@gmail.com
         </a>
-        <a href="https://www.linkedin.com/in/enver-adalı-195" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/enver-adalı/" target="_blank" rel="noopener noreferrer">
           💼 LinkedIn
         </a>
       </div>
@@ -809,7 +809,7 @@ layout: none
           <a href="/kaynaklar/#name">Mesaj & Görüşme Formuna Git →</a>
           <br><br>
           <strong>Profesyonel Ağ:</strong>
-          <a href="https://www.linkedin.com/in/enver-adalı-195" target="_blank" rel="noopener noreferrer">LinkedIn Profili</a>
+          <a href="https://www.linkedin.com/in/enver-adalı" target="_blank" rel="noopener noreferrer">LinkedIn Profili</a>
         </div>
       </div>
 
@@ -898,7 +898,7 @@ layout: none
           { "@type": "Country", "name": "Türkiye" }
         ],
         "sameAs": [
-          "https://www.linkedin.com/in/enver-adalı-195"
+          "https://www.linkedin.com/in/enver-adalı"
         ]
       },
       {
