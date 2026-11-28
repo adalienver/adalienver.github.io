@@ -787,6 +787,390 @@ permalink: /kaynaklar/
     </div>
   </div>
 </div>
+<!-- ETKİLEŞİMLİ ÇEVİRİ & DİL ARAÇLARI -->
+<section class="section" id="etkilesimli-araclar">
+  <span class="section-label">Uygulamalı Araçlar • Saf JavaScript</span>
+  <h2>Etkileşimli Çeviri & Sınav Mini Araçları</h2>
+  <p>Altyazı çevirisi standartlarını anında test edebileceğiniz <strong>CPS (Saniye Başına Karakter) Hesaplayıcı</strong> ile YDS, YÖKDİL ve akademik çeviri pratiği sunan <strong>Bağlaç & Eşdizim Testi</strong>.</p>
+
+  <div class="tools-grid">
+    <!-- ARAÇ 1: SUBTITLE EDIT CPS HESAPLAYICI -->
+    <div class="tool-card">
+      <div class="tool-header">
+        <strong>🎬 Altyazı CPS & Satır Denetleyicisi</strong>
+        <span class="tool-badge">Subtitle Edit Standardı</span>
+      </div>
+      <p class="tool-sub">Çeviri metnini ve sahne süresini girerek okuma hızını ve satır sınırını kontrol edin.</p>
+
+      <label for="subText" class="tool-label">Altyazı Metni (En fazla 2 satır önerilir):</label>
+      <textarea id="subText" rows="3" class="tool-input" placeholder="Örn: Yapay zekâ olası cümleler kurar,
+çevirmen ise gerçek anlamı inşa eder."></textarea>
+
+      <div class="tool-row">
+        <div>
+          <label for="subDuration" class="tool-label">Süre (Saniye):</label>
+          <input type="number" id="subDuration" class="tool-input" value="3.5" min="0.5" max="30" step="0.1">
+        </div>
+        <div>
+          <label for="cpsLimit" class="tool-label">Hedef CPS Limiti:</label>
+          <select id="cpsLimit" class="tool-input">
+            <option value="17" selected>17 CPS (Türkçe / Netflix)</option>
+            <option value="20">20 CPS (İngilizce Standart)</option>
+            <option value="15">15 CPS (Çocuk / Belgesel)</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="cpsResult" class="cps-result-box">
+        <div class="cps-metrics">
+          <span><strong>CPS Hızı:</strong> <b id="cpsValue">0.0</b> krk/sn</span>
+          <span><strong>Toplam:</strong> <b id="charCount">0</b> karakter</span>
+        </div>
+        <div id="cpsStatus" class="cps-status ok">Metin ve süre girerek analiz başlatın.</div>
+      </div>
+    </div>
+
+    <!-- ARAÇ 2: YDS / YÖKDİL BAĞLAÇ & EŞDİZİM TESTİ -->
+    <div class="tool-card">
+      <div class="tool-header">
+        <strong>📘 Hızlı Bağlaç & Eşdizim Testi</strong>
+        <span class="tool-badge">YDS • YÖKDİL</span>
+      </div>
+      <p class="tool-sub">Akademik metinlerde sık kullanılan mantıksal bağlaçları ve doğal kelime eşleşmelerini test edin.</p>
+
+      <div id="quizContainer" class="quiz-box">
+        <div class="quiz-top">
+          <span id="quizProgress">Soru 1 / 5</span>
+          <span id="quizScore">Skor: 0</span>
+        </div>
+        <p id="quizQuestion" class="quiz-question"></p>
+        <div id="quizOptions" class="quiz-options"></div>
+        <div id="quizFeedback" class="quiz-feedback" style="display:none;"></div>
+        <button id="nextQuestionBtn" class="btn btn-primary" style="display:none; margin-top:0.9rem; padding:0.5rem 1.1rem; font-size:0.85rem;">Sonraki Soru →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .tool-card {
+    background: var(--light);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .tool-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .tool-header strong {
+    color: var(--primary);
+    font-size: 1.05rem;
+  }
+  .tool-badge {
+    font-size: 0.72rem;
+    font-weight: 700;
+    background: #fff;
+    color: var(--secondary);
+    border: 1px solid var(--border);
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+  }
+  .tool-sub {
+    font-size: 0.86rem;
+    color: var(--muted);
+    margin-bottom: 1rem !important;
+  }
+  .tool-label {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 0.35rem;
+  }
+  .tool-input {
+    width: 100%;
+    padding: 0.65rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    background: #fff;
+    color: var(--text);
+    margin-bottom: 0.85rem;
+  }
+  .tool-input:focus {
+    outline: none;
+    border-color: var(--primary);
+  }
+  .tool-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+  }
+  .cps-result-box {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.9rem;
+    margin-top: 0.3rem;
+  }
+  .cps-metrics {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.88rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+  .cps-status {
+    font-size: 0.83rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 4px;
+    line-height: 1.45;
+  }
+  .cps-status.ok {
+    background: #ecf5e8;
+    color: var(--success);
+  }
+  .cps-status.warn {
+    background: #fef3c7;
+    color: #92400e;
+  }
+  .cps-status.danger {
+    background: #fee2e2;
+    color: #991b1b;
+  }
+  .quiz-box {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1rem;
+  }
+  .quiz-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.45rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .quiz-question {
+    font-size: 0.92rem;
+    font-weight: 500;
+    color: var(--primary);
+    margin-bottom: 0.85rem !important;
+  }
+  .quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+  }
+  .quiz-opt-btn {
+    text-align: left;
+    padding: 0.55rem 0.8rem;
+    background: var(--light);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    font-size: 0.86rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: var(--text);
+  }
+  .quiz-opt-btn:hover:not(:disabled) {
+    border-color: var(--primary);
+    background: #eef2f6;
+  }
+  .quiz-opt-btn.correct {
+    background: #dcfce7;
+    border-color: #16a34a;
+    color: #14532d;
+    font-weight: 600;
+  }
+  .quiz-opt-btn.wrong {
+    background: #fee2e2;
+    border-color: #dc2626;
+    color: #7f1d1d;
+  }
+  .quiz-feedback {
+    margin-top: 0.75rem;
+    font-size: 0.82rem;
+    padding: 0.6rem 0.75rem;
+    border-radius: 4px;
+    background: #f8fafc;
+    border-left: 3px solid var(--accent);
+    color: var(--text);
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // 1. ALTYAZI CPS HESAPLAYICI
+    const subText = document.getElementById('subText');
+    const subDuration = document.getElementById('subDuration');
+    const cpsLimit = document.getElementById('cpsLimit');
+    const cpsValue = document.getElementById('cpsValue');
+    const charCount = document.getElementById('charCount');
+    const cpsStatus = document.getElementById('cpsStatus');
+
+    function calculateCPS() {
+      const raw = subText.value;
+      const lines = raw.split('\n');
+      // Satır sonu karakterleri hariç görünür karakter sayısı
+      const cleanLength = raw.replace(/\r?\n/g, '').length;
+      const duration = parseFloat(subDuration.value) || 0;
+      const limit = parseFloat(cpsLimit.value) || 17;
+
+      charCount.textContent = cleanLength;
+
+      if (cleanLength === 0 || duration <= 0) {
+        cpsValue.textContent = '0.0';
+        cpsStatus.className = 'cps-status ok';
+        cpsStatus.textContent = 'Metin ve süre girerek analiz başlatın.';
+        return;
+      }
+
+      const cps = cleanLength / duration;
+      cpsValue.textContent = cps.toFixed(1);
+
+      const longestLine = Math.max(...lines.map(l => l.length));
+      const minRecommendedSec = (cleanLength / limit).toFixed(1);
+
+      if (lines.length > 2) {
+        cpsStatus.className = 'cps-status danger';
+        cpsStatus.textContent = `Uyarı: Altyazı ${lines.length} satır. Standart olarak en fazla 2 satır kullanılmalıdır.`;
+      } else if (longestLine > 42) {
+        cpsStatus.className = 'cps-status warn';
+        cpsStatus.textContent = `Satır sınırı aşıldı (${longestLine}/42 karakter). Metni iki satıra dengeli bölün.`;
+      } else if (cps > limit) {
+        cpsStatus.className = 'cps-status danger';
+        cpsStatus.textContent = `Okuma hızı yüksek (${cps.toFixed(1)} > ${limit} CPS). Metni kısaltın veya süreyi en az ${minRecommendedSec} sn yapın.`;
+      } else {
+        cpsStatus.className = 'cps-status ok';
+        cpsStatus.textContent = `Uygun: Okuma hızı (${cps.toFixed(1)} CPS) ve satır uzunluğu (${longestLine}/42 krk) yayın standardında.`;
+      }
+    }
+
+    subText.addEventListener('input', calculateCPS);
+    subDuration.addEventListener('input', calculateCPS);
+    cpsLimit.addEventListener('change', calculateCPS);
+
+    // 2. YDS / YÖKDİL BAĞLAÇ & EŞDİZİM TESTİ
+    const questions = [
+      {
+        q: "______ machine translation has improved rapidly, human translators remain indispensable for literary and legal nuance.",
+        options: ["Although", "Because", "Unless", "Therefore"],
+        answer: 0,
+        note: "Zıtlık bağlacı: 'Although' (-e rağmen), makine çevirisinin gelişmesine karşın insan çevirmenin vazgeçilmezliğini vurgular."
+      },
+      {
+        q: "In academic writing, researchers must ______ close attention to ethical citation standards.",
+        options: ["do", "make", "pay", "take"],
+        answer: 2,
+        note: "Doğal eşdizim (collocation): İngilizcede 'dikkat etmek' kalıbı 'pay attention to' fiiliyle kurulur."
+      },
+      {
+        q: "The symposium was postponed ______ unforeseen technical difficulties in the main auditorium.",
+        options: ["in spite of", "due to", "whereas", "moreover"],
+        answer: 1,
+        note: "Sebep-sonuç edatı: İsim öbeğinden ('unforeseen technical difficulties') önce '-den dolayı' anlamında 'due to' kullanılır."
+      },
+      {
+        q: "Subtitlers need to ______ a balance between semantic fidelity and the viewer's reading speed.",
+        options: ["strike", "hit", "build", "raise"],
+        answer: 0,
+        note: "İleri düzey eşdizim: 'Denge kurmak / tutturmak' anlamında en doğal akademik kalıp 'strike a balance'dır."
+      },
+      {
+        q: "Translation memory tools store previously translated segments; ______, they ensure terminological consistency across large projects.",
+        options: ["nevertheless", "otherwise", "consequently", "conversely"],
+        answer: 2,
+        note: "Sonuç bağlacı: 'Consequently' (sonuç olarak / bu sayede), çeviri belleğinin yarattığı olumlu etkiyi bağlar."
+      }
+    ];
+
+    let currentIdx = 0;
+    let score = 0;
+
+    const qProgress = document.getElementById('quizProgress');
+    const qScore = document.getElementById('quizScore');
+    const qText = document.getElementById('quizQuestion');
+    const qOptions = document.getElementById('quizOptions');
+    const qFeedback = document.getElementById('quizFeedback');
+    const nextBtn = document.getElementById('nextQuestionBtn');
+
+    function renderQuestion() {
+      const item = questions[currentIdx];
+      qProgress.textContent = `Soru ${currentIdx + 1} / ${questions.length}`;
+      qScore.textContent = `Skor: ${score}`;
+      qText.textContent = item.q;
+      qOptions.innerHTML = '';
+      qFeedback.style.display = 'none';
+      nextBtn.style.display = 'none';
+
+      item.options.forEach((opt, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'quiz-opt-btn';
+        btn.textContent = `${String.fromCharCode(65 + idx)}) ${opt}`;
+        btn.addEventListener('click', () => handleAnswer(idx, btn));
+        qOptions.appendChild(btn);
+      });
+    }
+
+    function handleAnswer(selectedIdx, selectedBtn) {
+      const item = questions[currentIdx];
+      const allBtns = qOptions.querySelectorAll('.quiz-opt-btn');
+      allBtns.forEach(b => b.disabled = true);
+
+      if (selectedIdx === item.answer) {
+        selectedBtn.classList.add('correct');
+        score++;
+        qScore.textContent = `Skor: ${score}`;
+      } else {
+        selectedBtn.classList.add('wrong');
+        allBtns[item.answer].classList.add('correct');
+      }
+
+      qFeedback.textContent = item.note;
+      qFeedback.style.display = 'block';
+
+      if (currentIdx < questions.length - 1) {
+        nextBtn.textContent = 'Sonraki Soru →';
+        nextBtn.style.display = 'inline-block';
+      } else {
+        nextBtn.textContent = 'Testi Yeniden Başlat ↻';
+        nextBtn.style.display = 'inline-block';
+      }
+    }
+
+    nextBtn.addEventListener('click', () => {
+      if (currentIdx < questions.length - 1) {
+        currentIdx++;
+        renderQuestion();
+      } else {
+        currentIdx = 0;
+        score = 0;
+        renderQuestion();
+      }
+    });
+
+    renderQuestion();
+  });
+</script>
 
 <!-- ANINDA FİLTRELEME VE ARAMA JAVASCRIPT KODU -->
 <script>
